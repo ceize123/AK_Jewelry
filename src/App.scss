@@ -513,14 +513,16 @@ header {
 
     img { height: calc( 100vh - 81px ); }
 
+    p { margin: 0; }
+
     .slogan, .getIn {
       position: absolute;
       padding: 0;
       margin: 0;
     }
     .slogan{
-      top: 406px;
-      right: 91px;
+      top: 42.2vh;
+      right: 115px;
       width: 595px;
       letter-spacing: 0.05em;
 
@@ -532,8 +534,8 @@ header {
     }
 
     .getIn {
-      top: 596px;
-      right: 158px;
+      top: 62.7vh;
+      right: 115px;
       color: #C2B04C;
       cursor: pointer;
 
