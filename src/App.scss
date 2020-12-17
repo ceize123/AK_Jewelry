@@ -511,7 +511,7 @@ header {
     position: relative;
     font-size: 36px;
 
-    img { width: 943px; }
+    img { height: calc( 100vh - 81px ); }
 
     .slogan, .getIn {
       position: absolute;
