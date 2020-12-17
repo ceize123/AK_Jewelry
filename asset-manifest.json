@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/AK_Jewelry/static/css/main.060bb8f5.chunk.css",
-    "main.js": "/AK_Jewelry/static/js/main.59cc29b6.chunk.js",
-    "main.js.map": "/AK_Jewelry/static/js/main.59cc29b6.chunk.js.map",
-    "runtime-main.js": "/AK_Jewelry/static/js/runtime-main.57a1e6f3.js",
-    "runtime-main.js.map": "/AK_Jewelry/static/js/runtime-main.57a1e6f3.js.map",
-    "static/js/2.7ad17e2c.chunk.js": "/AK_Jewelry/static/js/2.7ad17e2c.chunk.js",
-    "static/js/2.7ad17e2c.chunk.js.map": "/AK_Jewelry/static/js/2.7ad17e2c.chunk.js.map",
-    "index.html": "/AK_Jewelry/index.html",
-    "static/css/main.060bb8f5.chunk.css.map": "/AK_Jewelry/static/css/main.060bb8f5.chunk.css.map",
-    "static/js/2.7ad17e2c.chunk.js.LICENSE.txt": "/AK_Jewelry/static/js/2.7ad17e2c.chunk.js.LICENSE.txt",
-    "static/media/logo.9cabaa31.svg": "/AK_Jewelry/static/media/logo.9cabaa31.svg",
-    "static/media/抽象線條人物1.585f3421.svg": "/AK_Jewelry/static/media/抽象線條人物1.585f3421.svg",
-    "static/media/抽象線條人物2.613f9582.svg": "/AK_Jewelry/static/media/抽象線條人物2.613f9582.svg"
+    "main.css": "/static/css/main.060bb8f5.chunk.css",
+    "main.js": "/static/js/main.59cc29b6.chunk.js",
+    "main.js.map": "/static/js/main.59cc29b6.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2e6544c5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2e6544c5.js.map",
+    "static/js/2.7ad17e2c.chunk.js": "/static/js/2.7ad17e2c.chunk.js",
+    "static/js/2.7ad17e2c.chunk.js.map": "/static/js/2.7ad17e2c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.060bb8f5.chunk.css.map": "/static/css/main.060bb8f5.chunk.css.map",
+    "static/js/2.7ad17e2c.chunk.js.LICENSE.txt": "/static/js/2.7ad17e2c.chunk.js.LICENSE.txt",
+    "static/media/logo.9cabaa31.svg": "/static/media/logo.9cabaa31.svg",
+    "static/media/抽象線條人物1.585f3421.svg": "/static/media/抽象線條人物1.585f3421.svg",
+    "static/media/抽象線條人物2.613f9582.svg": "/static/media/抽象線條人物2.613f9582.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.57a1e6f3.js",
+    "static/js/runtime-main.2e6544c5.js",
     "static/js/2.7ad17e2c.chunk.js",
     "static/css/main.060bb8f5.chunk.css",
     "static/js/main.59cc29b6.chunk.js"
