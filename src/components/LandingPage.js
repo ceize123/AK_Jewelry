@@ -3,13 +3,14 @@ import abstract from '../imgs/RD-landingpage/抽象線條人物1.svg';
 import abstract2 from '../imgs/RD-landingpage/抽象線條人物2.svg';
 
 function LandingPage() {
+
   return (
     <>
       <header>
         <div className='sloganSec'>
           <div>
             <img src={abstract} alt="header"/>
-            <div class="glow bar">
+            <div className='glow'>
               <div></div>
               <div></div>
               <div></div>
