@@ -7,7 +7,27 @@ function LandingPage() {
     <>
       <header>
         <div className='sloganSec'>
-          <img src={abstract} alt="header"/>
+          <div>
+            <img src={abstract} alt="header"/>
+            <div class="glow bar">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div className='darkGrayLine'></div>
+              <div className='darkGrayLine'></div>
+              <div className='darkGrayLine'></div>
+              <div className='darkGrayLine'></div>
+              <div className='darkGrayLine'></div>
+              <div className='darkGrayLine'></div>
+              <div className='darkGrayLine'></div>
+              <div className='darkGrayLine'></div>
+            </div>
+          </div>
           <div className='slogan'>
             <p>喚起你心中的藝術家，</p>
             <p>開啟閃亮亮斜槓人生</p>
