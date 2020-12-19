@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/AK_Jewelry/static/css/main.c09ffb6c.chunk.css",
-    "main.js": "/AK_Jewelry/static/js/main.70e2aedd.chunk.js",
-    "main.js.map": "/AK_Jewelry/static/js/main.70e2aedd.chunk.js.map",
+    "main.css": "/AK_Jewelry/static/css/main.6d95aa68.chunk.css",
+    "main.js": "/AK_Jewelry/static/js/main.8f44a629.chunk.js",
+    "main.js.map": "/AK_Jewelry/static/js/main.8f44a629.chunk.js.map",
     "runtime-main.js": "/AK_Jewelry/static/js/runtime-main.57a1e6f3.js",
     "runtime-main.js.map": "/AK_Jewelry/static/js/runtime-main.57a1e6f3.js.map",
-    "static/js/2.7ad17e2c.chunk.js": "/AK_Jewelry/static/js/2.7ad17e2c.chunk.js",
-    "static/js/2.7ad17e2c.chunk.js.map": "/AK_Jewelry/static/js/2.7ad17e2c.chunk.js.map",
+    "static/css/2.ec02d681.chunk.css": "/AK_Jewelry/static/css/2.ec02d681.chunk.css",
+    "static/js/2.561fd1d7.chunk.js": "/AK_Jewelry/static/js/2.561fd1d7.chunk.js",
+    "static/js/2.561fd1d7.chunk.js.map": "/AK_Jewelry/static/js/2.561fd1d7.chunk.js.map",
     "index.html": "/AK_Jewelry/index.html",
-    "static/css/main.c09ffb6c.chunk.css.map": "/AK_Jewelry/static/css/main.c09ffb6c.chunk.css.map",
-    "static/js/2.7ad17e2c.chunk.js.LICENSE.txt": "/AK_Jewelry/static/js/2.7ad17e2c.chunk.js.LICENSE.txt",
+    "static/css/2.ec02d681.chunk.css.map": "/AK_Jewelry/static/css/2.ec02d681.chunk.css.map",
+    "static/css/main.6d95aa68.chunk.css.map": "/AK_Jewelry/static/css/main.6d95aa68.chunk.css.map",
+    "static/js/2.561fd1d7.chunk.js.LICENSE.txt": "/AK_Jewelry/static/js/2.561fd1d7.chunk.js.LICENSE.txt",
     "static/media/logo.9cabaa31.svg": "/AK_Jewelry/static/media/logo.9cabaa31.svg",
-    "static/media/抽象線條人物1.b151ff01.svg": "/AK_Jewelry/static/media/抽象線條人物1.b151ff01.svg",
+    "static/media/抽象人物線條亮晶晶.c6326ce0.gif": "/AK_Jewelry/static/media/抽象人物線條亮晶晶.c6326ce0.gif",
     "static/media/抽象線條人物2.613f9582.svg": "/AK_Jewelry/static/media/抽象線條人物2.613f9582.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.57a1e6f3.js",
-    "static/js/2.7ad17e2c.chunk.js",
-    "static/css/main.c09ffb6c.chunk.css",
-    "static/js/main.70e2aedd.chunk.js"
+    "static/css/2.ec02d681.chunk.css",
+    "static/js/2.561fd1d7.chunk.js",
+    "static/css/main.6d95aa68.chunk.css",
+    "static/js/main.8f44a629.chunk.js"
   ]
 }
