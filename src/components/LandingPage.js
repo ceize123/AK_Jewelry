@@ -15,8 +15,8 @@ function LessonSection(props) {
 
 
   // list with array
-  const handContent = lpHand.map( content => <li><img src={diamond} srcset={diamond + ' 1x,' + diamond2x + ' 2x'} alt="diamond"/>{content}</li> )
-  const digitalContent = lpDigital.map( content => <li><img src={diamond} alt="diamond"/>{content}</li> )
+  const handContent = lpHand.map( content => <li><img src={diamond} srcset={`${diamond} 1x, ${diamond2x} 2x`} alt="diamond"/>{content}</li> )
+  const digitalContent = lpDigital.map( content => <li><img src={diamond} srcset={`${diamond} 1x, ${diamond2x} 2x`} alt="diamond"/>{content}</li> )
 
   return (
     <>
@@ -130,8 +130,8 @@ function LandingPage() {
           <LessonSection handText='初階手繪珠寶設計' digitalText='數位珠寶設計'/>
         </div>
         <div className='tellMeTime'>
-          <p data-aos='fade-up' data-aos-delay='1400'>目前開課時間都無法配合<span>，</span>怎麼辦？</p>
-          <p data-aos='fade-up' data-aos-delay='1700'><nobr>別擔心！</nobr>告訴我們你可以的時間</p>
+          <p data-aos='fade-up' data-aos-delay='1400'>目前開課時間都無法配合<span>，</span><nobr>怎麼辦？</nobr></p>
+          <p data-aos='fade-up' data-aos-delay='1700'>別擔心！<nobr>告訴我們你可以的時間</nobr></p>
           <button data-aos='fade-up' data-aos-delay='2000' data-aos-offset='50'>填寫</button>
         </div>
       </header>
