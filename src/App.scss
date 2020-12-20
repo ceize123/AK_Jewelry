@@ -1151,7 +1151,7 @@ header {
             width: 100vw;
             margin-left: 39px;
             line-height: 39.6px;
-            white-space: nowrap;
+            white-space: wrap;
 
             &:first-child { margin-top: 15px; }
           }
