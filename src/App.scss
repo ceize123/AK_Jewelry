@@ -180,12 +180,19 @@ nav {
 
   nav {
     height: 56px;
-    justify-content: center;
     position: relative;
 
     a { color: #000; }
 
-    img { width: 46.51px;}
+    img {
+      width: 46.51px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
 
     .full-menu {
       background-color: $white;
@@ -214,11 +221,14 @@ nav {
       display: flex;
       flex-direction: column;
 
+      .selectDiv { padding: 0; }
+
       > li {
         padding: 0;
         opacity: 0;
 
         p {
+          margin: 0;
         .tri {
           border-width: 9px 0 9px 15.6px;
           border-color: transparent transparent transparent #C4C4C4;
@@ -820,7 +830,7 @@ header {
       top: -300%;
       left: -20%;
       transform: rotate(30deg);
-      transition: all 0.5s ease;
+      transition: all 0.7s ease;
       border: 8px solid #eee;
 
     }
@@ -1060,8 +1070,8 @@ header {
 
     .sloganSec, .lectureInfo p { font-size: 20px; }
     .aboutSec p { font-size: 36px; }
-    .dateInfo span, .handBar p, .digitalBar p, .tellMeTime p { font-size: 24px; }
-    .dateInfo li, .aboutSec span, button  { font-size: 20px; }
+    .dateInfo span, .handBar p, .digitalBar p { font-size: 24px; }
+    .dateInfo li, .aboutSec span, .tellMeTime p,  button  { font-size: 20px; }
 
     .sloganSec {
       img {
@@ -1141,6 +1151,7 @@ header {
             width: 100vw;
             margin-left: 39px;
             line-height: 39.6px;
+            white-space: nowrap;
 
             &:first-child { margin-top: 15px; }
           }

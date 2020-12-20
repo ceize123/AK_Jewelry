@@ -130,7 +130,7 @@ function LandingPage() {
         </div>
         <div className='tellMeTime'>
           <p data-aos='fade-up' data-aos-delay='1400'>目前開課時間都無法配合<span>，</span>怎麼辦？</p>
-          <p data-aos='fade-up' data-aos-delay='1700'>別擔心！<nobr>告訴我們你可以的時間</nobr></p>
+          <p data-aos='fade-up' data-aos-delay='1700'><nobr>別擔心！</nobr><nobr>告訴我們你可以的時間</nobr></p>
           <button data-aos='fade-up' data-aos-delay='2000' data-aos-offset='50'>填寫</button>
         </div>
       </header>
