@@ -145,12 +145,17 @@ nav {
             top: 10px;
             right: -160px;
             padding: 0;
+            background-color: #fff;
             border: 1px solid #205776;
             width: 154px;
             visibility: hidden;
 
-            li { padding: 11px 0 0 19px;
-              &:last-child { padding: 15px 0 9px 19px;}
+            li {
+              padding: 11px 0 0 19px;
+
+              &:last-child {
+                padding: 15px 0 9px 19px;
+              }
             }
           }
           &:hover ul  {
@@ -297,6 +302,7 @@ nav {
               top: 162px;
               left: 50%;
               transform: translateX(-50%);
+              background-color: $Navgray;
               border: none;
               visibility: visible;
 
@@ -467,7 +473,7 @@ footer {
 
 
 // mobile
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
   footer {
     height: 85px;
 
@@ -508,9 +514,17 @@ footer {
 header {
   padding-top: 81px;
 
+  .sloganSec, .lectureInfo p, .handBar p, .digitalBar p, .tellMeTime p { font-size: 36px; }
+  .aboutSec p { font-size: 48px; }
+  .aboutSec span, .dateInfo span {
+    font-size: 24px;
+    display: block;
+  }
+  .dateInfo li, button { font-size: 24px; }
+
+
   .sloganSec {
     position: relative;
-    font-size: 36px;
 
     img {
       max-height: 1280px;
@@ -766,23 +780,21 @@ header {
     // }
   }
 
-  .aboutSec p, .lectureInfo p, .handDate p, .digitalDate p { font-size: 48px; }
-  span {
-    font-size: 24px;
-    display: block;
-  }
-
-  .aboutSec p {
-    font-family: $playFair;
-    margin: 236px 0 35px 0;
-  }
-
   .aboutSec {
-    margin: 0 141px;
+    margin: 285px 141px 0 141px;
+    padding-top: 50px;
+
+    p {
+      font-family: $playFair;
+      margin-bottom: 35px;
+    }
+
+    span { letter-spacing: 0.08em; }
+
+    #moreBtn { font-size: 30px; }
   }
 
   button {
-    font-size: 30px;
     font-family: $playFair;
     display: block;
     margin: 91px auto 262px auto;
@@ -795,32 +807,54 @@ header {
     -webkit-box-shadow: 4px 4px 12px -2px rgba(20%,20%,40%,0.5);
 	  -moz-box-shadow: 4px 4px 12px -2px rgba(20%,20%,40%,0.5);
 	  box-shadow: 4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+    overflow: hidden;
+
+    &:after {
+      content: '';
+      padding: 0;
+      height: 250%;
+      background-color: $white;
+      border-left: 50% solid #eee;
+      display: block;
+      position: absolute;
+      top: -300%;
+      left: -20%;
+      transform: rotate(30deg);
+      transition: all 0.5s ease;
+      border: 8px solid #eee;
+
+    }
+    &:hover:after {
+      left: 100%;
+      top: 100%;
+    }
   }
 
   .lectureInfo {
     display: flex;
-    justify-content: space-between;
 
     img {
-      width: 760px;
-      height: 760px;
+      width: 46vw;
+      margin-left: 55px;
     }
 
     p {
-      margin: 260px 245px 0 0;
-      width: 350px;
+      margin: 279px 0 0 176px;
+      letter-spacing: 0.05em;
     }
   }
-//
+
   .dateInfo {
-    margin-top: 4px;
+    margin-top: 100px;
     display: flex;
+    justify-content: space-between;
     position: relative;
 
-    .digitalDate, .handDate {
+    .handBlock, .digitalBlock { width: 615px; }
+
+    .digitalBar, .handBar {
       margin: 0;
       padding: 45px 0;
-      transition: 0.5s;
       position: relative;
       -webkit-box-shadow: 4px 4px 12px -2px rgba(20%,20%,40%,0.5);
       -moz-box-shadow: 4px 4px 12px -2px rgba(20%,20%,40%,0.5);
@@ -830,7 +864,7 @@ header {
       p {
         margin: 0;
         position: relative;
-        // z-index: 1;
+        letter-spacing: 0.05em;
       }
 
       &:after {
@@ -838,14 +872,13 @@ header {
         padding: 0;
         height: 400%;
         background-color: $white;
-        border-left: 8% solid #eee;
         display: block;
         position: absolute;
         top: -400%;
         left: -20%;
         transform: rotate(30deg);
         transition: all 0.7s ease;
-        border: 20px solid #DCDCDC;
+        border: 20px solid #eee;
 
       }
       &:hover:after {
@@ -854,30 +887,120 @@ header {
       }
     }
 
-    .handDate {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 615px;
+    .handBar {
       border-radius: 30px 0 0 30px;
-
+      width: 540px;
+      padding-left: 75px;
     }
 
-    .digitalDate {
+    .digitalBar {
       margin-top: 476px;
-      width: 615px;
       border-radius: 0 30px 30px 0;
+      width: 540px;
+      text-align: right;
+      padding-right: 75px;
     }
 
+    .date {
+      position: relative;
+
+      span {
+        margin-top: 60px;
+        line-height: 36px;
+        letter-spacing: 0.08em;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+          width: 400px;
+          // margin-top: 11px;
+          position: relative;
+          margin-left: 39px;
+          line-height: 46.5px;
+          letter-spacing: 0.03em;
+
+          &:first-child { margin-top: 10px; }
+        }
+
+        img {
+          position: absolute;
+          top: 10px;
+          margin-left: -39px;
+        }
+      }
+
+      button { margin: 50px 0 0 139px; }
+    }
+
+    #floatControl { float: right; }
   }
 
-  .latsBtn { margin-bottom: 200px; }
+  .tellMeTime {
+    text-align: center;
+    position: relative;
+
+    p {
+      margin: 0;
+      margin-top: 100px;
+
+      &:first-child { margin-top: 250px; }
+    }
+
+    button { margin-top: 100px; }
+  }
+
 }
 
 // tablet
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   header {
+    .sloganSec { font-size: 30px; }
+    .aboutSec p { font-size: 36px; }
 
+
+    .sloganSec {
+      .slogan {
+        right: 80px;
+        width: 450px;
+
+        p:last-child {
+        top: 60px;
+        right: 0;
+       }
+      }
+
+      .getIn {
+        top: 58.6vh;
+        right: 80px;
+
+        i {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: -75px;
+          font-size: 70px;
+        }
+      }
+    }
+
+    .dateInfo {
+      margin-top: 40px;
+      flex-direction: column-reverse;
+
+      .handBlock {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .digitalBar {
+        margin-top: 642px;
+      }
+
+    }
   }
 }
 
@@ -886,7 +1009,7 @@ header {
     padding-top: 0px;
 
     .sloganSec {
-      font-size: 20px;
+      font-size: 30px;
 
       img {
         height: calc( 100vh - 56px );
@@ -895,51 +1018,36 @@ header {
       .slogan, .getIn {
         position: relative;
         top: 0;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 0;
+        margin: 0 auto;
       }
 
       .slogan {
-        width: 298px;
-        margin-top: 16px;
+        margin-top: 60px;
+        width: 450px;
 
         p:last-child {
-        top: 35px;
+        top: 50px;
        }
       }
 
       .getIn {
-        top: 55px;
-        width: 298px;
-        margin-left: 37px;
+        top: 70px;
+        width: 413px;
+        padding-left: 37px;
 
         i {
-          left: -40px;
+          left: 0px;
           font-size: 40px;
         }
       }
+    }
 
-      .glow {
-        position: absolute;
-        top: 31.6%;
-        left: calc( 81px - ( 900px - 155vh) / 7.7 );
+    .lectureInfo {
+      p {
+        font-size: 30px;
+        margin: 200px 0 0 100px;
       }
-    }
-
-    .aboutSec p, .lectureInfo p, .handDate p, .digitalDate p { font-size: 36px; }
-    span { font-size: 20px; }
-
-    .aboutSec p {
-      margin: 247px 0 15px 0;
-    }
-
-    .aboutSec {
-      margin: 0 141px;
-    }
-
-    button {
-      font-size: 24px;
-      margin: 45px auto 200px auto;
     }
 
   }
@@ -950,11 +1058,114 @@ header {
 @media screen and (max-width: 675px) {
   header {
 
+    .sloganSec, .lectureInfo p { font-size: 20px; }
+    .aboutSec p { font-size: 36px; }
+    .dateInfo span, .handBar p, .digitalBar p, .tellMeTime p { font-size: 24px; }
+    .dateInfo li, .aboutSec span, button  { font-size: 20px; }
+
     .sloganSec {
       img {
         height: auto;
         width: 100%;
       }
+
+      .slogan {
+        margin-top: 16px;
+        width: 298px;
+
+        p:last-child {
+        top: 35px;
+       }
+      }
+
+      .getIn {
+        top: 55px;
+        width: 261px;
+      }
     }
+
+    .aboutSec {
+      margin: 200px 22px 0 22px;
+      padding-top: 30px;
+
+      p { margin-bottom: 15px; }
+      #moreBtn { font-size: 24px; }
+    }
+
+    button {
+      margin: 51px auto 200px auto;
+      width: 137px;
+      height: 53px;
+    }
+
+    .lectureInfo {
+      img {
+        width: 100vw;
+        margin: 0;
+      }
+      p { display: none; }
+    }
+
+    .dateInfo {
+      margin-top: 40px;
+
+      .handBlock, .digitalBlock { width: 100vw; }
+
+      .digitalBar, .handBar { padding: 15px 0; }
+
+      .handBar {
+        border-radius: 6px 0 0 6px;
+        width: 235px;
+        padding-left: 50px;
+        position: absolute;
+        right: 0;
+      }
+
+      .digitalBar {
+        margin-top: 489px;
+        border-radius: 0 6px 6px 0;
+        width: 235px;
+        text-align: right;
+        padding-right: 50px;
+      }
+
+      .date {
+
+        span { margin: 91px 0 0 24px; }
+        #digitalSpan { margin-top: 25px; }
+
+        ul {
+          margin-left: 13px ;
+
+          li {
+            width: 100vw;
+            margin-left: 39px;
+            line-height: 39.6px;
+
+            &:first-child { margin-top: 15px; }
+          }
+
+          img {
+            width: 25px;
+          }
+        }
+
+        button { margin: 51px auto 0 auto; }
+      }
+
+      #floatControl { float: none; }
+    }
+
+    .tellMeTime {
+      width: 284px;
+      margin: 0 auto 0 auto;
+
+      p { line-height: 40px; }
+      p:first-child { margin-top: 100px; }
+      span { display: none; }
+
+      button { margin: 45px auto 100px auto; }
+    }
+
   }
 }
