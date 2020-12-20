@@ -1150,7 +1150,11 @@ header {
           }
         }
 
-        button { margin: 51px auto 0 auto; }
+        button {
+          margin: 51px auto 0 auto;
+          white-space: nowrap;
+          font-size: 30px;
+        }
       }
 
       #floatControl { float: none; }
