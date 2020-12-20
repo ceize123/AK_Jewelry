@@ -471,21 +471,9 @@ footer {
   display: none;
 }
 
-@media screen and (max-width: 1000px) {
-  footer {
-    .hamburger-footer {
-      display: block;
-      position: fixed;
-      bottom: 0;
-      width: 100vw;
-      margin-right: -100vw;
-    }
-  }
-}
-
 
 // mobile
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   footer {
     height: 85px;
 
@@ -509,6 +497,14 @@ footer {
       font-size: 14px;
       margin-top: 3px;
     }
+  }
+
+  .hamburger-footer {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    margin-right: -100vw;
   }
 }
 
