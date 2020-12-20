@@ -15,7 +15,7 @@ function LessonSection(props) {
 
 
   // list with array
-  const handContent = lpHand.map( content => <li><img src={diamond} srcset={`${diamond} 300w, ${diamond2x} 600w`} alt="diamond"/>{content}</li> )
+  const handContent = lpHand.map( content => <li><img src={diamond} srcset={`${diamond} 1x, ${diamond2x} 2x`} alt="diamond"/>{content}</li> )
   const digitalContent = lpDigital.map( content => <li><img src={diamond} alt="diamond"/>{content}</li> )
 
   return (
