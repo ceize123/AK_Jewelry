@@ -508,23 +508,23 @@ footer {
     }
   }
 
-  // .hamburger-footer {
-  //   display: block;
-  //   position: absolute;
-  //   width: 100vw;
-  //   top: calc( 100vh - 85px);
-  //   margin-right: -100vw;
-  //   z-index: 2;
-  // }
-
   .hamburger-footer {
     display: block;
-    position: fixed;
-    bottom: 0;
+    position: absolute;
     width: 100vw;
+    top: calc( 100vh - 85px);
     margin-right: -100vw;
     z-index: 2;
   }
+
+  // .hamburger-footer {
+  //   display: block;
+  //   position: fixed;
+  //   bottom: 0;
+  //   width: 100vw;
+  //   margin-right: -100vw;
+  //   z-index: 2;
+  // }
 }
 
 
