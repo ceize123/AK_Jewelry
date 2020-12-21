@@ -202,6 +202,7 @@ nav {
       top: 0;
       right: 0;
       transition: all 0.5s linear;
+      overflow: scroll;
       margin-right: -100vw;
       z-index: 1;
     }
@@ -510,7 +511,7 @@ footer {
 
   .hamburger-footer {
     display: block;
-    position: absolute;
+    position: fixed;
     width: 100vw;
     top: calc( 100vh - 85px);
     margin-right: -100vw;
