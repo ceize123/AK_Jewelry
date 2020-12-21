@@ -29,12 +29,12 @@ function LessonSection(props) {
             {text2}
           </p>
         </div>
-        <div className='date'>
-          <span data-aos='fade-up' data-aos-anchor-placement='top-center'>日期：2021<br/>籌備中，敬請期待！</span>
-          <ul data-aos='fade-up' data-aos-anchor-placement='top-center'>
+        <div className='date' data-aos='fade-up' data-aos-anchor-placement='top-center'>
+          <span>日期：2021<br/>籌備中，敬請期待！</span>
+          <ul>
             {handContent}
           </ul>
-          <button data-aos='fade-up' data-aos-anchor-placement='top-center'>開課通知我</button>
+          <button>開課通知我</button>
         </div>
       </div>
       <div className='digitalBlock'>
@@ -46,12 +46,12 @@ function LessonSection(props) {
             {text1}
           </p>
         </div>
-        <div className='date digitalDate'>
-          <span id='digitalSpan' data-aos='fade-up' data-aos-anchor-placement='top-center' data-aos-duration='0'>日期：2021<br/>1/01, 1/07, 1/14, 1/21, 1/28</span>
-          <ul data-aos='fade-up' data-aos-anchor-placement='top-center' data-aos-duration='0'>
+        <div className='date digitalDate' data-aos='fade-up' data-aos-anchor-placement='top-center' data-aos-duration='0'>
+          <span id='digitalSpan'>日期：2021<br/>1/01, 1/07, 1/14, 1/21, 1/28</span>
+          <ul>
             {digitalContent}
           </ul>
-          <button data-aos='fade-up' data-aos-anchor-placement='top-center' data-aos-duration='0'>詳細資訊</button>
+          <button>詳細資訊</button>
         </div>
       </div>
     </>
@@ -131,10 +131,10 @@ function LandingPage() {
         <div className='dateInfo'>
           <LessonSection handText='初階手繪珠寶設計' digitalText='數位珠寶設計'/>
         </div>
-        <div className='tellMeTime'>
-          <p data-aos='fade-up' data-aos-delay='500'>目前開課時間都無法配合<span id='comma'>，</span><span>怎麼辦？</span></p>
-          <p data-aos='fade-up' data-aos-delay='500'>別擔心！<span>告訴我們你可以的時間</span></p>
-          <button data-aos='fade-up' data-aos-delay='500'>填寫</button>
+        <div className='tellMeTime'  data-aos='fade-up' data-aos-delay='500'>
+          <p>目前開課時間都無法配合<span id='comma'>，</span><span>怎麼辦？</span></p>
+          <p>別擔心！<span>告訴我們你可以的時間</span></p>
+          <button>填寫</button>
         </div>
       </main>
     </>
