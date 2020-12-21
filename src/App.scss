@@ -511,23 +511,26 @@ footer {
     }
   }
 
+  .hamburger-footer {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    top: calc( 100vh - 85px);
+    right: -100vw;
+    z-index: 2;
+    transition: all 0.5s linear;
+  }
+
+  .full-hamburger-footer-actcive { right: 0;}
+
   // .hamburger-footer {
   //   display: block;
-  //   position: absolute;
+  //   position: fixed;
+  //   top: calc( 100vh - 85px );
   //   width: 100vw;
-  //   top: calc( 100vh - 85px);
   //   margin-right: -100vw;
   //   z-index: 2;
   // }
-
-  .hamburger-footer {
-    display: block;
-    position: fixed;
-    top: calc( 100vh - 85px );
-    width: 100vw;
-    margin-right: -100vw;
-    z-index: 2;
-  }
 }
 
 

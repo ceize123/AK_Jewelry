@@ -129,8 +129,8 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          <Footer className={`hamburger-footer ${click ? 'full-menu-actcive': null}`}/>
         </div>
+        <Footer className={`hamburger-footer ${click ? 'full-hamburger-footer-actcive': null}`}/>
       </nav>
     </>
   );
