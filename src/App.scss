@@ -513,7 +513,7 @@ footer {
 
   .hamburger-footer {
     display: block;
-    position: relative;
+    position: absolute;
     width: 100vw;
     top: calc( 100vh - 85px);
     margin-right: -100vw;
