@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/AK_Jewelry/static/css/main.c66c22d3.chunk.css",
-    "main.js": "/AK_Jewelry/static/js/main.4d5bbb73.chunk.js",
-    "main.js.map": "/AK_Jewelry/static/js/main.4d5bbb73.chunk.js.map",
+    "main.js": "/AK_Jewelry/static/js/main.c74f473f.chunk.js",
+    "main.js.map": "/AK_Jewelry/static/js/main.c74f473f.chunk.js.map",
     "runtime-main.js": "/AK_Jewelry/static/js/runtime-main.57a1e6f3.js",
     "runtime-main.js.map": "/AK_Jewelry/static/js/runtime-main.57a1e6f3.js.map",
     "static/css/2.ec02d681.chunk.css": "/AK_Jewelry/static/css/2.ec02d681.chunk.css",
@@ -12,9 +12,8 @@
     "static/css/2.ec02d681.chunk.css.map": "/AK_Jewelry/static/css/2.ec02d681.chunk.css.map",
     "static/css/main.c66c22d3.chunk.css.map": "/AK_Jewelry/static/css/main.c66c22d3.chunk.css.map",
     "static/js/2.561fd1d7.chunk.js.LICENSE.txt": "/AK_Jewelry/static/js/2.561fd1d7.chunk.js.LICENSE.txt",
-    "static/media/logo.9cabaa31.svg": "/AK_Jewelry/static/media/logo.9cabaa31.svg",
-    "static/media/圓小鑽石.f62e0ee5.svg": "/AK_Jewelry/static/media/圓小鑽石.f62e0ee5.svg",
-    "static/media/圓小鑽石2x.faa6a910.svg": "/AK_Jewelry/static/media/圓小鑽石2x.faa6a910.svg",
+    "static/media/logo.efc37209.png": "/AK_Jewelry/static/media/logo.efc37209.png",
+    "static/media/圓小鑽石.60dfdeef.png": "/AK_Jewelry/static/media/圓小鑽石.60dfdeef.png",
     "static/media/抽象人物線條亮晶晶.c6326ce0.gif": "/AK_Jewelry/static/media/抽象人物線條亮晶晶.c6326ce0.gif",
     "static/media/抽象線條人物2.613f9582.svg": "/AK_Jewelry/static/media/抽象線條人物2.613f9582.svg"
   },
@@ -23,6 +22,6 @@
     "static/css/2.ec02d681.chunk.css",
     "static/js/2.561fd1d7.chunk.js",
     "static/css/main.c66c22d3.chunk.css",
-    "static/js/main.4d5bbb73.chunk.js"
+    "static/js/main.c74f473f.chunk.js"
   ]
 }
