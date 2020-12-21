@@ -408,9 +408,10 @@ header {
   }
 }
 
+
+
 // footer
 // web
-
 footer {
   display: flex;
   justify-content: space-evenly;
@@ -515,6 +516,7 @@ footer {
     bottom: 0;
     width: 100vw;
     margin-right: -100vw;
+    z-index: 2;
   }
 }
 
