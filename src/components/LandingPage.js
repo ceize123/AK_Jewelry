@@ -47,11 +47,11 @@ function LessonSection(props) {
           </p>
         </div>
         <div className='date digitalDate'>
-          <span id='digitalSpan' data-aos='fade-up' data-aos-anchor-placement='top-center'>日期：2021<br/>1/01, 1/07, 1/14, 1/21, 1/28</span>
-          <ul data-aos='fade-up' data-aos-anchor-placement='top-center'>
+          <span id='digitalSpan' data-aos='fade-up' data-aos-anchor-placement='top-center' data-aos-duration='0'>日期：2021<br/>1/01, 1/07, 1/14, 1/21, 1/28</span>
+          <ul data-aos='fade-up' data-aos-anchor-placement='top-center' data-aos-duration='0'>
             {digitalContent}
           </ul>
-          <button data-aos='fade-up' data-aos-anchor-placement='top-center'>詳細資訊</button>
+          <button data-aos='fade-up' data-aos-anchor-placement='top-center' data-aos-duration='0'>詳細資訊</button>
         </div>
       </div>
     </>
@@ -132,9 +132,9 @@ function LandingPage() {
           <LessonSection handText='初階手繪珠寶設計' digitalText='數位珠寶設計'/>
         </div>
         <div className='tellMeTime'>
-          <p data-aos='fade-up' data-aos-anchor-placement='top-center'>目前開課時間都無法配合<span id='comma'>，</span><span>怎麼辦？</span></p>
-          <p data-aos='fade-up' data-aos-anchor-placement='top-center'>別擔心！<span>告訴我們你可以的時間</span></p>
-          <button data-aos='fade-up' data-aos-anchor-placement='top-center'>填寫</button>
+          <p data-aos='fade-up' data-aos-anchor-placement='top-center' data-aos-duration='0'>目前開課時間都無法配合<span id='comma'>，</span><span>怎麼辦？</span></p>
+          <p data-aos='fade-up' data-aos-anchor-placement='top-center' data-aos-duration='0'>別擔心！<span>告訴我們你可以的時間</span></p>
+          <button data-aos='fade-up' data-aos-anchor-placement='top-center' data-aos-duration='0'>填寫</button>
         </div>
       </main>
     </>
