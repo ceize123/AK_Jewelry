@@ -197,7 +197,7 @@ nav {
     .full-menu {
       background-color: $white;
       position: fixed;
-      height: 100vh;
+      height: calc(100vh - 85px);
       width: 100vw;
       top: 0;
       right: 0;
