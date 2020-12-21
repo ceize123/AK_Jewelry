@@ -44,7 +44,7 @@ function Navbar() {
         </div>
         <div className={`full-menu ${click ? 'menu-actcive': null}`}>
           <ul>
-            <li className={click ? 'active': null}>
+            <li className={click ? 'active': null} onClick={handleClick}>
               <Link to='/about'>
                 <div className='selectDiv'>
                   <p>About</p>
@@ -98,7 +98,7 @@ function Navbar() {
               </div>
             </li>
             <li className={click ? 'active': null}>
-              <Link to='/porfolio'>
+              <Link to='/porfolio' onClick={handleClick}>
                 <div className='selectDiv'>
                   <p>Porfolio</p>
                   <span>作品集</span>
@@ -106,7 +106,7 @@ function Navbar() {
               </Link>
             </li>
             <li className={click ? 'active': null}>
-              <Link to='/freelance'>
+              <Link to='/freelance' onClick={handleClick}>
                 <div className='selectDiv'>
                   <p>Freelance</p>
                   <span>企業合作/個人訂製</span>
@@ -114,7 +114,7 @@ function Navbar() {
               </Link>
             </li>
             <li className={click ? 'active': null}>
-              <Link to='/blog'>
+              <Link to='/blog' onClick={handleClick}>
                 <div className='selectDiv'>
                   <p>Blog</p>
                   <span>部落格</span>

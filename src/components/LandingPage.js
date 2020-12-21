@@ -20,23 +20,6 @@ function LessonSection(props) {
 
   return (
     <>
-      <div className='digitalBlock'>
-        <div className='digitalBar'
-        onMouseOver={()=>setText1('Digital Beginner')}
-        onMouseLeave={()=>setText1('數位珠寶設計')}
-        >
-          <p className='digitalP'>
-            {text1}
-          </p>
-        </div>
-        <div id='floatControl' className='date'>
-          <span id='digitalSpan' data-aos='fade-up'>日期：2021<br/>1/01, 1/07, 1/14, 1/21, 1/28</span>
-          <ul data-aos='fade-up' data-aos-delay='1500'>
-            {digitalContent}
-          </ul>
-          <button data-aos='fade-up' data-aos-delay='2000'>詳細資訊</button>
-        </div>
-      </div>
       <div className='handBlock'>
         <div className='handBar'
         onMouseOver={()=>setText2('Beginner')}
@@ -52,6 +35,23 @@ function LessonSection(props) {
             {handContent}
           </ul>
           <button data-aos='fade-up' data-aos-delay='1500'>開課通知我</button>
+        </div>
+      </div>
+      <div className='digitalBlock'>
+        <div className='digitalBar'
+        onMouseOver={()=>setText1('Digital Beginner')}
+        onMouseLeave={()=>setText1('數位珠寶設計')}
+        >
+          <p className='digitalP'>
+            {text1}
+          </p>
+        </div>
+        <div className='date digitalDate'>
+          <span id='digitalSpan' data-aos='fade-up'>日期：2021<br/>1/01, 1/07, 1/14, 1/21, 1/28</span>
+          <ul data-aos='fade-up' data-aos-delay='1500'>
+            {digitalContent}
+          </ul>
+          <button data-aos='fade-up' data-aos-delay='2000'>詳細資訊</button>
         </div>
       </div>
     </>
@@ -112,6 +112,8 @@ function LandingPage() {
             <p><i class="las la-long-arrow-alt-right"></i>進入珠寶世界</p>
           </div>
         </div>
+      </header>
+      <main>
         <div className='aboutSec' ref={aboutSection}>
           <p data-aos='fade-up' data-aos-offset='120' data-aos-delay='400'>About</p>
           <span data-aos='fade-up' data-aos-offset='120' data-aos-delay='700'>ANDREA老師畢業於紐約FIT珠寶設計學系，
@@ -130,11 +132,11 @@ function LandingPage() {
           <LessonSection handText='初階手繪珠寶設計' digitalText='數位珠寶設計'/>
         </div>
         <div className='tellMeTime'>
-          <p data-aos='fade-up' data-aos-delay='1400'>目前開課時間都無法配合<span>，</span><nobr>怎麼辦？</nobr></p>
-          <p data-aos='fade-up' data-aos-delay='1700'>別擔心！<nobr>告訴我們你可以的時間</nobr></p>
+          <p data-aos='fade-up' data-aos-delay='1400'>目前開課時間都無法配合<span id='comma'>，</span><span>怎麼辦？</span></p>
+          <p data-aos='fade-up' data-aos-delay='1700'>別擔心！<span>告訴我們你可以的時間</span></p>
           <button data-aos='fade-up' data-aos-delay='2000' data-aos-offset='50'>填寫</button>
         </div>
-      </header>
+      </main>
     </>
   );
 }
