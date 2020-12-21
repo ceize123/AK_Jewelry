@@ -10,11 +10,11 @@ function Navbar() {
   const [clickDeep2, setClickDeep2] = useState(false);
   // function positionFixed() { document.body.style.position = 'fixed';}
   // function positionStactic() { document.body.style.position = 'stactic';}
-  if ( click === true ) {
-    document.body.style.position = 'fixed';
-  } else {
-    document.body.style.position = 'static';
-  }
+  // if ( click === true ) {
+  //   document.body.style.position = 'fixed';
+  // } else {
+  //   document.body.style.position = 'static';
+  // }
 
   // toggle
   const handleClick = () => setClick(!click);
