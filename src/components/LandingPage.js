@@ -30,11 +30,11 @@ function LessonSection(props) {
           </p>
         </div>
         <div className='date'>
-          <span data-aos='fade-up'>日期：2021<br/>籌備中，敬請期待！</span>
-          <ul data-aos='fade-up' data-aos-delay='1000'>
+          <span data-aos='fade-up' data-aos-offset='80'>日期：2021<br/>籌備中，敬請期待！</span>
+          <ul data-aos='fade-up' data-aos-delay='1000' data-aos-offset='80'>
             {handContent}
           </ul>
-          <button data-aos='fade-up' data-aos-delay='1500'>開課通知我</button>
+          <button data-aos='fade-up' data-aos-delay='1000'>開課通知我</button>
         </div>
       </div>
       <div className='digitalBlock'>
@@ -51,7 +51,7 @@ function LessonSection(props) {
           <ul data-aos='fade-up' data-aos-delay='1500'>
             {digitalContent}
           </ul>
-          <button data-aos='fade-up' data-aos-delay='2000'>詳細資訊</button>
+          <button data-aos='fade-up' data-aos-delay='1500'>詳細資訊</button>
         </div>
       </div>
     </>
@@ -72,7 +72,7 @@ function LandingPage() {
 // aos
   useEffect(() => {
     Aos.init({
-      duration: 2000,
+      duration: 1000,
       once: true,
       offsetTop: 0,
       delay: 600,
@@ -115,14 +115,14 @@ function LandingPage() {
       </header>
       <main>
         <div className='aboutSec' ref={aboutSection}>
-          <p data-aos='fade-up' data-aos-offset='120' data-aos-delay='400'>About</p>
-          <span data-aos='fade-up' data-aos-offset='120' data-aos-delay='700'>ANDREA老師畢業於紐約FIT珠寶設計學系，
+          <p data-aos='fade-up' data-aos-offset='120' data-aos-delay='0'>About</p>
+          <span data-aos='fade-up' data-aos-offset='120' data-aos-delay='0'>ANDREA老師畢業於紐約FIT珠寶設計學系，
           畢業後立即進入了紐約一線的珠寶設計師品牌執業，
           為好萊塢明星提供客製化與紅毯珠寶設計，有多年業界經驗。
           <br/>
           <br/>
           因現居北美洲，ANDREA老師一年只會回來開2次課程...</span>
-          <button data-aos='fade-up' id='moreBtn' data-aos-offset='120' data-aos-delay='700'>More</button>
+          <button data-aos='fade-up' id='moreBtn' data-aos-offset='0' data-aos-delay='0'>More</button>
         </div>
         <div className='lectureInfo'>
           <img src={abstract2} alt="Jewelry"/>
@@ -132,9 +132,9 @@ function LandingPage() {
           <LessonSection handText='初階手繪珠寶設計' digitalText='數位珠寶設計'/>
         </div>
         <div className='tellMeTime'>
-          <p data-aos='fade-up' data-aos-delay='1400'>目前開課時間都無法配合<span id='comma'>，</span><span>怎麼辦？</span></p>
-          <p data-aos='fade-up' data-aos-delay='1700'>別擔心！<span>告訴我們你可以的時間</span></p>
-          <button data-aos='fade-up' data-aos-delay='2000' data-aos-offset='50'>填寫</button>
+          <p data-aos='fade-up' data-aos-delay='1400' data-aos-offset='80'>目前開課時間都無法配合<span id='comma'>，</span><span>怎麼辦？</span></p>
+          <p data-aos='fade-up' data-aos-delay='1700' data-aos-offset='80'>別擔心！<span>告訴我們你可以的時間</span></p>
+          <button data-aos='fade-up' data-aos-delay='2000' data-aos-offset='80'>填寫</button>
         </div>
       </main>
     </>
