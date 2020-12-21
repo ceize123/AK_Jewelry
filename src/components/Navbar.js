@@ -8,9 +8,13 @@ function Navbar() {
   const [clickInside, setClickInside] = useState(false);
   const [clickDeep, setClickDeep] = useState(false);
   const [clickDeep2, setClickDeep2] = useState(false);
+  function positionFixed() { document.body.style.position = 'fixed';}
 
   // toggle
-  const handleClick = () => setClick(!click);
+  const handleClick = () => {
+    setClick(!click);
+    positionFixed();
+  }
   const handleClickInside = () => setClickInside(!clickInside);
   const handleClickDeep = () => setClickDeep(!clickDeep);
   const handleClickDeep2 = () => setClickDeep2(!clickDeep2);

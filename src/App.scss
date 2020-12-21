@@ -203,7 +203,6 @@ nav {
       right: 0;
       transition: all 0.5s linear;
       margin-right: -100vw;
-      overflow: scroll;
       z-index: 1;
     }
 
@@ -487,6 +486,7 @@ footer {
 @media screen and (max-width: 1000px) {
   footer {
     height: 85px;
+    z-index: 1;
 
     .leftFooter {
       display: none;
@@ -516,7 +516,6 @@ footer {
     bottom: 0;
     width: 100vw;
     margin-right: -100vw;
-    z-index: 2;
   }
 }
 
