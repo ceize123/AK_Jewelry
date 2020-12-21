@@ -197,7 +197,7 @@ nav {
     .full-menu {
       background-color: $white;
       position: fixed;
-      height: calc( 100vh - 85px );
+      height: 100vh;
       width: 100vw;
       top: 0;
       right: 0;
@@ -512,12 +512,21 @@ footer {
 
   .hamburger-footer {
     display: block;
-    position: fixed;
-    bottom: 0;
+    position: absolute;
     width: 100vw;
+    top: calc( 100vh - 85px);
     margin-right: -100vw;
     z-index: 2;
   }
+
+  // .hamburger-footer {
+  //   display: block;
+  //   position: fixed;
+  //   bottom: 0;
+  //   width: 100vw;
+  //   margin-right: -100vw;
+  //   z-index: 2;
+  // }
 }
 
 
