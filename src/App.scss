@@ -203,7 +203,6 @@ nav {
       right: 0;
       transition: all 0.5s linear;
       margin-right: -100vw;
-      overflow: scroll;
       z-index: 1;
     }
 
@@ -386,6 +385,9 @@ nav {
   /* SET ANIMATION EFFECT - HAMBURGUER MENU CLOSED */
 
   .close-hamburger {
+    position: fixed;
+    right: 25.62px;
+    
     .lines {
       cursor: pointer;
       background-color: #000;
