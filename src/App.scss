@@ -205,6 +205,7 @@ nav {
       overflow: scroll;
       margin-right: -100vw;
       z-index: 1;
+      //
       border: 1px solid;
     }
 
@@ -516,7 +517,7 @@ footer {
     display: block;
     position: fixed;
     width: 100vw;
-    top: 50vw;
+    top: calc( 100vh - 110px );
     right: -100vw;
     z-index: 2;
     transition: all 0.5s linear;
