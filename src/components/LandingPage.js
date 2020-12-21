@@ -132,9 +132,9 @@ function LandingPage() {
           <LessonSection handText='初階手繪珠寶設計' digitalText='數位珠寶設計'/>
         </div>
         <div className='tellMeTime'>
-          <p data-aos='fade-up' data-aos-duration='500'>目前開課時間都無法配合<span id='comma'>，</span><span>怎麼辦？</span></p>
-          <p data-aos='fade-up' data-aos-duration='500'>別擔心！<span>告訴我們你可以的時間</span></p>
-          <button data-aos='fade-up' data-aos-duration='500'>填寫</button>
+          <p data-aos='fade-up' data-aos-delay='500'>目前開課時間都無法配合<span id='comma'>，</span><span>怎麼辦？</span></p>
+          <p data-aos='fade-up' data-aos-delay='500'>別擔心！<span>告訴我們你可以的時間</span></p>
+          <button data-aos='fade-up' data-aos-delay='500'>填寫</button>
         </div>
       </main>
     </>
