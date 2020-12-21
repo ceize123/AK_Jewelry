@@ -30,11 +30,11 @@ function LessonSection(props) {
           </p>
         </div>
         <div className='date'>
-          <span data-aos='fade-up' data-aos-offset='80'>日期：2021<br/>籌備中，敬請期待！</span>
-          <ul data-aos='fade-up' data-aos-delay='1000' data-aos-offset='80'>
+          <span data-aos='fade-up' data-aos-anchor-placement='top-center'>日期：2021<br/>籌備中，敬請期待！</span>
+          <ul data-aos='fade-up' data-aos-anchor-placement='top-center'>
             {handContent}
           </ul>
-          <button data-aos='fade-up' data-aos-delay='1000'>開課通知我</button>
+          <button data-aos='fade-up' data-aos-anchor-placement='top-center'>開課通知我</button>
         </div>
       </div>
       <div className='digitalBlock'>
@@ -47,11 +47,11 @@ function LessonSection(props) {
           </p>
         </div>
         <div className='date digitalDate'>
-          <span id='digitalSpan' data-aos='fade-up'>日期：2021<br/>1/01, 1/07, 1/14, 1/21, 1/28</span>
-          <ul data-aos='fade-up' data-aos-delay='1500'>
+          <span id='digitalSpan' data-aos='fade-up' data-aos-anchor-placement='top-center'>日期：2021<br/>1/01, 1/07, 1/14, 1/21, 1/28</span>
+          <ul data-aos='fade-up' data-aos-anchor-placement='top-center'>
             {digitalContent}
           </ul>
-          <button data-aos='fade-up' data-aos-delay='1500'>詳細資訊</button>
+          <button data-aos='fade-up' data-aos-anchor-placement='top-center'>詳細資訊</button>
         </div>
       </div>
     </>
@@ -75,7 +75,7 @@ function LandingPage() {
       duration: 1000,
       once: true,
       offsetTop: 0,
-      delay: 600,
+      delay: 500,
     });
   }, []);
 
@@ -108,7 +108,7 @@ function LandingPage() {
             <p>喚起你心中的藝術家，</p>
             <p>開啟閃亮亮斜槓人生</p>
           </div>
-          <div data-aos='fade-up' data-aos-delay='1000' className='getIn' onClick={gotoAboutSection}>
+          <div data-aos='fade-up' data-aos-delay='800' className='getIn' onClick={gotoAboutSection}>
             <p><i class="las la-long-arrow-alt-right"></i>進入珠寶世界</p>
           </div>
         </div>
@@ -132,9 +132,9 @@ function LandingPage() {
           <LessonSection handText='初階手繪珠寶設計' digitalText='數位珠寶設計'/>
         </div>
         <div className='tellMeTime'>
-          <p data-aos='fade-up' data-aos-delay='1400' data-aos-offset='80'>目前開課時間都無法配合<span id='comma'>，</span><span>怎麼辦？</span></p>
-          <p data-aos='fade-up' data-aos-delay='1700' data-aos-offset='80'>別擔心！<span>告訴我們你可以的時間</span></p>
-          <button data-aos='fade-up' data-aos-delay='2000' data-aos-offset='80'>填寫</button>
+          <p data-aos='fade-up' data-aos-anchor-placement='top-center'>目前開課時間都無法配合<span id='comma'>，</span><span>怎麼辦？</span></p>
+          <p data-aos='fade-up' data-aos-anchor-placement='top-center'>別擔心！<span>告訴我們你可以的時間</span></p>
+          <button data-aos='fade-up' data-aos-anchor-placement='top-center'>填寫</button>
         </div>
       </main>
     </>
