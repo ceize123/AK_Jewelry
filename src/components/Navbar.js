@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../imgs/RD-landingpage/logo.svg';
+import logo from '../imgs/RD-landingpage/logo.png';
 import Footer from '../components/Footer.js';
 
 function Navbar() {

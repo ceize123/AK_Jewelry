@@ -2,8 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import abstract2 from '../imgs/RD-landingpage/抽象線條人物2.svg';
 import bling from '../imgs/RD-landingpage/抽象人物線條亮晶晶.gif';
-import diamond from '../imgs/RD-landingpage/圓小鑽石.svg';
-import diamond2x from '../imgs/RD-landingpage/圓小鑽石2x.svg';
+import diamond from '../imgs/RD-landingpage/圓小鑽石.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import {lpHand, lpDigital} from './diamondContent.js';
@@ -15,8 +14,8 @@ function LessonSection(props) {
 
 
   // list with array
-  const handContent = lpHand.map( content => <li><img src={diamond2x} alt="diamond"/>{content}</li> )
-  const digitalContent = lpDigital.map( content => <li><img src={diamond} srcset={`${diamond} 400w, ${diamond2x} 800w`} alt="diamond"/>{content}</li> )
+  const handContent = lpHand.map( content => <li><img src={diamond} alt="diamond"/>{content}</li> )
+  const digitalContent = lpDigital.map( content => <li><img src={diamond} alt="diamond"/>{content}</li> )
 
   return (
     <>
