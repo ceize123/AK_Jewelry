@@ -513,9 +513,9 @@ footer {
 
   .hamburger-footer {
     display: block;
-    position: absolute;
+    position: fixed;
     width: 100vw;
-    top: calc( 100vh - 85px);
+    bottom: 0;
     right: -100vw;
     z-index: 2;
     transition: all 0.5s linear;
