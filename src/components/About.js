@@ -63,7 +63,7 @@ function About() {
               </div>
             </div>
           </div>
-          <div className='aboutPageLastBtn' data-aos='fade-up' data-aos-anchor-placement='top-center' data-aos-delay='1000'>
+          <div className='aboutPageLastBtn' data-aos='fade-up' data-aos-delay='1000'>
             <button>近期課程資訊</button>
             <button>作品集</button>
           </div>
