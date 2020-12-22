@@ -1,23 +1,13 @@
 import React, { useState } from 'react';
+import {HeaderContent} from './pagesContent.js';
 
 function Courses() {
   return (
     <>
-    <div>
-      123123123123123123
-    </div>
-    <div>
-      123123123123123123
-    </div>
-    <div>
-      123123123123123123
-    </div>
-    <div>
-      123123123123123123
-    </div>
-    <div>
-      123123123123123123
-    </div>
+      <div id='coursePage'>
+        <HeaderContent title='Beginner' sub='初階手繪珠寶設計'/>
+        <main></main>
+      </div>
     </>
   );
 }

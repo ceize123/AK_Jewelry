@@ -1,23 +1,13 @@
 import React, { useState } from 'react';
+import {HeaderContent} from './pagesContent.js';
 
 function Blog() {
   return (
     <>
-    <div>
-      123123123123123123
-    </div>
-    <div>
-      123123123123123123
-    </div>
-    <div>
-      123123123123123123
-    </div>
-    <div>
-      123123123123123123
-    </div>
-    <div>
-      123123123123123123
-    </div>
+      <div id='blogPage'>
+        <HeaderContent title='Blog' sub='部落格'/>
+        <main></main>
+      </div>
     </>
   );
 }

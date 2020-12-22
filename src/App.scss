@@ -12,13 +12,39 @@ $playFair: 'Playfair Display',sans-serif;
 $notoSans: 'Noto Sans TC', 'Playfair Display',sans-serif;
 $roboto: 'Roboto', sans-serif;
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
 html, body {
-  margin: 0;
-  padding: 0;
   font-family: 'Noto Sans TC', 'Playfair Display',sans-serif;
   font-size: 20px;
   background-color: $white;
   overflow-x: hidden;
+}
+
+@media screen and (min-width: 1600px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 li { list-style: none; }
@@ -30,7 +56,9 @@ a {
   text-decoration: none;
 }
 
-nav, footer, header { max-width: 1600px; }
+nav, footer, header, main {
+  max-width: 1600px;
+}
 
 // Navbar
 
@@ -842,12 +870,12 @@ main {
     &:after {
       content: '';
       padding: 0;
-      height: 250%;
+      height: 400%;
       background-color: $white;
       border-left: 50% solid #eee;
       display: block;
       position: absolute;
-      top: -300%;
+      top: -400%;
       left: -20%;
       transform: rotate(30deg);
       transition: all 0.7s ease;
@@ -910,7 +938,6 @@ main {
         transform: rotate(30deg);
         transition: all 0.7s ease;
         border: 20px solid #eee;
-
       }
       &:hover:after {
         left: 100%;
@@ -955,7 +982,7 @@ main {
 
           &:first-child { margin-top: 10px; }
         }
-
+//
         img {
           position: absolute;
           top: 10px;
@@ -1173,7 +1200,7 @@ main {
 
             &:first-child { margin-top: 15px; }
           }
-
+//
           img {
             width: 25px;
             margin-left: -30px;
@@ -1212,4 +1239,343 @@ main {
       .handBlock { width: 100vw;
     }
   }
+}
+
+
+
+// allPages
+// web
+#aboutPage, #coursePage, #freelancePage, #porfolioPage, #blogPage {
+  max-width: 1600px;
+  text-align: center;
+  button {
+    width: 281px;
+    height: 67px;
+    border-radius: 10px;
+    border: 1px solid #FFFFFF;
+    letter-spacing: 0.03em;
+    font-size: 24px;
+  }
+
+  header {
+    height: calc(100vh - 280px);
+    padding-top: 280px;
+
+    h1 {
+      font-size: 96px;
+      font-family: $playFair;
+    }
+    p {
+      font-size: 36px;
+      font-family: $notoSans;
+    }
+  }
+
+  main {
+    .listBlock {
+      margin-bottom: 250px;
+    }
+    p {
+      font-size: 48px;
+      letter-spacing: 0.03em;
+    }
+
+    li {
+      position: relative;
+      font-size: 24px;
+      text-align: left;
+      margin: 15px auto 0 auto;
+      letter-spacing: 0.05em;
+      padding-left: 39px;
+
+
+      &:first-child { margin-top: 35px; }
+    }
+    .diamond {
+      position: absolute;
+      top: 5px;
+      margin-left: -39px;
+      width: 30px;
+    }
+  }
+}
+
+// aboutPage
+#aboutPage {
+  main {
+    .andrea {
+      margin-top: 209px;
+      p { font-family: $playFair; }
+
+      li {
+        width: 618.95px;
+      }
+    }
+
+    .whyChose li { width: 380px; }
+
+    .designSec {
+      margin: 0 27px;
+      p { margin-bottom: 15px;
+        > span { font-family: $playFair; }
+      }
+      .designSecSpan { display: block; }
+      div { margin-top: 50px;}
+
+      img {
+        width: calc(25% - 30px);
+        margin: 0 15px 20.61px 15px;
+      }
+    }
+
+    .getCase {
+      margin-top: 229.4px;
+      margin-bottom: 200px;
+      p > span { font-family: $playFair; }
+      p { margin-bottom: 50px; }
+
+      .freelanceImg {
+        position: relative;
+
+        img {
+          width: 100vw;
+          max-width: 1600px;
+        }
+
+        .fadeIn {
+          position: absolute;
+          top: 0;
+          height: 99%;
+          background: rgba(0, 0, 0, 0.45);
+
+          span {
+            display: block;
+            text-align: left;
+            margin-top: 271px;
+            margin-left: 118px;
+            margin-right: 118px;
+            line-height: 36px;
+            letter-spacing: 0.05em;
+            font-size: 24px;
+            color: #fff;
+          }
+          button {
+            background-color: transparent;
+            box-shadow: 0 1px 8px #fff;
+            color: #fff;
+            text-shadow: 0 3px 15px #fff;
+            margin-top: 100px;
+          }
+        }
+      }
+    }
+
+    .aboutPageLastBtn {
+      display: flex;
+      justify-content: center;
+      button { margin: 0 44px 200px 44px; }
+    }
+  }
+}
+
+@media screen and ( max-width: 1280px ) {
+  #aboutPage {
+    main {
+      .designSec img {
+        width: calc(33% - 30px);
+      }
+
+      .getCase .freelanceImg .fadeIn span { margin-top: 95px; }
+    }
+  }
+}
+
+@media screen and ( max-width: 1000px ) {
+  #aboutPage {
+    main {
+      .getCase {
+        margin-bottom: 110px;
+        p {
+          margin-bottom: 25px;
+          margin-left: 28px;
+        }
+
+        .freelanceImg {
+          .fadeIn {
+            position: static;
+            height: auto;
+            background: transparent;
+
+            span {
+              margin: 25px auto 0 auto;
+              width: 84vw;
+              color: #000;
+            }
+            button {
+              background-color: #fff;
+              color: #000;
+              -webkit-box-shadow: 4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+          	  -moz-box-shadow: 4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+          	  box-shadow: 4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+              margin-top: 55px;
+              margin-bottom: 110px;
+            }
+          }
+        }
+      }
+
+      .aboutPageLastBtn {
+        align-items: center;
+        flex-direction: column;
+        button {
+          margin-bottom: 24px;
+          &:last-child { margin-bottom: 100px; }
+        }
+      }
+    }
+  }
+}
+
+@media screen and ( max-width: 850px ) {
+  #aboutPage, #coursePage, #freelancePage, #porfolioPage, #blogPage {
+    header {
+      height: auto;
+      padding-top: 150px;
+
+      h1 {
+        font-size: 64px;
+      }
+      p {
+        font-size: 30px;
+      }
+    }
+
+    main {
+      text-align: left;
+
+      .listBlock {margin-bottom: 100px;}
+
+      p { font-size: 24px; }
+
+      li {
+        position: relative;
+        font-size: 20px;
+        margin: 10px 0 0 19px;
+
+        &:first-child { margin-top: 25px; }
+      }
+      .diamond {
+        top: 2px;
+      }
+
+    }
+  }
+
+// aboutPage
+  #aboutPage {
+    main {
+      .andrea {
+        margin-top: 140px;
+        margin-bottom: 64px;
+        p { margin-left: 28px; }
+        li { width: calc( 100vw - 75px ); }
+      }
+
+      .whyChose {
+        p { margin-left: 28px; }
+      }
+
+      .designSec {
+        margin: 0 5px;
+        p {
+          margin-bottom: 5px;
+          margin-left: 23px;
+        }
+        > span { margin-left: 23px; }
+
+        div { margin-top: 11px;}
+
+        img {
+          width: calc(25% - 30px);
+          margin: 0 15px 20.61px 15px;
+        }
+      }
+
+      .designSec img { width: calc(50% - 30px); }
+      .getCase { margin-top: 100px; }
+    }
+  }
+}
+
+@media screen and ( max-width: 675px ) {
+  #aboutPage, #coursePage, #freelancePage, #porfolioPage, #blogPage {
+    button {
+      width: 191px;
+      height: 48px;
+      border-radius: 6px;
+      font-size: 20px;
+    }
+  }
+  #aboutPage {
+    main {
+      .designSec img {
+        width: calc(100% - 30px);
+        margin-bottom: 30px;
+      }
+
+      .getCase .freelanceImg .fadeIn span { font-size: 20px; }
+    }
+  }
+}
+
+
+@media screen and ( max-width: 480px ) {
+  #aboutPage, #coursePage, #freelancePage, #porfolioPage, #blogPage {
+    header {
+
+      h1 {
+        font-size: 36px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+
+    main {
+      text-align: left;
+
+      li {
+        margin: 0 0 0 19px;
+        line-height: 40px;
+
+        &:first-child { margin-top: 25px; }
+      }
+      .diamond {
+        top: 5px;
+      }
+    }
+
+  }
+
+  #aboutPage {
+    main {
+      .andrea {
+
+        li {
+          width: calc(100vw - 75px);
+        }
+      }
+
+      .whyChose {
+        p { margin-left: 28px;}
+        li { width: calc( 100vw - 73px) ; }
+      }
+
+      .designSec > span { font-size: 14px; }
+
+
+    }
+  }
+
+
 }
