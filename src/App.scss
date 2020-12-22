@@ -270,7 +270,7 @@ nav {
         &:nth-child(4) { transition: all 0.5s ease-in-out 0.85s; }
         &:nth-child(5) { transition: all 0.5s ease-in-out 0.95s; }
         &:not(:first-child) { padding-top: 35px; }
-        &:hover { background-color: transparent; }
+        &:hover { background-color: inherit; }
 
         .insideUl {
           top: 145px;
@@ -331,8 +331,7 @@ nav {
             }
 
             &:hover {
-              background-color: transparent;
-              color: #fff;
+              background-color: inherit;
             }
 
             .deepUl {
