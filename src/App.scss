@@ -96,6 +96,10 @@ nav {
       letter-spacing: 0.085em;
       position: relative;
 
+      &:hover {
+        background-color: $NavBlue;
+      }
+
       p {
         font-family: $playFair;
         font-size: 24px;
@@ -157,6 +161,11 @@ nav {
             margin-right: 0;
           }
 
+          &:hover {
+            background-color: transparent;
+            color: $NavBlue;
+          }
+
           .deepUl {
             display: flex;
             flex-direction: column;
@@ -177,40 +186,19 @@ nav {
               }
             }
           }
+          &:hover ul  {
+            visibility: visible;
+          }
         }
+      }
+
+      &:hover ul  {
+        visibility: visible;
       }
     }
 
     li:last-child {
       margin-right: 15px;
-    }
-  }
-}
-
-@media screen and (min-width: 1001px) {
-  nav {
-    ul {
-      > li {
-        &:hover {
-          background-color: $NavBlue;
-        }
-
-        .insideUl {
-          li {
-            &:hover {
-              background-color: transparent;
-              color: $NavBlue;
-            }
-            &:hover ul  {
-              visibility: visible;
-            }
-          }
-        }
-        &:hover ul  {
-          visibility: visible;
-        }
-      }
-
     }
   }
 }
@@ -283,6 +271,7 @@ nav {
         &:nth-child(4) { transition: all 0.5s ease-in-out 0.85s; }
         &:nth-child(5) { transition: all 0.5s ease-in-out 0.95s; }
         &:not(:first-child) { padding-top: 35px; }
+        &:hover { background-color: inherit; }
 
         .insideUl {
           top: 145px;

@@ -44,7 +44,7 @@ function Navbar() {
         </div>
         <div className={`full-menu ${click ? 'menu-actcive': null}`}>
           <ul>
-            <li className={click ? 'active': null} onClick={handleClick}>
+            <li className={click ? 'active': null}>
               <Link to='/about' onClick={closeMobileMenu}>
                 <div className='selectDiv'>
                   <p>About</p>
