@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/AK_Jewelry/static/css/main.891cabd0.chunk.css",
-    "main.js": "/AK_Jewelry/static/js/main.cfe85630.chunk.js",
-    "main.js.map": "/AK_Jewelry/static/js/main.cfe85630.chunk.js.map",
+    "main.css": "/AK_Jewelry/static/css/main.5676c7ce.chunk.css",
+    "main.js": "/AK_Jewelry/static/js/main.1e0eb370.chunk.js",
+    "main.js.map": "/AK_Jewelry/static/js/main.1e0eb370.chunk.js.map",
     "runtime-main.js": "/AK_Jewelry/static/js/runtime-main.57a1e6f3.js",
     "runtime-main.js.map": "/AK_Jewelry/static/js/runtime-main.57a1e6f3.js.map",
     "static/css/2.ec02d681.chunk.css": "/AK_Jewelry/static/css/2.ec02d681.chunk.css",
@@ -10,9 +10,10 @@
     "static/js/2.57dcbc09.chunk.js.map": "/AK_Jewelry/static/js/2.57dcbc09.chunk.js.map",
     "index.html": "/AK_Jewelry/index.html",
     "static/css/2.ec02d681.chunk.css.map": "/AK_Jewelry/static/css/2.ec02d681.chunk.css.map",
-    "static/css/main.891cabd0.chunk.css.map": "/AK_Jewelry/static/css/main.891cabd0.chunk.css.map",
+    "static/css/main.5676c7ce.chunk.css.map": "/AK_Jewelry/static/css/main.5676c7ce.chunk.css.map",
     "static/js/2.57dcbc09.chunk.js.LICENSE.txt": "/AK_Jewelry/static/js/2.57dcbc09.chunk.js.LICENSE.txt",
     "static/media/logo.efc37209.png": "/AK_Jewelry/static/media/logo.efc37209.png",
+    "static/media/圈圈.77c6ed8d.svg": "/AK_Jewelry/static/media/圈圈.77c6ed8d.svg",
     "static/media/圓小鑽石.60dfdeef.png": "/AK_Jewelry/static/media/圓小鑽石.60dfdeef.png",
     "static/media/抽象人物線條亮晶晶.c6326ce0.gif": "/AK_Jewelry/static/media/抽象人物線條亮晶晶.c6326ce0.gif",
     "static/media/抽象線條人物2.613f9582.svg": "/AK_Jewelry/static/media/抽象線條人物2.613f9582.svg",
@@ -24,13 +25,14 @@
     "static/media/明星穿戴照6.9fddb960.svg": "/AK_Jewelry/static/media/明星穿戴照6.9fddb960.svg",
     "static/media/明星穿戴照7.f326431a.svg": "/AK_Jewelry/static/media/明星穿戴照7.f326431a.svg",
     "static/media/明星穿戴照8.c83d7f65.svg": "/AK_Jewelry/static/media/明星穿戴照8.c83d7f65.svg",
+    "static/media/App.min.css": "/AK_Jewelry/static/media/歡迎你.c60b61ed.svg",
     "static/media/獨立接案設計image.696b1dbe.svg": "/AK_Jewelry/static/media/獨立接案設計image.696b1dbe.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.57a1e6f3.js",
     "static/css/2.ec02d681.chunk.css",
     "static/js/2.57dcbc09.chunk.js",
-    "static/css/main.891cabd0.chunk.css",
-    "static/js/main.cfe85630.chunk.js"
+    "static/css/main.5676c7ce.chunk.css",
+    "static/js/main.1e0eb370.chunk.js"
   ]
 }
