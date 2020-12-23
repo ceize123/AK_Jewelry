@@ -38,6 +38,9 @@ html, body {
   font-size: 20px;
   background-color: $white;
   overflow-x: hidden;
+  overflow: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 @media screen and (min-width: 1600px) {
@@ -1337,8 +1340,7 @@ main {
         position: relative;
 
         img {
-          width: 100vw;
-          max-width: 1600px;
+          width: 100%;
         }
 
         .fadeIn {
@@ -1370,9 +1372,12 @@ main {
     }
 
     .aboutPageLastBtn {
-      display: flex;
-      justify-content: center;
-      button { margin: 0 44px 200px 44px; }
+
+      button {
+        margin: 0 44px 200px 4px;
+        display: inline;
+
+      }
     }
   }
 }
@@ -1424,10 +1429,9 @@ main {
       }
 
       .aboutPageLastBtn {
-        align-items: center;
-        flex-direction: column;
         button {
-          margin-bottom: 24px;
+          display: block;
+          margin: 0 auto 24px auto;
           &:last-child { margin-bottom: 100px; }
         }
       }
@@ -1438,7 +1442,7 @@ main {
 @media screen and ( max-width: 850px ) {
   #aboutPage, #coursePage, #freelancePage, #porfolioPage, #blogPage {
     header {
-      height: auto;
+      height: 0px;
       padding-top: 150px;
 
       h1 {
