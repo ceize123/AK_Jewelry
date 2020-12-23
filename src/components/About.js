@@ -18,8 +18,8 @@ function About() {
     Aos.init({
       duration: 1000,
       once: true,
-      offsetTop: 80,
-      delay: 500,
+      offsetTop: 120,
+      delay: 200,
     });
   }, []);
 
@@ -30,9 +30,9 @@ function About() {
         <main>
           <ListsWithDiamond className='andrea' title='Andrea Ko' listName={aboutPageAndrea} />
           <ListsWithDiamond className='whyChose' title='為什麼選Andrea Ko珠寶教室?' listName={whyChose} />
-          <div className='designSec'>
-            <p  data-aos='fade-up'><span>Andrea</span>的設計</p>
-            <span className='designSecSpan'  data-aos='fade-up'>手飾和耳環為ANDREA設計 (版權所有洛琳·施華滋)</span>
+          <div className='designSec' data-aos='fade-up'>
+            <p><span>Andrea</span>的設計</p>
+            <span className='designSecSpan' >手飾和耳環為ANDREA設計 (版權所有洛琳·施華滋)</span>
             <div>
               <img src={aboutImg1} alt="明星穿戴照1" />
               <img src={aboutImg2} alt="明星穿戴照2" />
@@ -45,10 +45,10 @@ function About() {
             </div>
           </div>
           <div className='getCase'>
-            <p data-aos='fade-up' data-aos-anchor-placement='top-center' data-aos-delay='1000'>獨立接案設計師<span>Freelance</span></p>
+            <p data-aos='fade-up' data-aos-delay='800'>獨立接案設計師<span>Freelance</span></p>
             <div className='freelanceImg'>
               <img src={getCase} alt="Freelance"/>
-              <div className='fadeIn' data-aos='fade-up' data-aos-anchor-placement='top-center' data-aos-delay='1000'>
+              <div className='fadeIn' data-aos='fade-up' data-aos-anchor-placement='center-top' data-aos-delay='800'>
                 <span>
                   ANDREA KO 定居多倫多後成立自有工作室，轉型專案設計師，
                   除了教課之外Andrea也提供客製化珠寶訂製服務，無論是婚戒、各種紀念日、
@@ -63,7 +63,7 @@ function About() {
               </div>
             </div>
           </div>
-          <div className='aboutPageLastBtn' data-aos='fade-up' data-aos-delay='1000'>
+          <div className='aboutPageLastBtn' data-aos='fade-up' data-aos-delay='800'>
             <button>近期課程資訊</button>
             <button>作品集</button>
           </div>

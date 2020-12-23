@@ -53,12 +53,10 @@ function Navbar() {
               </Link>
             </li>
             <li className={click ? 'active': null}>
-              <Link to='/courses'>
-                <div className='selectDiv' onClick={handleClickInside}>
-                  <p>Courses<div className='tri'></div></p>
-                  <span>課程</span>
-                </div>
-              </Link>
+              <div className='selectDiv' onClick={handleClickInside}>
+                <p>Courses<div className='tri'></div></p>
+                <span>課程</span>
+              </div>
               <div className={`insideMenu ${clickInside ? 'insideMenu-active': null}`}>
                 <div className='transparent' onClick={handleClickInside}></div>
                 <ul className='insideUl'>
@@ -69,8 +67,10 @@ function Navbar() {
                     <div className={`deepMenu ${clickDeep ? 'deepMenu-active': null}`}>
                       <div className='insideTransparent' onClick={handleBoth}></div>
                       <ul className='deepUl'>
-                        <p className='insideEng deepEng'>Beginner</p>
-                        <li>初階手繪珠寶</li>
+                        <Link to='/BeginnerHandCourse' onClick={closeMobileMenu}>
+                          <p className='insideEng deepEng'>Beginner</p>
+                          <li>初階手繪珠寶</li>
+                        </Link>
                         <p className='insideEng deepEng'>Advanced</p>
                         <li>進階手繪珠寶</li>
                       </ul>
