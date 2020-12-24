@@ -48,12 +48,12 @@ html, body {
     display: flex;
     justify-content: center;
   }
+
+  header, main { width: 1600px; }
 }
 
 li { list-style: none; }
-
 hr { margin: 0; }
-
 a {
   color: #fff;
   text-decoration: none;
@@ -1281,7 +1281,7 @@ main {
       font-size: 24px;
       text-align: left;
       margin: 15px auto 0 auto;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.03em;
       padding-left: 39px;
 
       &:first-child { margin-top: 35px; }
@@ -1370,40 +1370,64 @@ main {
 #BeginnerHandCoursePage {
   main {
     .listBlock { margin-bottom: 507px; }
+
+		.parallax {
+			position: relative;
+			width: 500px;
+			top: -407px;
+			margin-left: 55.4%;
+
+			div {
+				position: absolute;
+				height: 80%;
+				top: 23px;
+				left: 0;
+				right: 0;
+				overflow: hidden;
+
+				p {
+					font-size: 18px;
+					color: rgba(74, 74, 74, 0.95);
+					text-align: left;
+					margin: 0 auto;
+				}
+			}
+    }
+
     .suitFor {
-      li {
-        width: 421px;
-        letter-spacing: 0.03em;
-      }
-    }
-    .parallax {
-      // parallax effect ｜
-      background-image: url('./imgs/RD-初階手繪珠寶設計/歡迎你.svg');
-      height: 130px;
-      background-attachment: fixed;
-      background-position: 80% center;
-      background-repeat: no-repeat;
-      background-size: 259px;
-      position: relative;
-      top: -407px;
+			li { width: 421px; }
+			+ .parallax p { width: 259px; }
+		}
+		.learnWhat {
+			li { width: 424.75px; }
+			+ .parallax p { width: 294px; }
+		}
+		.whyChose {
+			li { width: 371px; }
+			+ .parallax p { width: 298px; }
+		}
 
-      img {
-        position: absolute;
-        margin-top: -10px;
-        left: 58%;
-
-      }
-    }
+		.student {
+			display: flex;
+			justify-content: center;
+			margin-left: 20px;
+			margin-right: 20px;
+			div {
+				width: calc( 33% - 20px );
+				margin: 77px 10px 516px 10px;
+				span {
+					display: block;
+					text-align: left;
+				}
+				img { width: 100%;}
+			}
+		}
   }
 }
 
 @media screen and ( max-width: 1280px ) {
   #aboutPage {
     main {
-      .designSec img {
-        width: calc(33% - 30px);
-      }
-
       .getCase .freelanceImg .fadeIn span { margin-top: 95px; }
     }
   }
@@ -1412,6 +1436,8 @@ main {
 @media screen and ( max-width: 1000px ) {
   #aboutPage {
     main {
+			.designSec img { width: calc(33% - 30px); }
+
       .getCase {
         margin-bottom: 110px;
         p {
