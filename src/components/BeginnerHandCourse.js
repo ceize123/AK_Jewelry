@@ -20,8 +20,8 @@ function BeginnerHandCourse() {
 
   useEffect(() => {
     new Rellax(".rellax", {
-      speed: 0.75,
-      center: 0.4,
+      speed: 0.5,
+      center: true,
     });
   })
 

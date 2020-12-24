@@ -1260,12 +1260,13 @@ main {
     margin-bottom: 209px;
 
     h1 {
-      font-size: 96px;
+      font-size: 72px;
       font-family: $playFair;
     }
     p {
       font-size: 36px;
       font-family: $notoSans;
+			letter-spacing: 0.12em;
     }
   }
 
@@ -1496,7 +1497,10 @@ main {
 
       .listBlock {margin-bottom: 100px;}
 
-      p { font-size: 24px; }
+      p {
+				font-size: 24px;
+				margin-left: 28px;
+			}
       li {
         position: relative;
         font-size: 20px;
@@ -1514,12 +1518,7 @@ main {
     main {
       .andrea {
         margin-bottom: 64px;
-        p { margin-left: 28px; }
         li { width: calc( 100vw - 75px ); }
-      }
-
-      .whyChose {
-        p { margin-left: 28px; }
       }
 
       .designSec {
