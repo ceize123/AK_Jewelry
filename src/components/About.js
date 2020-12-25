@@ -31,7 +31,7 @@ function About() {
           <ListsWithDiamond className='andrea' title='Andrea Ko' listName={aboutPageAndrea} />
           <ListsWithDiamond className='whyChose' title='為什麼選Andrea Ko珠寶教室?' listName={whyChose} />
           <div className='designSec' data-aos='fade-up'>
-            <p><span>Andrea</span>的設計</p>
+            <h3><span>Andrea</span>的設計</h3>
             <span className='designSecSpan' >手飾和耳環為ANDREA設計 (版權所有洛琳·施華滋)</span>
             <div>
               <img src={aboutImg1} alt="明星穿戴照1" />
@@ -45,7 +45,7 @@ function About() {
             </div>
           </div>
           <div className='getCase'>
-            <p data-aos='fade-up' data-aos-delay='800'>獨立接案設計師<span>Freelance</span></p>
+            <h3 data-aos='fade-up' data-aos-delay='800'>獨立接案設計師<span>Freelance</span></h3>
             <div className='freelanceImg'>
               <img src={getCase} alt="Freelance"/>
               <div className='fadeIn' data-aos='fade-up' data-aos-anchor-placement='center-top' data-aos-delay='800'>

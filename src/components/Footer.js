@@ -11,9 +11,9 @@ function Footer(props) {
         </div>
         <div className='rightFooter'>
           <div className='icons'>
-            <i class="lab la-line"></i>
-            <i class="lab la-facebook"></i>
-            <i class="lab la-instagram"></i>
+            <i className="lab la-line"></i>
+            <i className="lab la-facebook"></i>
+            <i className="lab la-instagram"></i>
           </div>
           <span className='koDesign'>Andrea Ko Design</span>
           <span>Jewelry Design and Illustration Courses</span>

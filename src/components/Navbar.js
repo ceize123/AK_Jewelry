@@ -38,9 +38,9 @@ function Navbar() {
           <img src={logo} alt='logo'/>
         </Link>
         <div className={`hamburger ${click ? 'close-hamburger' : null}`} onClick={handleClick}>
-          <div class="lines line-top"></div>
-          <div class="lines line-mid"></div>
-          <div class="lines line-bottom"></div>
+          <div className="lines line-top"></div>
+          <div className="lines line-mid"></div>
+          <div className="lines line-bottom"></div>
         </div>
         <div className={`full-menu ${click ? 'menu-actcive': null}`}>
           <ul>
@@ -54,14 +54,14 @@ function Navbar() {
             </li>
             <li className={click ? 'active': null}>
               <div className='selectDiv' onClick={handleClickInside}>
-                <p>Courses<div className='tri'></div></p>
+                <p>Courses<span className='tri'></span></p>
                 <span>課程</span>
               </div>
               <div className={`insideMenu ${clickInside ? 'insideMenu-active': null}`}>
                 <div className='transparent' onClick={handleClickInside}></div>
                 <ul className='insideUl'>
                   <p className='insideEng' onClick={handleClickDeep}>Jewelry Design
-                    <div className='insideTri mobileTri upperTri'></div>
+                    <span className='insideTri mobileTri upperTri'></span>
                   </p>
                   <li>手繪珠寶設計<div className='insideTri'></div>
                     <div className={`deepMenu ${clickDeep ? 'deepMenu-active': null}`}>
@@ -77,7 +77,7 @@ function Navbar() {
                     </div>
                   </li>
                   <p className='insideEng' onClick={handleClickDeep2}>Digital Jewelry Design
-                    <div className='insideTri mobileTri'></div>
+                    <span className='insideTri mobileTri'></span>
                   </p>
                   <li>數位珠寶設計<div className='insideTri'></div>
                     <div className={`deepMenu2 ${clickDeep2 ? 'deepMenu2-active': null}`}>
