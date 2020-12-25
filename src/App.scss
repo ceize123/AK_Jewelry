@@ -56,7 +56,7 @@ html, body {
     body{
     -webkit-text-size-adjust: none;
     }
-} 
+}
 
 li { list-style: none; }
 hr { margin: 0; }
@@ -517,6 +517,8 @@ footer {
       display: block;
       position: absolute;
       bottom: 1px;
+			left: 50%;
+			transform: translateX(-50%);
     }
 
     .leftFooter { display: none; }
