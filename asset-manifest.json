@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/AK_Jewelry/static/css/main.d7ea6e8b.chunk.css",
-    "main.js": "/AK_Jewelry/static/js/main.b87f88e0.chunk.js",
-    "main.js.map": "/AK_Jewelry/static/js/main.b87f88e0.chunk.js.map",
+    "main.css": "/AK_Jewelry/static/css/main.3ec2fd38.chunk.css",
+    "main.js": "/AK_Jewelry/static/js/main.10fcd284.chunk.js",
+    "main.js.map": "/AK_Jewelry/static/js/main.10fcd284.chunk.js.map",
     "runtime-main.js": "/AK_Jewelry/static/js/runtime-main.57a1e6f3.js",
     "runtime-main.js.map": "/AK_Jewelry/static/js/runtime-main.57a1e6f3.js.map",
     "static/css/2.ec02d681.chunk.css": "/AK_Jewelry/static/css/2.ec02d681.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.aa9c9a32.chunk.js.map": "/AK_Jewelry/static/js/2.aa9c9a32.chunk.js.map",
     "index.html": "/AK_Jewelry/index.html",
     "static/css/2.ec02d681.chunk.css.map": "/AK_Jewelry/static/css/2.ec02d681.chunk.css.map",
-    "static/css/main.d7ea6e8b.chunk.css.map": "/AK_Jewelry/static/css/main.d7ea6e8b.chunk.css.map",
+    "static/css/main.3ec2fd38.chunk.css.map": "/AK_Jewelry/static/css/main.3ec2fd38.chunk.css.map",
     "static/js/2.aa9c9a32.chunk.js.LICENSE.txt": "/AK_Jewelry/static/js/2.aa9c9a32.chunk.js.LICENSE.txt",
     "static/media/logo.efc37209.png": "/AK_Jewelry/static/media/logo.efc37209.png",
     "static/media/圈圈.77c6ed8d.svg": "/AK_Jewelry/static/media/圈圈.77c6ed8d.svg",
@@ -27,13 +27,32 @@
     "static/media/明星穿戴照6.9fddb960.svg": "/AK_Jewelry/static/media/明星穿戴照6.9fddb960.svg",
     "static/media/明星穿戴照7.f326431a.svg": "/AK_Jewelry/static/media/明星穿戴照7.f326431a.svg",
     "static/media/明星穿戴照8.c83d7f65.svg": "/AK_Jewelry/static/media/明星穿戴照8.c83d7f65.svg",
-    "static/media/獨立接案設計image.696b1dbe.svg": "/AK_Jewelry/static/media/獨立接案設計image.696b1dbe.svg"
+    "static/media/獨立接案設計image.696b1dbe.svg": "/AK_Jewelry/static/media/獨立接案設計image.696b1dbe.svg",
+    "static/media/設計作品1.26b74108.svg": "/AK_Jewelry/static/media/設計作品1.26b74108.svg",
+    "static/media/設計作品10.445fafc4.svg": "/AK_Jewelry/static/media/設計作品10.445fafc4.svg",
+    "static/media/設計作品11.209a778a.svg": "/AK_Jewelry/static/media/設計作品11.209a778a.svg",
+    "static/media/設計作品12.faaa1137.svg": "/AK_Jewelry/static/media/設計作品12.faaa1137.svg",
+    "static/media/設計作品13.de6e1b7d.svg": "/AK_Jewelry/static/media/設計作品13.de6e1b7d.svg",
+    "static/media/設計作品14.d919b68d.svg": "/AK_Jewelry/static/media/設計作品14.d919b68d.svg",
+    "static/media/設計作品15.480fc2f4.svg": "/AK_Jewelry/static/media/設計作品15.480fc2f4.svg",
+    "static/media/設計作品16.1c7e5e8d.svg": "/AK_Jewelry/static/media/設計作品16.1c7e5e8d.svg",
+    "static/media/設計作品17.591d7f07.svg": "/AK_Jewelry/static/media/設計作品17.591d7f07.svg",
+    "static/media/設計作品18.ba0dd5f3.svg": "/AK_Jewelry/static/media/設計作品18.ba0dd5f3.svg",
+    "static/media/設計作品19.d467a9a7.svg": "/AK_Jewelry/static/media/設計作品19.d467a9a7.svg",
+    "static/media/設計作品2.2a53d797.svg": "/AK_Jewelry/static/media/設計作品2.2a53d797.svg",
+    "static/media/設計作品3.d46d5987.svg": "/AK_Jewelry/static/media/設計作品3.d46d5987.svg",
+    "static/media/設計作品4.b0615ac0.svg": "/AK_Jewelry/static/media/設計作品4.b0615ac0.svg",
+    "static/media/設計作品5.7363ec24.svg": "/AK_Jewelry/static/media/設計作品5.7363ec24.svg",
+    "static/media/設計作品6.efbba43e.svg": "/AK_Jewelry/static/media/設計作品6.efbba43e.svg",
+    "static/media/設計作品7.548ca005.svg": "/AK_Jewelry/static/media/設計作品7.548ca005.svg",
+    "static/media/設計作品8.1fcb40ff.svg": "/AK_Jewelry/static/media/設計作品8.1fcb40ff.svg",
+    "static/media/設計作品9.8e99e5d6.svg": "/AK_Jewelry/static/media/設計作品9.8e99e5d6.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.57a1e6f3.js",
     "static/css/2.ec02d681.chunk.css",
     "static/js/2.aa9c9a32.chunk.js",
-    "static/css/main.d7ea6e8b.chunk.css",
-    "static/js/main.b87f88e0.chunk.js"
+    "static/css/main.3ec2fd38.chunk.css",
+    "static/js/main.10fcd284.chunk.js"
   ]
 }
