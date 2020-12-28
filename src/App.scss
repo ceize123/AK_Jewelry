@@ -1253,7 +1253,7 @@ main {
   max-width: 1600px;
   text-align: center;
   button {
-    width: 281px;
+    width: 178px;
     height: 67px;
     border-radius: 10px;
     border: 1px solid #FFFFFF;
@@ -1281,6 +1281,7 @@ main {
   main {
     .listBlock { margin-bottom: 250px; }
 		h2 {
+			text-align: center;
 			font-size: 180px;
 			margin-top: -378px;
 			margin-bottom: 50px;
@@ -1396,6 +1397,7 @@ main {
             color: #fff;
             text-shadow: 0 3px 15px #fff;
             margin-top: 100px;
+						width: 281px;
           }
         }
       }
@@ -1405,6 +1407,7 @@ main {
       button {
         margin: 0 44px 200px 44px;
         display: inline;
+				width: 281px;
       }
     }
   }
@@ -1426,7 +1429,7 @@ main {
 				top: 25px;
 				left: 0;
 				right: 0;
-				overflow: hidden;
+				// overflow: hidden;
 				border-radius: 50%;
 
 				p {
@@ -1440,34 +1443,37 @@ main {
 
     .suitFor {
 			li { width: 421px; }
-			+ .parallax p { width: 259px; }
+			+ .parallax p {
+				width: 259px;
+				margin-top: 200px;
+			}
 		}
 		.learnWhat {
 			li { width: 424.75px; }
 			+ .parallax p {
 				width: 294px;
-				margin-top: 15px;
+				margin-top: 420px;
 			}
 		}
 		.whyChose {
 			li { width: 371px; }
 			+ .parallax p {
 				width: 298px;
-				margin-top: 25px;
+				margin-top: 570px;
 			}
 		}
 
 		.student {
 			+ .parallax p {
 				width: 264px;
-				margin-top: 400px;
+				margin-top: 820px;
 			}
 		}
 
 		.classInfo {
 			+ .parallax p {
 				width: 204px;
-				margin-top: 550px;
+				margin-top: 1150px;
 			}
 		}
 
@@ -1517,132 +1523,207 @@ main {
 }
 
 #porfolioPage {
-	.porfolioSec {
-		background: #000;
-		position: relative;
-		padding-left: 65.5px;
-		padding-right: 65.5px;
-		text-align: left;
-		img { display: block;}
+	main {
+		.porfolioSec {
+			background: #000;
+			position: relative;
+			padding-left: 65.5px;
+			padding-right: 65.5px;
+			text-align: left;
+			img { display: block;}
 
-		img:nth-child(1) {
-			position: absolute;
-			right: 0;
-			width: 769px;
-		}
+			img:nth-child(1) {
+				position: absolute;
+				right: 0;
+				width: 769px;
+			}
 
-		img:nth-child(2) {
-			padding-top: 818px;
-			width: 612px;
-			margin: 0 auto;
-		}
+			img:nth-child(2) {
+				padding-top: 818px;
+				width: 612px;
+				margin: 0 auto;
+			}
 
-		img:nth-child(3) {
-			display: inline-block;
-			width: 395px;
-			padding-top: 250px;
-			margin-right: 15px;
-		}
-		img:nth-child(4) {
-			width: 408px;
-			display: inline-block;
-		}
+			img:nth-child(3) {
+				display: inline-block;
+				width: 395px;
+				padding-top: 250px;
+				margin-right: 15px;
+			}
+			img:nth-child(4) {
+				width: 408px;
+				display: inline-block;
+			}
 
-		img:nth-child(5) {
-			width: 66.18%;
-			padding-top: 250px;
-			display: inline-block;margin-right: 15px;
-		}
-		img:nth-child(6) {
-			width: 22.03%;
-			display: inline-block;
-		}
+			img:nth-child(5) {
+				width: 66.18%;
+				padding-top: 250px;
+				display: inline-block;
+				margin-right: 15px;
+			}
+			img:nth-child(6) {
+				width: 22.03%;
+				display: inline-block;
+			}
 
-		img:nth-child(7) {
-			width: 42.77%;
-			padding-top: 250px;
-			display: inline-block;
-			margin-right: 15px;
-		}
-		img:nth-child(8) {
-			width: 42.6%;
-			display: inline-block;
-		}
+			img:nth-child(7) {
+				width: 42.77%;
+				padding-top: 250px;
+				display: inline-block;
+				margin-right: 15px;
+			}
+			img:nth-child(8) {
+				width: 42.6%;
+				display: inline-block;
+			}
 
-		img:nth-child(9) {
-			margin: 0 auto;
-			width: 463px;
-			padding-top: 250px;
-		}
+			img:nth-child(9) {
+				margin: 0 auto;
+				width: 463px;
+				padding-top: 250px;
+			}
 
-		img:nth-child(10) {
-			display: inline-block;
-			width: calc(25% - 15px);
-			padding-top: 250px;
-			margin-left: 7.5px;
-			margin-right: 7.5px;
-		}
-		img:nth-child(11) {
-			display: inline-block;
-			width: calc(25% - 15px);
-			margin-left: 7.5px;
-			margin-right: 7.5px;
-		}
-		img:nth-child(12) {
-			display: inline-block;
-			width: calc(25% - 15px);
-			margin-left: 7.5px;
-			margin-right: 7.5px;
-		}
-		img:nth-child(13) {
-			display: inline-block;
-			width: calc(25% - 15px);
-			margin-left: 7.5px;
-			margin-right: 7.5px;
-		}
+			img:nth-child(10), img:nth-child(11), img:nth-child(12), img:nth-child(13) {
+				display: inline-block;
+				width: calc(25% - 15px);
+				padding-top: 250px;
+				margin-left: 7.5px;
+				margin-right: 7.5px;
+			}
 
-		img:nth-child(14) {
-			display: inline-block;
-			width: calc(33% - 15px);
-			margin-left: 7.5px;
-			margin-right: 7.5px;
-			padding-top: 250px;
-		}
-		img:nth-child(15) {
-			display: inline-block;
-			width: calc(33% - 15px);
-			margin-left: 7.5px;
-			margin-right: 7.5px;
-		}
-		img:nth-child(16) {
-			display: inline-block;
-			width: calc(33% - 15px);
-			margin-left: 7.5px;
-			margin-right: 7.5px;
-		}
+			img:nth-child(14),img:nth-child(15), img:nth-child(16) {
+				display: inline-block;
+				width: calc(33% - 15px);
+				margin-left: 7.5px;
+				margin-right: 7.5px;
+				padding-top: 250px;
+			}
 
-		img:nth-child(17), img:nth-child(18), img:nth-child(19) {
-			width: 418px;
-			margin: 0 auto;
-			padding-top: 250px;
-		}
+			img:nth-child(17), img:nth-child(18), img:nth-child(19) {
+				width: 418px;
+				margin: 0 auto;
+				padding-top: 250px;
+			}
 
-		div {
-			display: flex;
-			justify-content: center;
-			padding: 200px 0;
-			
-			button {
-				display: inline;
-				margin: 0;
-				background-color: transparent;
-				box-shadow: 0 1px 8px #fff;
-				color: #fff;
-				text-shadow: 0 3px 15px #fff;
+			div {
+				display: flex;
+				justify-content: center;
+				padding: 200px 0;
 
-				&:last-child { margin-left: 88px; }
+				button {
+					display: inline;
+					margin: 0;
+					background-color: transparent;
+					box-shadow: 0 1px 8px #fff;
+					color: #fff;
+					text-shadow: 0 3px 15px #fff;
+					width: 281px;
+
+					&:last-child { margin-left: 88px; }
+				}
 			}
 		}
+	}
+}
+
+#blogPage, #Articles {
+	header {
+		height: calc( 100vh - 344px );
+		margin-bottom: 0;
+	}
+	main {
+		.blogBar {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 100px;
+
+			p {
+				padding: 12px 40px;
+				border: 1px solid #D8D8D8;
+				letter-spacing: 0.03em;
+				font-size: 24px;
+				cursor: pointer;
+
+				&:active {
+					color: #fff;
+					background-color: $NavdarkBlue;
+				}
+				&:not(:last-child) { border-right: none; }
+			}
+		}
+
+		.articles {
+			width: 1184px;
+			height: 352px;
+			background: #FFFFFF;
+			border-radius: 10px;
+			display: flex;
+			margin: 0 auto 200px auto;
+			text-align: left;
+			letter-spacing: 0.05em;
+			cursor: pointer;
+			color: #000;
+
+			&:not(:last-child) { margin-bottom: 50px; }
+
+			img {
+				width: 352px;
+				height: 352px;
+			}
+
+			h5 {
+				font-size: 36px;
+				padding: 50px 0 0 80px;
+			}
+
+			p {
+				font-size: 24px;
+				padding: 30px 39px 0 80px;
+			}
+
+		}
+	}
+}
+
+#Articles {
+	main {
+		padding-top: 81px;
+		margin-left: 43.5px;
+		margin-right: 43.5px;
+		letter-spacing: 0.05em;
+
+		.articleImgs {
+			text-align: center;
+			margin-top: 55px;
+			img {
+				width: calc( 33% - 75px );
+				margin-left: 37.5px;
+				margin-right: 37.5px;
+			}
+		}
+
+		h5 {
+			font-size: 36px;
+			margin-top: 45px;
+			margin-bottom: 30px;
+			margin-left: 37.5px;
+		}
+
+		p {
+			font-size: 24px;
+			margin-left: 37.5px;
+			margin-right: 37.5px;
+		}
+
+		.articleBtn {
+			text-align: center;
+			button {
+				margin: 100px 44px 250px 44px;
+				display: inline;
+				width: 281px;
+			}
+		}
+
 	}
 }
 
@@ -1655,6 +1736,16 @@ main {
 }
 
 @media screen and ( max-width: 1000px ) {
+	#aboutPage, #BeginnerHandCoursePage, #freelancePage, #porfolioPage, #blogPage {
+		main {
+			h2 {
+				font-size: 60px;
+				margin-top: -66px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+
   #aboutPage {
     main {
 			.designSec img { width: calc(33% - 30px); }
@@ -1699,6 +1790,92 @@ main {
       }
     }
   }
+
+
+	#porfolioPage {
+		main {
+			.porfolioSec {
+				padding: 0;
+
+				img:not(:first-child) { margin-top: 50px; }
+
+				img:nth-child(1) {
+					position: static;
+					width: 100%;
+				}
+
+				img:nth-child(2) {
+					padding: 0;
+					width: 100%;
+				}
+
+				img:nth-child(3) {
+					display: block;
+					width: 100%;
+					padding: 0;
+					margin-right: 0;
+				}
+				img:nth-child(4) {
+					width: 100%;
+					display: block;
+				}
+
+				img:nth-child(5) {
+					width: 100%;
+					padding: 0;
+					display: block;
+					margin-right: 0;
+				}
+				img:nth-child(6) {
+					width: 100%;
+					display: block;
+				}
+
+				img:nth-child(7) {
+					width: 100%;
+					padding: 0;
+					display: block;
+					margin-right: 0;
+				}
+				img:nth-child(8) {
+					width: 100%;
+					display: block;
+				}
+
+				img:nth-child(9) {
+					width: 100%;
+					padding: 0;
+				}
+
+				img:nth-child(10), img:nth-child(11), img:nth-child(12), img:nth-child(13), img:nth-child(14), img:nth-child(15), img:nth-child(16) {
+					display: block;
+					width: 100%;
+					padding: 0;
+				}
+
+				img:nth-child(17), img:nth-child(18), img:nth-child(19) {
+					width: 100%;
+					padding: 0;
+				}
+
+				div {
+					display: block;
+					padding: 100px 0;
+
+					button {
+						display: block;
+						margin: 0 auto;
+						font-size: 20px;
+						width: 191px;
+
+						&:last-child {
+							margin: 15px auto 0 auto;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 @media screen and ( max-width: 850px ) {
@@ -1761,12 +1938,103 @@ main {
       .getCase { margin-top: 100px; }
     }
   }
+
+	#BeginnerHandCoursePage {
+	  main {
+	    .listBlock { margin-bottom: 125px; }
+			.parallax img { width: 344.7px; }
+
+			.parallax {
+				width: 344.7px;
+				top: -100px;
+				margin-left: 19%;
+
+				div {
+					top: 15px;
+
+					p {	font-size: 16px; }
+				}
+	    }
+
+	    .suitFor {
+				+ .parallax p {
+					width: 207px;
+					margin-top: 80px;
+				}
+			}
+			.learnWhat {
+				+ .parallax p {
+					width: 207px;
+					margin-top: 240px;
+				}
+			}
+			.whyChose {
+				+ .parallax p {
+					width: 225px;
+					margin-top: 340px;
+				}
+			}
+
+			.student {
+				+ .parallax p {
+					width: 207px;
+					margin-top: 770px;
+				}
+			}
+
+			.classInfo {
+				+ .parallax p {
+					width: 191px;
+					margin-top: 970px;
+				}
+			}
+
+			.student {
+				flex-direction: column;
+				margin-left: 28px;
+				margin-right: 28px;
+				margin-bottom: 125px;
+				div {
+					width: 424px;
+					margin: 50px auto 0 auto;
+					&:first-child { margin-top: 25px; }
+
+					span {
+						font-size: 14px;
+						margin-bottom: 5px;
+					}
+				}
+			}
+
+			.classInfo {
+				width: 430px;
+				font-size: 20px;
+				margin: 0;
+				margin-bottom: 125px;
+
+				h3 { margin-bottom: 0; }
+				h4 {
+					margin-top: 25px;
+					margin-left: 20px;
+				}
+				button {
+					margin-top: 45px;
+					margin-bottom: 45px;
+				}
+				span {
+					margin-top: 5px;
+					margin-left: 20px;
+				}
+			}
+
+	  }
+	}
 }
 
 @media screen and ( max-width: 675px ) {
   #aboutPage, #BeginnerHandCoursePage, #freelancePage, #porfolioPage, #blogPage {
     button {
-      width: 191px;
+      width: 128px;
       height: 48px;
       border-radius: 6px;
       font-size: 20px;
@@ -1780,6 +2048,7 @@ main {
       }
 
       .getCase .freelanceImg .fadeIn span { font-size: 20px; }
+			.getCase .freelanceImg .fadeIn button, .aboutPageLastBtn button { width: 191px; }
     }
   }
 }
@@ -1819,5 +2088,40 @@ main {
       .designSec > span { font-size: 14px; }
     }
   }
+
+	#BeginnerHandCoursePage {
+	  main {
+
+	    .suitFor li, .learnWhat li { width: 327px; }
+			.whyChose li { width: 348px; }
+			.student {
+				+ .parallax p {
+					margin-top: 730px;
+				}
+			}
+			.classInfo {
+				+ .parallax p {
+					margin-top: 930px;
+				}
+			}
+
+			.student div { width: 319px; }
+
+			.classInfo {
+				width: 100%;
+				button {
+
+				}
+				span {
+					width: 344px;
+				}
+			}
+
+			.redInput {
+				background: #8D182B;
+			}
+
+	  }
+	}
 
 }

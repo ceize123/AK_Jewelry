@@ -5,7 +5,7 @@ import bling from '../imgs/RD-landingpage/抽象人物線條亮晶晶.gif';
 import diamond from '../imgs/RD-landingpage/圓小鑽石.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import {lpHand, lpDigital} from './diamondContent.js';
+import {lpHand, lpDigital} from './diamondListAndArticleContent.js';
 
 function LessonSection(props) {
   const { handText, digitalText } = props;

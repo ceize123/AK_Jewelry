@@ -8,6 +8,7 @@ import BeginnerHandCourse from './components/BeginnerHandCourse.js';
 import Porfolio from './components/Porfolio.js';
 import Freelance from './components/Freelance.js';
 import Blog from './components/Blog.js';
+import Articles from './components/ArticleContent.js';
 import Footer from './components/Footer.js';
 
 // basename={ process.env.PUBLIC_URL } 建立router需要的
@@ -29,10 +30,12 @@ function App() {
         <Switch>
           <Route path='/' exact component={LandingPage} />
           <Route path='/about' component={About} />
-          <Route path='/BeginnerHandCourse' component={BeginnerHandCourse} />
+          <Route path='/beginnerHandCourse' component={BeginnerHandCourse} />
           <Route path='/porfolio' component={Porfolio} />
           <Route path='/freelance' component={Freelance} />
-          <Route path='/blog' component={Blog} />
+          <Route path='/blog' exact component={Blog} />
+          {/* 下面是useParams用法，參考ArticleContent.js */}
+          <Route path='/blog/:title' exact component={Articles} />
         </Switch>
         <Footer />
       </ScrollToTop>

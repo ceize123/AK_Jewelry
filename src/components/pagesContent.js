@@ -1,6 +1,8 @@
-import React, {useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 import diamond from '../imgs/RD-landingpage/圓小鑽石.png';
 import circle from '../imgs/RD-初階手繪珠寶設計/圈圈.svg';
+import {article} from './diamondListAndArticleContent.js';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -52,16 +54,78 @@ export function ListsWithDiamond(props) {
   )
 }
 
+// Parallax Effect
 export function ParallaxCricle(props) {
+  // easy parallax scroll
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [])
 
   return (
     <>
-    <div className='parallax'>
-      <img src={circle} alt="circle"/>
-      <div>
-        <p className={props.rellax}>{props.text}</p>
+      <div className='parallax'>
+        <img src={circle} alt="circle"/>
+        <div>
+          <p style={{ transform: `translateY(${offsetY * -0.2}px)` }} className='rellax'>{props.text}</p>
+        </div>
       </div>
-    </div>
+    </>
+  )
+}
+
+// Blog page
+export function BlogArticle() {
+
+  const articles = article.map((content, key) =>
+    <Link className='articles' key={key} to={`/blog/${content.title}`}>
+      <div><img src={content.img} alt="articleImgs"/></div>
+      <div >
+        <h5>{content.title}</h5>
+        <p>{content.content[0].substring(0,50)}...</p>
+      </div>
+    </Link>
+  )
+
+  return (
+    <>
+      <div>
+        {articles}
+      </div>
+    </>
+  )
+}
+
+export function RandomBlogArticle() {
+  const articles = article.map((content, key) =>
+    <Link className='articles' key={key} to={`/blog/${content.title}`}>
+      <div><img src={content.img} alt="articleImgs"/></div>
+      <div >
+        <h5>{content.title}</h5>
+        <p>{content.content[0].substring(0,50)}...</p>
+      </div>
+    </Link>
+  )
+
+  let randoms = [];
+
+  for ( let len = 0; len < 2;) {
+    let random = articles[Math.floor(Math.random() * articles.length)];
+    if ( randoms.indexOf(random) === -1 ) {
+      randoms.push(random);
+      len++;
+    }
+  }
+
+
+  return (
+    <>
+      <div>
+        {randoms}
+      </div>
     </>
   )
 }

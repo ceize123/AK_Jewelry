@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import {HeaderContent, ListsWithDiamond} from './pagesContent.js';
-import {aboutPageAndrea, whyChose} from './diamondContent.js';
+import {aboutPageAndrea, whyChose} from './diamondListAndArticleContent.js';
 import aboutImg1 from '../imgs/RD-about師資介紹/明星穿戴照1.svg';
 import aboutImg2 from '../imgs/RD-about師資介紹/明星穿戴照2.svg';
 import aboutImg3 from '../imgs/RD-about師資介紹/明星穿戴照3.svg';
