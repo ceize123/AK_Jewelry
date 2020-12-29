@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import LazyLoad from 'react-lazyload';
 import { Link } from 'react-router-dom';
 import diamond from '../imgs/RD-landingpage/圓小鑽石.png';
 import circle from '../imgs/RD-初階手繪珠寶設計/圈圈.svg';

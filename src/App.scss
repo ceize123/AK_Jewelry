@@ -1637,18 +1637,19 @@ main {
 			justify-content: center;
 			margin-bottom: 100px;
 
-			p {
+			input[type='radio'] { display: none;}
+			label {
 				padding: 12px 40px;
 				border: 1px solid #D8D8D8;
 				letter-spacing: 0.03em;
 				font-size: 24px;
 				cursor: pointer;
 
-				&:active {
-					color: #fff;
-					background-color: $NavdarkBlue;
-				}
 				&:not(:last-child) { border-right: none; }
+			}
+			input[type='radio']:checked + label {
+				color: #fff;
+				background-color: $NavdarkBlue;
 			}
 		}
 
@@ -1658,17 +1659,16 @@ main {
 			background: #FFFFFF;
 			border-radius: 10px;
 			display: flex;
-			margin: 0 auto 200px auto;
+			margin: 0 auto 50px auto;
 			text-align: left;
 			letter-spacing: 0.05em;
 			cursor: pointer;
 			color: #000;
 
-			&:not(:last-child) { margin-bottom: 50px; }
-
 			img {
 				width: 352px;
 				height: 352px;
+				border-radius: 10px;
 			}
 
 			h5 {
@@ -1680,7 +1680,10 @@ main {
 				font-size: 24px;
 				padding: 30px 39px 0 80px;
 			}
+		}
 
+		.restOfArticles {
+			margin-bottom: 150px;
 		}
 	}
 }
