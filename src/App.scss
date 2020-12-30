@@ -2148,6 +2148,7 @@ main {
 }
 
 @media screen and ( max-width: 675px ) {
+	body { overflow-x: hidden;}
   #aboutPage, #BeginnerHandCoursePage, #freelancePage, #porfolioPage, #blogPage {
     button {
       width: 128px;

@@ -121,7 +121,7 @@ export function RandomBlogArticle() {
   window.addEventListener('resize', size);
 
   const articles = article.map((content, key) =>
-    <Link className='articles' key={key} to={`/blog/${content.title}`}>
+    <Link key={key} className='articles' to={`/blog/${content.title}`}>
       <div><img src={content.img} alt="articleImgs"/></div>
       <div >
         <h5>{content.title}</h5>
