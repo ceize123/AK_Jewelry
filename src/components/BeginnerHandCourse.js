@@ -1,25 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {HeaderContent, ListsWithDiamond, ParallaxCricle} from './pagesContent.js';
 import {beginnerHandSuit, learnWhat, whyChose} from './diamondListAndArticleContent.js';
 import student1 from '../imgs/RD-初階手繪珠寶設計/學生作品1.svg';
 import student2 from '../imgs/RD-初階手繪珠寶設計/學生作品2.svg';
+import student3 from '../imgs/RD-初階手繪珠寶設計/學生作品3.svg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 function BeginnerHandCourse() {
-  // useEffect(() => {
-  //   new Rellax(".rellax", {
-  //     speed: 0.8,
-  //     center: true,
-  //   });
-  // }, [])
-  //
-  // useEffect(() => {
-  //   new Rellax(".rellaxBelow", {
-  //     speed: 0.8,
-  //     center: true,
-  //   });
-  // }, [])
 
   // use useEffect to set rellax
   // useEffect(() => {
@@ -33,6 +21,15 @@ function BeginnerHandCourse() {
   //   });
   // })
 
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      once: true,
+      offsetTop: 100,
+      delay: 200,
+    });
+  }, []);
+
 
   return (
     <>
@@ -45,14 +42,14 @@ function BeginnerHandCourse() {
           <ParallaxCricle text={['Andrea老師精心編排，', <br/>, '讓沒有美術設計經驗的同學也能快速上手喔！']}/>
           <ListsWithDiamond className='whyChose' title='為什麼選Andrea Ko珠寶教室?' listName={whyChose} />
           <ParallaxCricle text='我們非常重視與產業接軌以及學生的設計發想能力，打好軟實力基礎，才能走得更長遠。'/>
-          <h3>上完課你可以做到...</h3>
+          <h3 data-aos='fade-up'>上完課你可以做到...</h3>
           <div className='student'>
-            <div><span>學生作品-By Feng</span><img src={student1} alt="Feng"/></div>
-            <div><span>學生作品-By Ivy</span><img src={student2} alt="Ivy"/></div>
-            <div><span>學生作品-By Lillian</span><img src={student1} alt="Feng"/></div>
+            <div data-aos='fade-up' data-aos-delay='500'><span>學生作品-By Feng</span><img src={student1} alt="Feng"/></div>
+            <div data-aos='fade-up' data-aos-delay='800'><span>學生作品-By Ivy</span><img src={student2} alt="Ivy"/></div>
+            <div data-aos='fade-up' data-aos-delay='1100'><span>學生作品-By Lillian</span><img src={student3} alt="Lillian"/></div>
           </div>
           <ParallaxCricle text='沒有設計美術的背景，也能完成像這樣的作品，是不是真的很厲害呢！'/>
-          <div className='classInfo'>
+          <div className='classInfo' data-aos='fade-up' data-aos-delay='600'>
             <h3>課程資訊</h3>
             <h4>上課日期&lt;2021&gt;</h4>
             <span>

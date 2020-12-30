@@ -265,7 +265,7 @@ nav {
 
       .selectDiv {
 				padding: 0;
-				&:hover { background-color: inherit; }
+				&:hover { background-color: #fff; }
 			}
 
       > li {
@@ -281,11 +281,11 @@ nav {
 
         span { display: block; }
 
-        &:nth-child(1) { transition: all 0.5s ease-in-out 0.55s; }
-        &:nth-child(2) { transition: all 0.5s ease-in-out 0.65s; }
-        &:nth-child(3) { transition: all 0.5s ease-in-out 0.75s; }
-        &:nth-child(4) { transition: all 0.5s ease-in-out 0.85s; }
-        &:nth-child(5) { transition: all 0.5s ease-in-out 0.95s; }
+        &:nth-child(1) { transition: all 0.5s ease-in-out 0.5s; }
+        &:nth-child(2) { transition: all 0.5s ease-in-out 0.6s; }
+        &:nth-child(3) { transition: all 0.5s ease-in-out 0.7s; }
+        &:nth-child(4) { transition: all 0.5s ease-in-out 0.8s; }
+        &:nth-child(5) { transition: all 0.5s ease-in-out 0.9s; }
         &:not(:first-child) { padding-top: 35px; }
 
         .insideUl {
@@ -340,10 +340,10 @@ nav {
 						transition: all 0.04s ease;
 						padding: 0;
 
-						&:nth-child(1) { transition: all 0.5s ease-in-out 0.55s; }
-		        &:nth-child(2) { transition: all 0.5s ease-in-out 0.65s; }
-		        &:nth-child(3) { transition: all 0.5s ease-in-out 0.75s; }
-		        &:nth-child(4) { transition: all 0.5s ease-in-out 0.85s; }
+						&:nth-child(1) { transition: all 0.5s ease-in-out 0.3s; }
+		        &:nth-child(2) { transition: all 0.5s ease-in-out 0.4s; }
+		        &:nth-child(3) { transition: all 0.5s ease-in-out 0.5s; }
+		        &:nth-child(4) { transition: all 0.5s ease-in-out 0.6s; }
 
 					  span {
 	            font-size: 14px;
@@ -403,7 +403,7 @@ nav {
           right: 0;
           z-index: 1;
           margin-right: -100vw;
-          transition: all 0.5s ease;
+          transition: all 0.3s ease;
 
           .transparent, .insideTransparent {
             width: 59px;
@@ -1514,11 +1514,12 @@ main {
 			div {
 				width: calc( 33% - 20px );
 				margin: 77px 10px 341px 10px;
+
 				span {
 					display: block;
 					text-align: left;
 				}
-				img { width: 100%;}
+				img { width: 100%; }
 			}
 		}
 
@@ -1581,6 +1582,7 @@ main {
 			}
 			img:nth-child(4) {
 				width: 408px;
+				padding-top: 250px;
 				display: inline-block;
 			}
 
@@ -1592,6 +1594,7 @@ main {
 			}
 			img:nth-child(6) {
 				width: 22.03%;
+				padding-top: 250px;
 				display: inline-block;
 			}
 
@@ -1604,6 +1607,7 @@ main {
 			img:nth-child(8) {
 				width: 42.6%;
 				display: inline-block;
+				padding-top: 250px;
 			}
 
 			img:nth-child(9) {
@@ -1861,6 +1865,7 @@ main {
 				img:nth-child(4) {
 					width: 100%;
 					display: block;
+					padding: 0;
 				}
 
 				img:nth-child(5) {
@@ -1872,6 +1877,7 @@ main {
 				img:nth-child(6) {
 					width: 100%;
 					display: block;
+					padding: 0;
 				}
 
 				img:nth-child(7) {
@@ -1883,6 +1889,7 @@ main {
 				img:nth-child(8) {
 					width: 100%;
 					display: block;
+					padding: 0;
 				}
 
 				img:nth-child(9) {

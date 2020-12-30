@@ -18,7 +18,7 @@ function About() {
     Aos.init({
       duration: 1000,
       once: true,
-      offsetTop: 120,
+      offsetTop: 100,
       delay: 200,
     });
   }, []);
@@ -30,25 +30,25 @@ function About() {
         <main>
           <ListsWithDiamond className='andrea' title='Andrea Ko' listName={aboutPageAndrea} />
           <ListsWithDiamond className='whyChose' title='為什麼選Andrea Ko珠寶教室?' listName={whyChose} />
-          <div className='designSec' data-aos='fade-up'>
-            <h3><span>Andrea</span>的設計</h3>
-            <span className='designSecSpan' >手飾和耳環為ANDREA設計 (版權所有洛琳·施華滋)</span>
+          <div className='designSec'>
+            <h3 data-aos='fade-up'><span>Andrea</span>的設計</h3>
+            <span className='designSecSpan' data-aos='fade-up'>手飾和耳環為ANDREA設計 (版權所有洛琳·施華滋)</span>
             <div>
-              <img src={aboutImg1} alt="明星穿戴照1" />
-              <img src={aboutImg2} alt="明星穿戴照2" />
-              <img src={aboutImg3} alt="明星穿戴照3" />
-              <img src={aboutImg4} alt="明星穿戴照4" />
-              <img src={aboutImg5} alt="明星穿戴照5" />
-              <img src={aboutImg6} alt="明星穿戴照6" />
-              <img src={aboutImg7} alt="明星穿戴照7" />
-              <img src={aboutImg8} alt="明星穿戴照8" />
+              <img src={aboutImg1} alt="明星穿戴照1" data-aos='fade-up' />
+              <img src={aboutImg2} alt="明星穿戴照2" data-aos='fade-up' data-aos-delay='500'/>
+              <img src={aboutImg3} alt="明星穿戴照3" data-aos='fade-up' data-aos-delay='800'/>
+              <img src={aboutImg4} alt="明星穿戴照4" data-aos='fade-up' data-aos-delay='1100'/>
+              <img src={aboutImg5} alt="明星穿戴照5" data-aos='fade-up' data-aos-delay='1400'/>
+              <img src={aboutImg6} alt="明星穿戴照6" data-aos='fade-up' data-aos-delay='1700'/>
+              <img src={aboutImg7} alt="明星穿戴照7" data-aos='fade-up' data-aos-delay='2000'/>
+              <img src={aboutImg8} alt="明星穿戴照8" data-aos='fade-up' data-aos-delay='2300'/>
             </div>
           </div>
           <div className='getCase'>
-            <h3 data-aos='fade-up' data-aos-delay='800'>獨立接案設計師<span>Freelance</span></h3>
+            <h3 data-aos='fade-up' data-aos-delay='900'>獨立接案設計師<span>Freelance</span></h3>
             <div className='freelanceImg'>
               <img src={getCase} alt="Freelance"/>
-              <div className='fadeIn' data-aos='fade-up' data-aos-anchor-placement='center-top' data-aos-delay='800'>
+              <div className='fadeIn' data-aos='fade-up' data-aos-anchor-placement='center-center' data-aos-offset='0' data-aos-duration='1500' data-aos-delay='1000'>
                 <span>
                   ANDREA KO 定居多倫多後成立自有工作室，轉型專案設計師，
                   除了教課之外Andrea也提供客製化珠寶訂製服務，無論是婚戒、各種紀念日、
@@ -63,7 +63,7 @@ function About() {
               </div>
             </div>
           </div>
-          <div className='aboutPageLastBtn' data-aos='fade-up' data-aos-delay='800'>
+          <div className='aboutPageLastBtn' data-aos='fade-up' data-aos-delay='400'>
             <button>近期課程資訊</button>
             <button>作品集</button>
           </div>

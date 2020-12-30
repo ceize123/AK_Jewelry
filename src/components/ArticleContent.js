@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { article } from './diamondListAndArticleContent.js';
 import { useParams } from 'react-router-dom';
 import { RandomBlogArticle } from './pagesContent.js';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function Articles() {
   const { title } = useParams();
@@ -19,7 +21,16 @@ function Articles() {
         // do your stuff here for right swipe
         setCurrentImg( currentImg - 1 );
     }
-}
+  }
+
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      once: true,
+      offsetTop: 100,
+      delay: 200,
+    });
+  }, []);
 
   return (
     <>
@@ -33,9 +44,9 @@ function Articles() {
                 onTouchEnd={handleTouchEnd}
                 >
               <div id='articleImgs' style={{left: currentImg * -100 + 'vw' }}>
-                <img src={content.img} alt="img1"/>
-                <img src={content.img2} alt="img2"/>
-                <img src={content.img3} alt="img3"/>
+                <img src={content.img} alt="img1" data-aos='fade-up'/>
+                <img src={content.img2} alt="img2" data-aos='fade-up' data-aos-delay='500'/>
+                <img src={content.img3} alt="img3" data-aos='fade-up' data-aos-delay='800'/>
               </div>
               <div className='carouselInput'>
                 <ul>
@@ -51,15 +62,15 @@ function Articles() {
                 </ul>
               </div>
             </div>
-            <h5>{content.title}</h5>
-            <p>{content.content}</p>
+            <h5 data-aos='fade-up' data-aos-delay='500'>{content.title}</h5>
+            <p data-aos='fade-up'>{content.content}</p>
           </div>
         ))}
-        <div className='articleBtn'>
+        <div className='articleBtn' data-aos='fade-up'>
           <button>近期課程資訊</button>
           <button>作品集</button>
         </div>
-        <h5>其他人也看過</h5>
+        <h5 data-aos='fade-up'>其他人也看過</h5>
         <RandomBlogArticle />
       </main>
     </div>
