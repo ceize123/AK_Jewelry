@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import LazyLoad from 'react-lazyload';
 import { Link } from 'react-router-dom';
 import diamond from '../imgs/RD-landingpage/圓小鑽石.png';
 import circle from '../imgs/RD-初階手繪珠寶設計/圈圈.svg';
@@ -81,12 +80,22 @@ export function ParallaxCricle(props) {
 // Blog page
 export function BlogArticle() {
 
+  const [resize, setResize] = useState(50);
+  const size = () => {
+    if (window.innerWidth <= 850) {
+      setResize(30);
+    } else {
+      setResize(50);
+    }
+  }
+  window.addEventListener('resize', size);
+
   const articles = article.map((content, key) =>
     <Link className='articles' key={key} to={`/blog/${content.title}`}>
       <div><img src={content.img} alt="articleImgs"/></div>
-      <div >
+      <div>
         <h5>{content.title}</h5>
-        <p>{content.content[0].substring(0,50)}...</p>
+        <p>{content.content[0].substring(0, resize)}...</p>
       </div>
     </Link>
   )
@@ -101,12 +110,22 @@ export function BlogArticle() {
 }
 
 export function RandomBlogArticle() {
+  const [resize, setResize] = useState(50);
+  const size = () => {
+    if (window.innerWidth <= 850) {
+      setResize(20);
+    } else {
+      setResize(50);
+    }
+  }
+  window.addEventListener('resize', size);
+
   const articles = article.map((content, key) =>
     <Link className='articles' key={key} to={`/blog/${content.title}`}>
       <div><img src={content.img} alt="articleImgs"/></div>
       <div >
         <h5>{content.title}</h5>
-        <p>{content.content[0].substring(0,50)}...</p>
+        <p>{content.content[0].substring(0, resize)}...</p>
       </div>
     </Link>
   )

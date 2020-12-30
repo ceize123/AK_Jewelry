@@ -7,28 +7,20 @@ function Navbar() {
   const [click, setClick] = useState(false);
   const [clickInside, setClickInside] = useState(false);
   const [clickDeep, setClickDeep] = useState(false);
-  const [clickDeep2, setClickDeep2] = useState(false);
 
   // toggle
   const handleClick = () => setClick(!click);
   const handleClickInside = () => setClickInside(!clickInside);
   const handleClickDeep = () => setClickDeep(!clickDeep);
-  const handleClickDeep2 = () => setClickDeep2(!clickDeep2);
   const handleBoth = () => {
     setClickInside(!clickInside);
     setClickDeep(!clickDeep);
-  }
-
-  const handleBoth2 = () => {
-    setClickInside(!clickInside);
-    setClickDeep2(!clickDeep2);
   }
 
   const closeMobileMenu = () => {
     setClick(false);
     setClickInside(false);
     setClickDeep(false);
-    setClickDeep2(false);
   }
 
   return (
@@ -37,12 +29,17 @@ function Navbar() {
         <Link to='/'>
           <img src={logo} alt='logo'/>
         </Link>
+        <div className='hamburger' onClick={handleClick}>
+          <div className="lines line-top"></div>
+          <div className="lines line-mid"></div>
+          <div className="lines line-bottom"></div>
+        </div>
+        <div className={`full-menu ${click ? 'menu-actcive close-hamburger': null}`}>
         <div className={`hamburger ${click ? 'close-hamburger' : null}`} onClick={handleClick}>
           <div className="lines line-top"></div>
           <div className="lines line-mid"></div>
           <div className="lines line-bottom"></div>
         </div>
-        <div className={`full-menu ${click ? 'menu-actcive': null}`}>
           <ul>
             <li className={click ? 'active': null}>
               <Link to='/about' onClick={closeMobileMenu}>
@@ -60,40 +57,57 @@ function Navbar() {
               <div className={`insideMenu ${clickInside ? 'insideMenu-active': null}`}>
                 <div className='transparent' onClick={handleClickInside}></div>
                 <ul className='insideUl'>
-                  <p className='insideEng' onClick={handleClickDeep}>Jewelry Design
-                    <span className='insideTri mobileTri upperTri'></span>
-                  </p>
-                  <li>手繪珠寶設計<div className='insideTri'></div>
+                  <li className={clickInside ? 'active': null}>
+                    <div onClick={handleClickDeep}>
+                      <p className='insideEng' >Jewelry Design
+                        <span className='insideTri mobileTri upperTri'></span>
+                      </p>
+                      <span>手繪珠寶設計</span>
+                    </div>
+                    <div className='insideTri'></div>
                     <div className={`deepMenu ${clickDeep ? 'deepMenu-active': null}`}>
+                      <div id='deepIcon'>
+                        <i class="las la-angle-left" onClick={handleClickDeep}></i>
+                        <span onClick={handleBoth}>X</span>
+                      </div>
                       <div className='insideTransparent' onClick={handleBoth}></div>
                       <ul className='deepUl'>
+                        <i class="fas fa-chevron-left"></i>
                         <Link to='/BeginnerHandCourse' onClick={closeMobileMenu}>
-                          <p className='insideEng deepEng'>Beginner</p>
-                          <li>初階手繪珠寶</li>
+                          <li className={clickDeep ? 'active': null}>
+                            <div>
+                              <p className='insideEng deepEng'>Beginner</p>
+                              <span>初階手繪珠寶設計</span>
+                            </div>
+                          </li>
                         </Link>
-                        <p className='insideEng deepEng'>Advanced</p>
-                        <li>進階手繪珠寶</li>
+                        <li className={clickDeep ? 'active': null}>
+                          <div>
+                            <p className='insideEng deepEng'>Advanced</p>
+                            <span id='deepUlAdvanced'>進階手繪珠寶</span>
+                          </div>
+                        </li>
                       </ul>
                     </div>
                   </li>
-                  <p className='insideEng' onClick={handleClickDeep2}>Digital Jewelry Design
-                    <span className='insideTri mobileTri'></span>
-                  </p>
-                  <li>數位珠寶設計<div className='insideTri'></div>
-                    <div className={`deepMenu2 ${clickDeep2 ? 'deepMenu2-active': null}`}>
-                      <div className='insideTransparent' onClick={handleBoth2}></div>
-                      <ul className='deepUl'>
-                        <p className='insideEng deepEng'>Beginner</p>
-                        <li>初階數位珠寶</li>
-                        <p className='insideEng deepEng'>Advanced</p>
-                        <li>進階數位珠寶</li>
-                      </ul>
+                  <li className={clickInside ? 'active': null}>
+                    <div>
+                      <p className='insideEng'>Digital Jewelry Design</p>
+                      <span>數位珠寶設計</span>
                     </div>
                   </li>
-                  <p className='insideEng'>3D Cad</p>
-                  <li>3D珠寶建模</li>
-                  <p className='insideEng'>Review For Free</p>
-                  <li>免費複習課程</li>
+                  <li className={clickInside ? 'active': null}>
+                    <div>
+                      <p className='insideEng'>3D Cad</p>
+                      <span>3D珠寶建模</span>
+                    </div>
+                  </li>
+                  <li className={clickInside ? 'active': null}>
+                    <div>
+                      <p className='insideEng'>Review For Free</p>
+                      <span>免費複習課程</span>
+                    </div>
+                  </li>
                 </ul>
               </div>
             </li>
