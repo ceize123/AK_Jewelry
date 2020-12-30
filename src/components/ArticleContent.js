@@ -7,28 +7,20 @@ function Articles() {
   const { title } = useParams();
   let [currentImg, setCurrentImg] = useState(0);
 
-  var touchstartX = 0;
-  var touchendX = 0;
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
 
-  var gesuredZone = document.getElementById('articleImgs');
+  function handleTouchEnd() {
+    if (touchStart - touchEnd > 5) {
+        // do your stuff here for left swipe
+        setCurrentImg( currentImg + 1);
+    }
 
-  gesuredZone.addEventListener('touchstart', function(event) {
-      touchstartX = event.changedTouches[0].screenX;
-  }, false);
-
-  gesuredZone.addEventListener('touchend', function(event) {
-      touchendX = event.changedTouches[0].screenX;
-      handleGesure();
-  }, false);
-
-  function handleGesure() {
-    if (touchendX - touchstartX > 5) {
-      setCurrentImg = (setCurrentImg > 0) ? setCurrentImg - 1 : 0;
-    };
-    if (touchstartX - touchendX > 5) {
-      setCurrentImg = ( setCurrentImg < 2) ? setCurrentImg + 1 : 2;
-    };
-  };
+    if (touchStart - touchEnd < -5) {
+        // do your stuff here for right swipe
+        setCurrentImg( currentImg - 1);
+    }
+}
 
   return (
     <>
@@ -36,7 +28,10 @@ function Articles() {
       <main>
         {article.filter(content => content.title === title).map((content, key) =>(
           <div key={key}>
-            <div className='imgsSecWithRadio'>
+            <div className='imgsSecWithRadio'
+                onTouchStart={(e) => setTouchStart(e.targetTouches[0].clientX)}
+                onTouchEnd={(e) => setTouchEnd(e.targetTouches[0].clientX)}
+                >
               <div id='articleImgs' style={{left: currentImg * -100 + 'vw' }}>
                 <img src={content.img} alt="img1"/>
                 <img src={content.img2} alt="img2"/>
