@@ -1673,7 +1673,7 @@ main {
 				font-size: 24px;
 				cursor: pointer;
 
-				&:not(:last-child) { border-right: none; }
+				&:not(:last-of-type) { border-right: none; }
 			}
 			input[type='radio']:checked + label {
 				color: #fff;
@@ -2200,24 +2200,56 @@ main {
 		}
 		main {
 			.blogBar {
-				display: flex;
-				justify-content: center;
-				margin-bottom: 100px;
+				position: relative;
+				width: 377px;
+				height: 50px;
+				margin-left: auto;
+				margin-right: auto;
 
-				input[type='radio'] { display: none;}
 				label {
-					padding: 12px 40px;
-					border: 1px solid #D8D8D8;
-					letter-spacing: 0.03em;
-					font-size: 24px;
-					cursor: pointer;
+					padding: 7px 12.5px;
 
-					&:not(:last-child) { border-right: none; }
+					&:nth-of-type(3) { padding-left: 14px; }
+					&:nth-of-type(4), &:nth-of-type(5) { border-left: none; }
+					&:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5) { border-right: none; }
+					&:nth-of-type(1), &:nth-of-type(2) {
+						position: absolute;
+						display: none;
+					}
+					&:nth-of-type(1) {
+						text-align: center;
+						border-right: 1px solid #D8D8D8;
+						top: 49px;
+						width: 374px;
+						padding: 12px 0;
+					}
+					&:nth-of-type(2) {
+						text-align: center;
+						border-right: 1px solid #D8D8D8;
+						top: 103px;
+						width: 374px;
+						padding: 12px 0;
+					}
 				}
-				input[type='radio']:checked + label {
-					color: #fff;
-					background-color: $NavdarkBlue;
+
+				div {
+					width: 50px;
+					border: 1px solid #D8D8D8;
+					border-left: none;
 				}
+				.inputTri {
+					cursor: pointer;
+					position: absolute;
+					top: 14px;
+					right: 15px;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 19.1px 11px 0 11px;
+					border-color: $NavdarkBlue transparent transparent transparent;
+					transition: all 0.5s ease;
+				}
+				.reverse { transform: rotate(-180deg); }
 			}
 
 			.articles {
@@ -2230,10 +2262,8 @@ main {
 					width: 315px;
 					height: 247px;
 				}
-
 				h5 { padding: 20px 0 0 18px; }
-
-				p { padding: 8px 18px 0 18px; }
+				p { padding: 8px 18px 24px 18px; }
 			}
 		}
 	}
