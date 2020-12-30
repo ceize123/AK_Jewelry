@@ -83,7 +83,7 @@ export function BlogArticle() {
   const [resize, setResize] = useState(50);
   const size = () => {
     if (window.innerWidth <= 850) {
-      setResize(30);
+      setResize(20);
     } else {
       setResize(50);
     }

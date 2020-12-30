@@ -2120,6 +2120,30 @@ main {
 	  }
 	}
 
+	#blogPage, #Articles {
+		main {
+			.blogBar {
+				label {
+					padding: 7px 15px;
+					font-size: 20px;
+				}
+			}
+
+			.articles {
+				width: 625px;
+				height: 202px;
+
+				img {
+					width: 202px;
+					height: 202px;
+				}
+
+				h5 { padding-top: 20px;}
+
+				p { padding-top: 8px; }
+			}
+		}
+	}
 
 
 	#Articles {
@@ -2168,6 +2192,51 @@ main {
 			.getCase .freelanceImg .fadeIn button, .aboutPageLastBtn button { width: 191px; }
     }
   }
+
+	#blogPage, #Articles {
+		header {
+			height: calc( 100vh - 344px );
+			margin-bottom: 0;
+		}
+		main {
+			.blogBar {
+				display: flex;
+				justify-content: center;
+				margin-bottom: 100px;
+
+				input[type='radio'] { display: none;}
+				label {
+					padding: 12px 40px;
+					border: 1px solid #D8D8D8;
+					letter-spacing: 0.03em;
+					font-size: 24px;
+					cursor: pointer;
+
+					&:not(:last-child) { border-right: none; }
+				}
+				input[type='radio']:checked + label {
+					color: #fff;
+					background-color: $NavdarkBlue;
+				}
+			}
+
+			.articles {
+				width: 315px;
+				height: 414px;
+				display: flex;
+				flex-direction: column;
+
+				img {
+					width: 315px;
+					height: 247px;
+				}
+
+				h5 { padding: 20px 0 0 18px; }
+
+				p { padding: 8px 18px 0 18px; }
+			}
+		}
+	}
 
 	#Articles {
 		main {
