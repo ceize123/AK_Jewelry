@@ -11,14 +11,13 @@ function Articles() {
   const [touchEnd, setTouchEnd] = useState(0);
 
   function handleTouchEnd() {
-    if (touchStart - touchEnd > 5) {
+    if (touchStart - touchEnd > 5 & currentImg < 2) {
         // do your stuff here for left swipe
-        setCurrentImg( currentImg + 1);
+        setCurrentImg( currentImg + 1 );
     }
-
-    if (touchStart - touchEnd < -5) {
+    if (touchStart - touchEnd < -5 & currentImg > 0 ) {
         // do your stuff here for right swipe
-        setCurrentImg( currentImg - 1);
+        setCurrentImg( currentImg - 1 );
     }
 }
 
@@ -31,7 +30,7 @@ function Articles() {
             <div className='imgsSecWithRadio'
                 onTouchStart={(e) => setTouchStart(e.targetTouches[0].clientX)}
                 onTouchMove={(e) => setTouchEnd(e.targetTouches[0].clientX)}
-                onTouchEnd={handleTouchEnd()}
+                onTouchEnd={handleTouchEnd}
                 >
               <div id='articleImgs' style={{left: currentImg * -100 + 'vw' }}>
                 <img src={content.img} alt="img1"/>
