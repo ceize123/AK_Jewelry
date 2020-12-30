@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/AK_Jewelry/static/css/main.b32e608b.chunk.css",
-    "main.js": "/AK_Jewelry/static/js/main.8299da65.chunk.js",
-    "main.js.map": "/AK_Jewelry/static/js/main.8299da65.chunk.js.map",
+    "main.css": "/AK_Jewelry/static/css/main.88e75dfb.chunk.css",
+    "main.js": "/AK_Jewelry/static/js/main.28c9b67e.chunk.js",
+    "main.js.map": "/AK_Jewelry/static/js/main.28c9b67e.chunk.js.map",
     "runtime-main.js": "/AK_Jewelry/static/js/runtime-main.57a1e6f3.js",
     "runtime-main.js.map": "/AK_Jewelry/static/js/runtime-main.57a1e6f3.js.map",
     "static/css/2.ec02d681.chunk.css": "/AK_Jewelry/static/css/2.ec02d681.chunk.css",
-    "static/js/2.7e4dc72f.chunk.js": "/AK_Jewelry/static/js/2.7e4dc72f.chunk.js",
-    "static/js/2.7e4dc72f.chunk.js.map": "/AK_Jewelry/static/js/2.7e4dc72f.chunk.js.map",
+    "static/js/2.c0d1deb5.chunk.js": "/AK_Jewelry/static/js/2.c0d1deb5.chunk.js",
+    "static/js/2.c0d1deb5.chunk.js.map": "/AK_Jewelry/static/js/2.c0d1deb5.chunk.js.map",
     "index.html": "/AK_Jewelry/index.html",
     "static/css/2.ec02d681.chunk.css.map": "/AK_Jewelry/static/css/2.ec02d681.chunk.css.map",
-    "static/css/main.b32e608b.chunk.css.map": "/AK_Jewelry/static/css/main.b32e608b.chunk.css.map",
-    "static/js/2.7e4dc72f.chunk.js.LICENSE.txt": "/AK_Jewelry/static/js/2.7e4dc72f.chunk.js.LICENSE.txt",
+    "static/css/main.88e75dfb.chunk.css.map": "/AK_Jewelry/static/css/main.88e75dfb.chunk.css.map",
+    "static/js/2.c0d1deb5.chunk.js.LICENSE.txt": "/AK_Jewelry/static/js/2.c0d1deb5.chunk.js.LICENSE.txt",
     "static/media/experience1-1.263a0981.jpg": "/AK_Jewelry/static/media/experience1-1.263a0981.jpg",
     "static/media/experience1-2.e6daf780.jpg": "/AK_Jewelry/static/media/experience1-2.e6daf780.jpg",
     "static/media/experience2-1.e7f9f14a.jpg": "/AK_Jewelry/static/media/experience2-1.e7f9f14a.jpg",
@@ -55,6 +55,7 @@
     "static/media/圓小鑽石.60dfdeef.png": "/AK_Jewelry/static/media/圓小鑽石.60dfdeef.png",
     "static/media/學生作品1.417b3004.svg": "/AK_Jewelry/static/media/學生作品1.417b3004.svg",
     "static/media/學生作品2.0f660ad0.svg": "/AK_Jewelry/static/media/學生作品2.0f660ad0.svg",
+    "static/media/學生作品3.f3c9cedf.svg": "/AK_Jewelry/static/media/學生作品3.f3c9cedf.svg",
     "static/media/抽象人物線條亮晶晶.c6326ce0.gif": "/AK_Jewelry/static/media/抽象人物線條亮晶晶.c6326ce0.gif",
     "static/media/抽象線條人物2.613f9582.svg": "/AK_Jewelry/static/media/抽象線條人物2.613f9582.svg",
     "static/media/明星穿戴照1.c6b0a888.svg": "/AK_Jewelry/static/media/明星穿戴照1.c6b0a888.svg",
@@ -89,8 +90,8 @@
   "entrypoints": [
     "static/js/runtime-main.57a1e6f3.js",
     "static/css/2.ec02d681.chunk.css",
-    "static/js/2.7e4dc72f.chunk.js",
-    "static/css/main.b32e608b.chunk.css",
-    "static/js/main.8299da65.chunk.js"
+    "static/js/2.c0d1deb5.chunk.js",
+    "static/css/main.88e75dfb.chunk.css",
+    "static/js/main.28c9b67e.chunk.js"
   ]
 }
