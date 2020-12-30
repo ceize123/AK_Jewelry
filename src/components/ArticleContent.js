@@ -30,7 +30,8 @@ function Articles() {
           <div key={key}>
             <div className='imgsSecWithRadio'
                 onTouchStart={(e) => setTouchStart(e.targetTouches[0].clientX)}
-                onTouchEnd={(e) => setTouchEnd(e.targetTouches[0].clientX)}
+                onTouchMove={(e) => setTouchEnd(e.targetTouches[0].clientX)}
+                onTouchEnd={handleTouchEnd()}
                 >
               <div id='articleImgs' style={{left: currentImg * -100 + 'vw' }}>
                 <img src={content.img} alt="img1"/>
