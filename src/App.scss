@@ -1288,6 +1288,7 @@ main {
     letter-spacing: 0.03em;
     font-size: 24px;
     font-family: $notoSans;
+		white-space: nowrap;
   }
 
   header {
@@ -1457,7 +1458,7 @@ main {
 				top: 25px;
 				left: 0;
 				right: 0;
-				// overflow: hidden;
+				overflow: hidden;
 				border-radius: 50%;
 
 				p {
@@ -2378,9 +2379,6 @@ main {
 
 			.classInfo {
 				width: 100%;
-				button {
-
-				}
 				span {
 					width: 344px;
 				}
