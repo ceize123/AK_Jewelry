@@ -35,20 +35,20 @@ function About() {
             <span className='designSecSpan' data-aos='fade-up'>手飾和耳環為ANDREA設計 (版權所有洛琳·施華滋)</span>
             <div>
               <img src={aboutImg1} alt="明星穿戴照1" data-aos='fade-up' />
-              <img src={aboutImg2} alt="明星穿戴照2" data-aos='fade-up' data-aos-delay='400'/>
-              <img src={aboutImg3} alt="明星穿戴照3" data-aos='fade-up' data-aos-delay='600'/>
-              <img src={aboutImg4} alt="明星穿戴照4" data-aos='fade-up' data-aos-delay='800'/>
-              <img src={aboutImg5} alt="明星穿戴照5" data-aos='fade-up' data-aos-delay='1000'/>
-              <img src={aboutImg6} alt="明星穿戴照6" data-aos='fade-up' data-aos-delay='1200'/>
-              <img src={aboutImg7} alt="明星穿戴照7" data-aos='fade-up' data-aos-delay='1400'/>
-              <img src={aboutImg8} alt="明星穿戴照8" data-aos='fade-up' data-aos-delay='1600'/>
+              <img src={aboutImg2} alt="明星穿戴照2" data-aos='fade-up' />
+              <img src={aboutImg3} alt="明星穿戴照3" data-aos='fade-up' />
+              <img src={aboutImg4} alt="明星穿戴照4" data-aos='fade-up' />
+              <img src={aboutImg5} alt="明星穿戴照5" data-aos='fade-up' />
+              <img src={aboutImg6} alt="明星穿戴照6" data-aos='fade-up' />
+              <img src={aboutImg7} alt="明星穿戴照7" data-aos='fade-up' />
+              <img src={aboutImg8} alt="明星穿戴照8" data-aos='fade-up' />
             </div>
           </div>
           <div className='getCase'>
             <h3 data-aos='fade-up' data-aos-delay='900'>獨立接案設計師<span>Freelance</span></h3>
             <div className='freelanceImg'>
               <img src={getCase} alt="Freelance"/>
-              <div className='fadeIn' data-aos='fade-up' data-aos-anchor-placement='center-center' data-aos-offset='0' data-aos-duration='2000' data-aos-delay='1000'>
+              <div className='fadeIn' data-aos='fade-up' data-aos-offset='0' data-aos-duration='2000' data-aos-delay='1000'>
                 <span>
                   ANDREA KO 定居多倫多後成立自有工作室，轉型專案設計師，
                   除了教課之外Andrea也提供客製化珠寶訂製服務，無論是婚戒、各種紀念日、
