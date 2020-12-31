@@ -10,11 +10,12 @@ function Navbar() {
   // toggle
   const handleClick = () => {
     setClick(!click);
-    document.getElementById('root').style.position = "fixed";
-    if ( click === true ) {
-      document.getElementById('root').style.position = "static";
+    if (window.innerWidth <= 1000) {
+      document.getElementById('root').style.position = "fixed";
+      if ( click === true ) {
+        document.getElementById('root').style.position = "static";
+      }
     }
-
   };
   const handleClickInside = () => setClickInside(!clickInside);
   const handleClickDeep = () => setClickDeep(!clickDeep);
