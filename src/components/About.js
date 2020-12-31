@@ -45,10 +45,10 @@ function About() {
             </div>
           </div>
           <div className='getCase'>
-            <h3 data-aos='fade-up' data-aos-offset='0' data-aos-delay='600'>獨立接案設計師<span>Freelance</span></h3>
+            <h3 data-aos='fade-up' data-aos-offset='0' data-aos-delay='500'>獨立接案設計師<span>Freelance</span></h3>
             <div className='freelanceImg'>
               <img src={getCase} alt="Freelance"/>
-              <div className='fadeIn' data-aos='fade-up' data-aos-offset='0' data-aos-duration='1500' data-aos-delay='800'>
+              <div className='fadeIn' data-aos='fade-up' data-aos-offset='0' data-aos-duration='1500' data-aos-delay='600'>
                 <span>
                   ANDREA KO 定居多倫多後成立自有工作室，轉型專案設計師，
                   除了教課之外Andrea也提供客製化珠寶訂製服務，無論是婚戒、各種紀念日、
