@@ -862,13 +862,21 @@ main {
     #moreBtn { font-size: 30px; }
   }
 
+	.shortBtn {
+		width: 178px;
+		height: 67px;
+	}
+
+	.longBtn {
+		width: 281.04px;
+		height: 67px;
+	}
+
   button {
     font-family: $playFair;
     position: relative;
     display: block;
     margin: 91px auto 262px auto;
-    width: 178px;
-    height: 67px;
     background: #fff;
     border-radius: 6px;
     border: #fff;
@@ -1157,10 +1165,18 @@ main {
       #moreBtn { font-size: 24px; }
     }
 
+		.shortBtn {
+			width: 137px;
+			height: 48px;
+		}
+
+		.longBtn {
+			width: 210px;
+			height: 48px;
+		}
+
     button {
       margin: 51px auto 200px auto;
-      width: 137px;
-      height: 48px;
     }
 
     .lectureInfo {
@@ -1260,11 +1276,8 @@ main {
   max-width: 1600px;
   text-align: center;
   button {
-    width: 178px;
-    height: 67px;
     border-radius: 10px;
     border: 1px solid #FFFFFF;
-    letter-spacing: 0.03em;
     font-size: 24px;
     font-family: $notoSans;
 		white-space: nowrap;
@@ -1406,7 +1419,7 @@ main {
             color: #fff;
             text-shadow: 0 3px 15px #fff;
             margin-top: 100px;
-						width: 281px;
+						letter-spacing: 0.03em;
           }
         }
       }
@@ -1416,7 +1429,6 @@ main {
       button {
         margin: 0 44px 200px 44px;
         display: inline;
-				width: 281px;
       }
     }
   }
@@ -1630,7 +1642,6 @@ main {
 					box-shadow: 0 1px 8px #fff;
 					color: #fff;
 					text-shadow: 0 3px 15px #fff;
-					width: 281px;
 
 					&:last-child { margin-left: 88px; }
 				}
@@ -1733,7 +1744,6 @@ main {
 			button {
 				margin: 100px 44px 250px 44px;
 				display: inline;
-				width: 281px;
 			}
 		}
 
@@ -1896,7 +1906,6 @@ main {
 						display: block;
 						margin: 0 auto;
 						font-size: 20px;
-						width: 191px;
 
 						&:last-child {
 							margin: 15px auto 0 auto;
@@ -2163,9 +2172,6 @@ main {
 	body { overflow-x: hidden;}
   #aboutPage, #BeginnerHandCoursePage, #freelancePage, #porfolioPage, #blogPage {
     button {
-      width: 137px;
-      height: 48px;
-      border-radius: 6px;
       font-size: 20px;
     }
   }
@@ -2301,7 +2307,6 @@ main {
 
 			.articleBtn {
 				button {
-					width: 191px;
 					font-size: 20px;
 				}
 			}

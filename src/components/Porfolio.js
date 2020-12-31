@@ -59,8 +59,8 @@ function Porfolio() {
             <img src={porfolio18} alt="porfolio18" data-aos='fade-up' data-aos-delay='3000'/>
             <img src={porfolio19} alt="porfolio19" data-aos='fade-up' data-aos-delay='3000'/>
             <div>
-              <button>近期課程資訊</button>
-              <button>企業合作/個人訂製</button>
+              <button className='longBtn'>近期課程資訊</button>
+              <button className='longBtn'>企業合作/個人訂製</button>
             </div>
           </section>
         </main>

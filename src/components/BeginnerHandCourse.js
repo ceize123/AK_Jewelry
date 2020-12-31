@@ -58,7 +58,7 @@ function BeginnerHandCourse() {
             等確立回台開課時間會再通知同學，
             歡迎留下聯絡資訊，才不會漏接開課重要通知喔！
             </span>
-            <button>開課通知我</button>
+            <button className='shortBtn'>開課通知我</button>
             <h4>費用 ＆ 工具</h4>
             <span>NT$26000<br/>
               課上提供上課用具，毋須自備材料。

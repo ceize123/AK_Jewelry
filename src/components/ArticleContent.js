@@ -67,8 +67,8 @@ function Articles() {
           </div>
         ))}
         <div className='articleBtn' data-aos='fade-up'>
-          <button>近期課程資訊</button>
-          <button>作品集</button>
+          <button className='longBtn'>近期課程資訊</button>
+          <button className='longBtn'>作品集</button>
         </div>
         <h5 data-aos='fade-up'>其他人也看過</h5>
         <RandomBlogArticle />

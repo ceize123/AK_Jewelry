@@ -33,7 +33,7 @@ function LessonSection(props) {
           <ul>
             {handContent}
           </ul>
-          <button>開課通知我</button>
+          <button className='shortBtn'>開課通知我</button>
         </div>
       </div>
       <div className='digitalBlock'>
@@ -50,7 +50,7 @@ function LessonSection(props) {
           <ul>
             {digitalContent}
           </ul>
-          <button>詳細資訊</button>
+          <button className='shortBtn'>詳細資訊</button>
         </div>
       </div>
     </>
@@ -121,7 +121,7 @@ function LandingPage() {
           <br/>
           <br/>
           因現居北美洲，ANDREA老師一年只會回來開2次課程...</span>
-          <button data-aos='fade-up' id='moreBtn' data-aos-offset='0' data-aos-delay='0'>More</button>
+          <button className='shortBtn' data-aos='fade-up' id='moreBtn' data-aos-offset='0' data-aos-delay='0'>More</button>
         </div>
         <div className='lectureInfo'>
           <img src={abstract2} alt="Jewelry"/>
@@ -133,7 +133,7 @@ function LandingPage() {
         <div className='tellMeTime'  data-aos='fade-up' data-aos-delay='500'>
           <p>目前開課時間都無法配合<span id='comma'>，</span><span>怎麼辦？</span></p>
           <p>別擔心！<span>告訴我們你可以的時間</span></p>
-          <button>填寫</button>
+          <button className='shortBtn'>填寫</button>
         </div>
       </main>
     </>
