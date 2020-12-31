@@ -240,7 +240,7 @@ nav {
     .full-menu {
       background-color: $white;
       position: fixed;
-      height: calc(100vh - 85px);
+      height: 100vh;
       width: 100vw;
       top: 0;
       right: 0;
@@ -265,7 +265,7 @@ nav {
 
       .selectDiv {
 				padding: 0;
-				&:hover { background-color: #fff; }
+				&:hover { background-color: inherit;; }
 			}
 
       > li {
@@ -358,6 +358,7 @@ nav {
 						}
 
             .deepUl {
+							text-align: center;
               top: 90px;
               left: 50%;
               transform: translateX(-50%);
@@ -396,7 +397,7 @@ nav {
 
         .insideMenu, .deepMenu {
           width: calc( 100vw - 59px );
-          height: calc( 100vh - 85px );
+          height: 100vh;
           background-color: $Navgray;
           position: fixed;
           top: 0;
@@ -407,7 +408,7 @@ nav {
 
           .transparent, .insideTransparent {
             width: 59px;
-            height: calc( 100vh - 85px );
+            height: 100vh;
             background-color: transparent;
             position: fixed;
             margin-left: -59px;
@@ -571,26 +572,6 @@ footer {
     }
   }
 
-  .hamburger-footer {
-    display: block;
-    position: fixed;
-    width: 100vw;
-    top: calc( 100vh - 85px );
-    right: -100vw;
-    z-index: 2;
-    transition: all 0.5s linear;
-  }
-
-  .full-hamburger-footer-actcive { right: 0; }
-
-  // .hamburger-footer {
-  //   display: block;
-  //   position: fixed;
-  //   top: calc( 100vh - 85px );
-  //   width: 100vw;
-  //   margin-right: -100vw;
-  //   z-index: 2;
-  // }
 }
 
 
@@ -2360,7 +2341,7 @@ main {
 
       .whyChose {
         h3 { margin-left: 28px;}
-        li { width: 312px; }
+        li { width: 309px; }
       }
       .designSec > span { font-size: 14px; }
     }

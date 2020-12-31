@@ -3,7 +3,7 @@ import React from 'react';
 function Footer(props) {
   return (
     <>
-      <footer className={props.className}>
+      <footer>
         <div className='leftFooter'>
           <h2>Any Question?</h2>
           <p>聯絡我們！</p>

@@ -77,7 +77,7 @@ function Navbar() {
                           <li className={clickDeep ? 'active': null}>
                             <div>
                               <p className='insideEng deepEng'>Beginner</p>
-                              <span>初階手繪珠寶設計</span>
+                              <span>初階手繪珠寶</span>
                             </div>
                           </li>
                         </Link>
@@ -137,7 +137,6 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <Footer className={`hamburger-footer ${click ? 'full-hamburger-footer-actcive': null}`}/>
       </nav>
     </>
   );
