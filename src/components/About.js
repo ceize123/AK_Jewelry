@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import {HeaderContent, ListsWithDiamond} from './pagesContent.js';
 import {aboutPageAndrea, whyChose} from './diamondListAndArticleContent.js';
-import aboutImg1 from '../imgs/RD-about師資介紹/明星穿戴照1.svg';
-import aboutImg2 from '../imgs/RD-about師資介紹/明星穿戴照2.svg';
-import aboutImg3 from '../imgs/RD-about師資介紹/明星穿戴照3.svg';
-import aboutImg4 from '../imgs/RD-about師資介紹/明星穿戴照4.svg';
-import aboutImg5 from '../imgs/RD-about師資介紹/明星穿戴照5.svg';
-import aboutImg6 from '../imgs/RD-about師資介紹/明星穿戴照6.svg';
-import aboutImg7 from '../imgs/RD-about師資介紹/明星穿戴照7.svg';
-import aboutImg8 from '../imgs/RD-about師資介紹/明星穿戴照8.svg';
-import getCase from '../imgs/RD-about師資介紹/獨立接案設計image.svg';
+import aboutImg1 from '../imgs/RD-about師資介紹/明星穿戴照1.png';
+import aboutImg2 from '../imgs/RD-about師資介紹/明星穿戴照2.png';
+import aboutImg3 from '../imgs/RD-about師資介紹/明星穿戴照3.png';
+import aboutImg4 from '../imgs/RD-about師資介紹/明星穿戴照4.png';
+import aboutImg5 from '../imgs/RD-about師資介紹/明星穿戴照5.png';
+import aboutImg6 from '../imgs/RD-about師資介紹/明星穿戴照6.png';
+import aboutImg7 from '../imgs/RD-about師資介紹/明星穿戴照7.png';
+import aboutImg8 from '../imgs/RD-about師資介紹/明星穿戴照8.png';
+import getCase from '../imgs/RD-about師資介紹/獨立接案設計image.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -35,13 +35,13 @@ function About() {
             <span className='designSecSpan' data-aos='fade-up'>手飾和耳環為ANDREA設計 (版權所有洛琳·施華滋)</span>
             <div>
               <img src={aboutImg1} alt="明星穿戴照1" data-aos='fade-up' />
-              <img src={aboutImg2} alt="明星穿戴照2" data-aos='fade-up' />
-              <img src={aboutImg3} alt="明星穿戴照3" data-aos='fade-up' />
-              <img src={aboutImg4} alt="明星穿戴照4" data-aos='fade-up' />
-              <img src={aboutImg5} alt="明星穿戴照5" data-aos='fade-up' />
-              <img src={aboutImg6} alt="明星穿戴照6" data-aos='fade-up' />
-              <img src={aboutImg7} alt="明星穿戴照7" data-aos='fade-up' />
-              <img src={aboutImg8} alt="明星穿戴照8" data-aos='fade-up' />
+              <img src={aboutImg2} alt="明星穿戴照2" data-aos='fade-up' data-aos-delay='400'/>
+              <img src={aboutImg3} alt="明星穿戴照3" data-aos='fade-up' data-aos-delay='600'/>
+              <img src={aboutImg4} alt="明星穿戴照4" data-aos='fade-up' data-aos-delay='800'/>
+              <img src={aboutImg5} alt="明星穿戴照5" data-aos='fade-up' data-aos-delay='1000'/>
+              <img src={aboutImg6} alt="明星穿戴照6" data-aos='fade-up' data-aos-delay='1200'/>
+              <img src={aboutImg7} alt="明星穿戴照7" data-aos='fade-up' data-aos-delay='1400'/>
+              <img src={aboutImg8} alt="明星穿戴照8" data-aos='fade-up' data-aos-delay='1600'/>
             </div>
           </div>
           <div className='getCase'>
