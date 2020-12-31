@@ -38,8 +38,6 @@ html, body {
   font-size: 20px;
   background-color: $white;
   overflow-x: hidden;
-  overflow: auto;
-  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -2316,7 +2314,7 @@ main {
   #aboutPage, #BeginnerHandCoursePage, #freelancePage, #porfolioPage, #blogPage {
     header {
       h1 { font-size: 36px; }
-      h3 { font-size: 18px; }
+      p { font-size: 18px; }
     }
 
     main {

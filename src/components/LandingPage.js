@@ -108,7 +108,7 @@ function LandingPage() {
             <p>開啟閃亮亮斜槓人生</p>
           </div>
           <div data-aos='fade-up' data-aos-delay='400' className='getIn' onClick={gotoAboutSection}>
-            <p><i class="las la-long-arrow-alt-right"></i>進入珠寶世界</p>
+            <p><i className="las la-long-arrow-alt-right"></i>進入珠寶世界</p>
           </div>
         </div>
       </header>

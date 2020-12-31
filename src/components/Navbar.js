@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../imgs/RD-landingpage/logo.png';
-import Footer from '../components/Footer.js';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -9,7 +8,14 @@ function Navbar() {
   const [clickDeep, setClickDeep] = useState(false);
 
   // toggle
-  const handleClick = () => setClick(!click);
+  const handleClick = () => {
+    setClick(!click);
+    document.getElementById('root').style.position = "fixed";
+    if ( click === true ) {
+      document.getElementById('root').style.position = "static";
+    }
+
+  };
   const handleClickInside = () => setClickInside(!clickInside);
   const handleClickDeep = () => setClickDeep(!clickDeep);
   const handleBoth = () => {
@@ -21,6 +27,7 @@ function Navbar() {
     setClick(false);
     setClickInside(false);
     setClickDeep(false);
+    document.getElementById('root').style.position = "static";
   }
 
   return (
@@ -67,12 +74,12 @@ function Navbar() {
                     <div className='insideTri'></div>
                     <div className={`deepMenu ${clickDeep ? 'deepMenu-active': null}`}>
                       <div id='deepIcon'>
-                        <i class="las la-angle-left" onClick={handleClickDeep}></i>
+                        <i className="las la-angle-left" onClick={handleClickDeep}></i>
                         <span onClick={handleBoth}>X</span>
                       </div>
                       <div className='insideTransparent' onClick={handleBoth}></div>
                       <ul className='deepUl'>
-                        <i class="fas fa-chevron-left"></i>
+                        <i className="fas fa-chevron-left"></i>
                         <Link to='/BeginnerHandCourse' onClick={closeMobileMenu}>
                           <li className={clickDeep ? 'active': null}>
                             <div>
