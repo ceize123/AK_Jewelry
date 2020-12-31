@@ -2339,7 +2339,7 @@ main {
 
       .whyChose {
         h3 { margin-left: 28px;}
-        li { width: 309px; }
+        li { width: calc( 100vw - 53px); }
       }
       .designSec > span { font-size: 14px; }
     }
