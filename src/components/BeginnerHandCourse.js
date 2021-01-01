@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import {HeaderContent, ListsWithDiamond, ParallaxCricle} from './pagesContent.js';
 import {beginnerHandSuit, learnWhat, whyChose} from './diamondListAndArticleContent.js';
-import student1 from '../imgs/RD-初階手繪珠寶設計/學生作品1.svg';
-import student2 from '../imgs/RD-初階手繪珠寶設計/學生作品2.svg';
-import student3 from '../imgs/RD-初階手繪珠寶設計/學生作品3.svg';
+import student1 from '../imgs/RD-初階手繪珠寶設計/學生作品1.png';
+import student2 from '../imgs/RD-初階手繪珠寶設計/學生作品2.png';
+import student3 from '../imgs/RD-初階手繪珠寶設計/學生作品3.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
