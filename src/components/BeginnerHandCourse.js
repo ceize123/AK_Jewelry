@@ -44,9 +44,9 @@ function BeginnerHandCourse() {
           <ParallaxCricle text='我們非常重視與產業接軌以及學生的設計發想能力，打好軟實力基礎，才能走得更長遠。'/>
           <h3 data-aos='fade-up'>上完課你可以做到...</h3>
           <div className='student'>
-            <div data-aos='fade-up' data-aos-delay='500'><span>學生作品-By Feng</span><img src={student1} alt="Feng"/></div>
-            <div data-aos='fade-up' data-aos-delay='800'><span>學生作品-By Ivy</span><img src={student2} alt="Ivy"/></div>
-            <div data-aos='fade-up' data-aos-delay='1100'><span>學生作品-By Lillian</span><img src={student3} alt="Lillian"/></div>
+            <div data-aos='fade-up'><span>學生作品-By Feng</span><img src={student1} alt="Feng"/></div>
+            <div data-aos='fade-up'><span>學生作品-By Ivy</span><img src={student2} alt="Ivy"/></div>
+            <div data-aos='fade-up'><span>學生作品-By Lillian</span><img src={student3} alt="Lillian"/></div>
           </div>
           <ParallaxCricle text='沒有設計美術的背景，也能完成像這樣的作品，是不是真的很厲害呢！'/>
           <div className='classInfo' data-aos='fade-up' data-aos-delay='600'>
