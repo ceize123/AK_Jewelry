@@ -38,7 +38,7 @@ function LessonSection(props) {
       </div>
       <div className='digitalBlock'>
         <div className='digitalBar'
-        onMouseOver={()=>setText1('Digital Beginner')}
+        onMouseOver={()=>setText1('Digital Jewelry')}
         onMouseLeave={()=>setText1('數位珠寶設計')}
         >
           <p className='digitalP'>
@@ -50,7 +50,9 @@ function LessonSection(props) {
           <ul>
             {digitalContent}
           </ul>
+          <Link to='/BeginnerHandCourse'>
           <button className='shortBtn'>詳細資訊</button>
+          </Link>
         </div>
       </div>
     </>
@@ -121,7 +123,9 @@ function LandingPage() {
           <br/>
           <br/>
           因現居北美洲，ANDREA老師一年只會回來開2次課程...</span>
-          <button className='shortBtn' data-aos='fade-up' id='moreBtn' data-aos-offset='0' data-aos-delay='0'>More</button>
+          <Link to='/about'>
+            <button className='shortBtn' data-aos='fade-up' id='moreBtn' data-aos-offset='0' data-aos-delay='0'>More</button>
+          </Link>
         </div>
         <div className='lectureInfo'>
           <img src={abstract2} alt="Jewelry"/>

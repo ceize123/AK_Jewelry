@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { article } from './diamondListAndArticleContent.js';
 import { useParams } from 'react-router-dom';
 import { RandomBlogArticle } from './pagesContent.js';
@@ -67,8 +68,12 @@ function Articles() {
           </div>
         ))}
         <div className='articleBtn' data-aos='fade-up'>
+        <Link to='/'>
           <button className='longBtn'>近期課程資訊</button>
+        </Link>
+        <Link to='/porfolio'>
           <button className='longBtn'>作品集</button>
+        </Link>
         </div>
         <h5 data-aos='fade-up'>其他人也看過</h5>
         <RandomBlogArticle />

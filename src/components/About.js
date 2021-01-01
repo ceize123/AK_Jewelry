@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import {HeaderContent, ListsWithDiamond} from './pagesContent.js';
 import {aboutPageAndrea, whyChose} from './diamondListAndArticleContent.js';
 import aboutImg1 from '../imgs/RD-about師資介紹/明星穿戴照1.png';
@@ -59,13 +60,19 @@ function About() {
                   其中SILVER意指該系列以銀飾為主打， DRIFT則象徵了設計師珠寶應該自由奔放，
                   不受框架拘束的精神。
                 </span>
-                <button className='longBtn' id='cooperateBtn'>企業合作/個人訂製</button>
+                <Link to='/freelance'>
+                  <button className='longBtn' id='cooperateBtn'>企業合作/個人訂製</button>
+                </Link>
               </div>
             </div>
           </div>
           <div className='aboutPageLastBtn' data-aos='fade-up' data-aos-offset='0' data-aos-delay='400'>
-            <button className='longBtn'>近期課程資訊</button>
-            <button className='longBtn'>作品集</button>
+            <Link to='/'>
+              <button className='longBtn'>近期課程資訊</button>
+            </Link>
+            <Link to='/porfolio'>
+              <button className='longBtn'>作品集</button>
+            </Link>
           </div>
         </main>
       </div>

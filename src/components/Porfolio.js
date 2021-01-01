@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import {HeaderContent} from './pagesContent.js';
 import porfolio1 from '../imgs/RD-作品集/設計作品1.png';
 import porfolio2 from '../imgs/RD-作品集/設計作品2.png';
@@ -59,8 +60,12 @@ function Porfolio() {
             <img src={porfolio18} alt="porfolio18" data-aos='fade-up' />
             <img src={porfolio19} alt="porfolio19" data-aos='fade-up' />
             <div>
+            <Link to='/'>
               <button className='longBtn'>近期課程資訊</button>
+            </Link>
+            <Link to='freelance'>
               <button className='longBtn'>企業合作/個人訂製</button>
+            </Link>
             </div>
           </section>
         </main>

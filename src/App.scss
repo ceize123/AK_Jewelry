@@ -1023,13 +1023,14 @@ main {
     position: relative;
 
     p {
+			font-size: 24px;
       margin: 0;
       margin-top: 100px;
 
       &:first-child { margin-top: 250px; }
     }
 
-    button { margin-top: 100px; }
+    button { margin-top: 50px; }
   }
 
 }
