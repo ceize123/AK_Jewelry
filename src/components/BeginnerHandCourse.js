@@ -51,7 +51,7 @@ function BeginnerHandCourse() {
           <ParallaxCricle text='沒有設計美術的背景，也能完成像這樣的作品，是不是真的很厲害呢！'/>
           <div className='classInfo' data-aos='fade-up' data-aos-delay='600'>
             <h3>課程資訊</h3>
-            <h4>上課日期&lt;2021&gt;</h4>
+            <h4>上課日期 &lt;2021&gt;</h4>
             <span>
             籌備中，敬請期待！<br/>
             Andrea 老師一年回台灣開課兩次，
