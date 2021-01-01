@@ -44,9 +44,9 @@ function Articles() {
                 onTouchEnd={handleTouchEnd}
                 >
               <div id='articleImgs' style={{left: currentImg * -100 + 'vw' }}>
-                <img src={content.img} alt="img1" data-aos='fade-up'/>
-                <img src={content.img2} alt="img2" data-aos='fade-up' data-aos-delay='500'/>
-                <img src={content.img3} alt="img3" data-aos='fade-up' data-aos-delay='800'/>
+                <img src={content.img} alt="img1"/>
+                <img src={content.img2} alt="img2"/>
+                <img src={content.img3} alt="img3"/>
               </div>
               <div className='carouselInput'>
                 <ul>
