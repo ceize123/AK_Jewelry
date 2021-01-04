@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import {HeaderContent, ListsWithDiamond} from './pagesContent.js';
 import {aboutPageAndrea, whyChose} from './diamondListAndArticleContent.js';
 import aboutImg1 from '../imgs/RD-about師資介紹/明星穿戴照1.png';
@@ -15,6 +15,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 function About() {
+
   useEffect(() => {
     Aos.init({
       duration: 1000,
@@ -67,7 +68,7 @@ function About() {
             </div>
           </div>
           <div className='aboutPageLastBtn' data-aos='fade-up' data-aos-offset='0' data-aos-delay='400'>
-            <Link to='/'>
+            <Link to='/#lectureInfoSection'>
               <button className='longBtn'>近期課程資訊</button>
             </Link>
             <Link to='/porfolio'>

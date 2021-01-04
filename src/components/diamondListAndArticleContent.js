@@ -1,42 +1,55 @@
 import knowledge1_1 from '../imgs/Blog/Web/knowledge1-1.jpg';
+import knowledge1_1_mobile from '../imgs/Blog/Mobile/knowledge1-1_mobile.jpg';
 import knowledge1_2 from '../imgs/Blog/Web/knowledge1-2.jpg';
 import knowledge1_3 from '../imgs/Blog/Web/knowledge1-3.jpg';
 import knowledge2_1 from '../imgs/Blog/Web/knowledge2-1.jpg';
+import knowledge2_1_mobile from '../imgs/Blog/Mobile/knowledge2-1_mobile.jpg';
 import knowledge2_2 from '../imgs/Blog/Web/knowledge2-2.jpg';
 import knowledge2_3 from '../imgs/Blog/Web/knowledge2-3.jpg';
 import knowledge3_1 from '../imgs/Blog/Web/knowledge3-1.jpg';
+import knowledge3_1_mobile from '../imgs/Blog/Mobile/knowledge3-1_mobile.jpg';
 import knowledge3_2 from '../imgs/Blog/Web/knowledge3-2.jpg';
 import knowledge3_3 from '../imgs/Blog/Web/knowledge3-3.jpg';
 import knowledge4_1 from '../imgs/Blog/Web/knowledge4-1.jpg';
+import knowledge4_1_mobile from '../imgs/Blog/Mobile/knowledge4-1_mobile.jpg';
 import knowledge4_2 from '../imgs/Blog/Web/knowledge4-2.jpg';
 import knowledge5_1 from '../imgs/Blog/Web/knowledge5-1.jpg';
+import knowledge5_1_mobile from '../imgs/Blog/Mobile/knowledge5-1_mobile.jpg';
 import knowledge5_2 from '../imgs/Blog/Web/knowledge5-2.jpg';
 import knowledge5_3 from '../imgs/Blog/Web/knowledge5-3.jpg';
 import experience1_1 from '../imgs/Blog/Web/experience1-1.jpg';
+import experience1_1_mobile from '../imgs/Blog/Mobile/experience1-1_mobile.jpg';
 import experience1_2 from '../imgs/Blog/Web/experience1-2.jpg';
 import experience2_1 from '../imgs/Blog/Web/experience2-1.jpg';
+import experience2_1_mobile from '../imgs/Blog/Mobile/experience2-1_mobile.jpg';
 import experience2_2 from '../imgs/Blog/Web/experience2-2.jpg';
 import experience2_3 from '../imgs/Blog/Web/experience2-3.jpg';
 import experience3_1 from '../imgs/Blog/Web/experience3-1.jpg';
+import experience3_1_mobile from '../imgs/Blog/Mobile/experience3-1_mobile.jpg';
 import experience3_2 from '../imgs/Blog/Web/experience3-2.jpg';
 import experience3_3 from '../imgs/Blog/Web/experience3-3.jpg';
 import experience4_1 from '../imgs/Blog/Web/experience4-1.jpg';
+import experience4_1_mobile from '../imgs/Blog/Mobile/experience4-1_mobile.jpg';
 import experience4_2 from '../imgs/Blog/Web/experience4-2.jpg';
 import experience4_3 from '../imgs/Blog/Web/experience4-3.jpg';
 import trend1_1 from '../imgs/Blog/Web/trend1-1.jpg';
+import trend1_1_mobile from '../imgs/Blog/Mobile/trend1-1_mobile.jpg';
 import trend1_2 from '../imgs/Blog/Web/trend1-2.jpg';
 import trend2_1 from '../imgs/Blog/Web/trend2-1.jpg';
+import trend2_1_mobile from '../imgs/Blog/Mobile/trend2-1_mobile.jpg';
 import trend2_2 from '../imgs/Blog/Web/trend2-2.jpg';
 import trend2_3 from '../imgs/Blog/Web/trend2-3.jpg';
 import trend3_1 from '../imgs/Blog/Web/trend3-1.jpg';
+import trend3_1_mobile from '../imgs/Blog/Mobile/trend3-1_mobile.jpg';
 import trend3_2 from '../imgs/Blog/Web/trend3-2.jpg';
 import trend3_3 from '../imgs/Blog/Web/trend3-3.jpg';
 import trend4_1 from '../imgs/Blog/Web/trend4-1.jpg';
+import trend4_1_mobile from '../imgs/Blog/Mobile/trend4-1_mobile.jpg';
 import trend4_2 from '../imgs/Blog/Web/trend4-2.jpg';
 import trend4_3 from '../imgs/Blog/Web/trend4-3.jpg';
 import trend5_1 from '../imgs/Blog/Web/trend5-1.jpg';
+import trend5_1_mobile from '../imgs/Blog/Mobile/trend5-1_mobile.jpg';
 import trend5_2 from '../imgs/Blog/Web/trend5-2.jpg';
-
 
 
 
@@ -109,6 +122,7 @@ export const article = [
     img: knowledge5_1,
     img2: knowledge5_2,
     img3: knowledge5_3,
+    img_mobile: knowledge5_1_mobile,
     category: '珠寶知識',
   },
   {
@@ -123,6 +137,7 @@ export const article = [
               ],
     img: knowledge4_1,
     img2: knowledge4_2,
+    img_mobile: knowledge4_1_mobile,
     category: '珠寶知識',
   },
   {
@@ -142,6 +157,7 @@ export const article = [
     img: knowledge3_1,
     img2: knowledge3_2,
     img3: knowledge3_3,
+    img_mobile: knowledge3_1_mobile,
     category: '珠寶知識',
   },
   {
@@ -167,6 +183,7 @@ export const article = [
     img: knowledge2_1,
     img2: knowledge2_2,
     img3: knowledge2_3,
+    img_mobile: knowledge2_1_mobile,
     category: '珠寶知識',
   },
   {
@@ -189,6 +206,7 @@ export const article = [
     img: knowledge1_1,
     img2: knowledge1_2,
     img3: knowledge1_3,
+    img_mobile: knowledge1_1_mobile,
     category: '珠寶知識',
   },
   {
@@ -204,6 +222,7 @@ export const article = [
     img: experience4_1,
     img2: experience4_2,
     img3: experience4_3,
+    img_mobile: experience4_1_mobile,
     category: '經驗分享',
   },
   {
@@ -219,6 +238,7 @@ export const article = [
     img: experience3_1,
     img2: experience3_2,
     img3: experience3_3,
+    img_mobile: experience3_1_mobile,
     category: '經驗分享',
   },
   {
@@ -232,6 +252,7 @@ export const article = [
     img: experience2_1,
     img2: experience2_2,
     img3: experience2_3,
+    img_mobile: experience2_1_mobile,
     category: '經驗分享',
   },
   {
@@ -251,6 +272,7 @@ export const article = [
               ],
     img: experience1_1,
     img2: experience1_2,
+    img_mobile: experience1_1_mobile,
     category: '經驗分享',
   },
   {
@@ -265,6 +287,7 @@ export const article = [
               ],
     img: trend5_1,
     img2: trend5_2,
+    img_mobile: trend5_1_mobile,
     category: '產業趨勢',
   },
   {
@@ -280,6 +303,7 @@ export const article = [
     img: trend4_1,
     img2: trend4_2,
     img3: trend4_3,
+    img_mobile: trend4_1_mobile,
     category: '產業趨勢',
   },
   {
@@ -299,6 +323,7 @@ export const article = [
     img: trend3_1,
     img2: trend3_2,
     img3: trend3_3,
+    img_mobile: trend3_1_mobile,
     category: '產業趨勢',
   },
   {
@@ -316,6 +341,7 @@ export const article = [
     img: trend2_1,
     img2: trend2_2,
     img3: trend2_3,
+    img_mobile: trend2_1_mobile,
     category: '產業趨勢',
   },
   {
@@ -346,6 +372,7 @@ export const article = [
               ],
     img: trend1_1,
     img2: trend1_2,
+    img_mobile: trend1_1_mobile,
     category: '產業趨勢',
   }
 ]

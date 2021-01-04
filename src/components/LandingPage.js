@@ -70,6 +70,7 @@ function LandingPage() {
       behavior: 'smooth'
     });
 
+
 // aos
   useEffect(() => {
     Aos.init({
@@ -127,7 +128,7 @@ function LandingPage() {
             <button className='shortBtn' data-aos='fade-up' id='moreBtn' data-aos-offset='0' data-aos-delay='0'>More</button>
           </Link>
         </div>
-        <div className='lectureInfo'>
+        <div className='lectureInfo' id='lectureInfoSection'>
           <img src={abstract2} alt="Jewelry"/>
           <p data-aos='fade-up'>近期開課資訊</p>
         </div>

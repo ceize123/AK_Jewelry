@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 $NavdarkBlue: #191828;
@@ -85,6 +85,7 @@ nav {
   justify-content: space-between;
   position: fixed;
   z-index: 1;
+	position: relative;
 
   img {
     margin-left: 35px;
@@ -221,7 +222,6 @@ nav {
 
   nav {
     height: 56px;
-    position: relative;
 
     a { color: #000; }
 
@@ -587,7 +587,6 @@ footer {
 .dateInfo li, button { font-size: 24px; }
 
 header {
-  padding-top: 81px;
 
   .sloganSec {
     position: relative;
@@ -1303,15 +1302,7 @@ main {
 
   main {
     .listBlock { margin-bottom: 250px; }
-		h2 {
-			text-align: center;
-			font-size: 180px;
-			margin-top: -378px;
-			margin-bottom: 50px;
-			line-height: 165.69%;
-			font-family: $playFair;
-			letter-spacing: 0.205em;
-		}
+
     h3 {
       font-size: 36px;
       letter-spacing: 0.03em;
@@ -1335,28 +1326,134 @@ main {
     }
 
 		.signUp {
-			width: 100%;
-			height: 767px;
+			margin-bottom: 200px;
+			position: relative;
+			p { font-size: 36px; }
 
-			div {
-				margin-left: 30px;
-				margin-right: 30px;
+			.inputSection {
+				width: 587px;
+				margin: 35px auto 0 auto;
+				padding-bottom: 59px;
+				border-radius: 10px;
+				border: 2px solid #8D182B;
+			}
 
-				input {
-					margin-left: 31px;
-					margin-right: 31px;
-					height: 45px;
-					width: 314px;
+			form {
+				input, select, textarea {
+					box-sizing: border-box;
+				  -moz-box-sizing: border-box;
+				  -webkit-box-sizing: border-box;
+					height: 35px;
+					width: 430.5px;
 					font-size: 20px;
-					&:nth-child(3) { width: 525px; }
-					&:nth-child(6) { width: 525px; }
+					border-radius: 10px;
+					border: 2px solid #8D182B;
+					margin-bottom: 30px;
+					padding-left: 20.5px;
+
+					&::placeholder { color: #C4C4C4; }
+				}
+
+				div {
+					margin-top: 49px;
+					width: 430.5px;
+					margin: 49px auto 0 auto;
+					position: relative;
+				}
+
+				select {
+					appearance:none;
+				  -moz-appearance:none;
+				  -webkit-appearance:none;
+					background-color: #fff;
+				}
+
+				.signUpTri {
+					position: absolute;
+					top: -42px;
+					right: 27px;
+					cursor: pointer;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 21.7px 12.5px 0 12.5px;
+					border-color: #630014 transparent transparent transparent;
+				}
+
+				textarea {
+					height: 162px;
+					margin-bottom: 40px;
+					resize: none;
 				}
 			}
 
-			.textarea {
-				width: 1279px;
-				height: 353px;
-				margin-top: 44px;
+
+			button {
+				margin: 0 auto;
+			}
+
+			.sentInfo {
+				width: 366px;
+				height: 520px;
+				background: rgba(99, 0, 20, 0.8);
+				border-radius: 10px;
+				padding: 100px 42px 0 42px;
+				text-align: left;
+				position: absolute;
+				top: 138px;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				font-weight: 500;
+
+				.x {
+					position: absolute;
+					top: 13px;
+					right: 24px;
+					cursor: pointer;
+				}
+
+				p, span {
+					letter-spacing: 0.12em;
+					color: #fff;
+				}
+				p { font-size: 36px; }
+				span { font-size: 20px; }
+			}
+
+			#firstSentInfo {
+				display: none;
+				p { margin-bottom: 100px; }
+				span {
+					border-bottom: 1px solid;
+					display: block;
+					width: 247px;
+					margin: 0 auto;
+					cursor: pointer;
+				}
+			}
+
+			#secondSentInfo {
+				display: none;
+				p { margin-bottom: 40px; }
+				span { font-size: 24px; }
+
+
+				div {
+					text-align: center;
+					.la-line, .la-facebook {
+				    font-size: 48px;
+				    line-height: 48px;
+				    margin-top: 40px;
+				    cursor: pointer;
+				  }
+
+				  .la-line {
+						color: #00C300;
+						margin-right: 11px;
+					}
+				  .la-facebook { color: #3B5998; }
+				}
 			}
 		}
   }
@@ -1538,15 +1635,22 @@ main {
 			}
 		}
 
-		.redInput {
-			background: #8D182B;
-		}
-
   }
 }
 
 #porfolioPage {
 	main {
+
+		h2 {
+			text-align: center;
+			font-size: 180px;
+			margin-top: -378px;
+			margin-bottom: 50px;
+			line-height: 165.69%;
+			font-family: $playFair;
+			letter-spacing: 0.205em;
+		}
+
 		.porfolioSec {
 			background: #000;
 			position: relative;
@@ -1654,14 +1758,19 @@ main {
 
 #blogPage, #Articles {
 	header {
-		height: calc( 100vh - 344px );
-		margin-bottom: 0;
+		height: auto;
+		margin-bottom: 489px;
 	}
 	main {
 		.blogBar {
 			display: flex;
-			justify-content: center;
-			margin-bottom: 100px;
+			position: absolute;
+			top: 836px;
+			height: 67px;
+			width: 725px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
 
 			input[type='radio'] { display: none;}
 			label {
@@ -1669,7 +1778,9 @@ main {
 				border: 1px solid #D8D8D8;
 				letter-spacing: 0.03em;
 				font-size: 24px;
+				line-height: 180.5%;
 				cursor: pointer;
+				background: #F9F9F9;
 
 				&:not(:last-of-type) { border-right: none; }
 			}
@@ -1778,15 +1889,6 @@ main {
 }
 
 @media screen and ( max-width: 1000px ) {
-	#aboutPage, #BeginnerHandCoursePage, #freelancePage, #porfolioPage, #blogPage {
-		main {
-			h2 {
-				font-size: 60px;
-				margin-top: -66px;
-				margin-bottom: 20px;
-			}
-		}
-	}
 
   #aboutPage {
     main {
@@ -1836,6 +1938,13 @@ main {
 
 	#porfolioPage {
 		main {
+
+			h2 {
+				font-size: 60px;
+				margin-top: -66px;
+				margin-bottom: 20px;
+			}
+
 			.porfolioSec {
 				padding: 0;
 
@@ -1923,14 +2032,6 @@ main {
 
 	#blogPage, #Articles {
 		main {
-			.blogBar {
-				margin-bottom: 30px;
-
-				label {
-					padding: 10px 30px;
-					font-size: 20px;
-				}
-			}
 
 			.articles {
 				width: 775px;
@@ -1976,9 +2077,6 @@ main {
       height: auto;
       padding-top: 150px;
       margin-bottom: 140px;
-
-      h1 { font-size: 64px; }
-      p { font-size: 30px; }
     }
 
     main {
@@ -2123,11 +2221,20 @@ main {
 	}
 
 	#blogPage, #Articles {
+		header {
+			height: auto;
+			margin-bottom: 419px;
+		}
 		main {
 			.blogBar {
+				height: 48px;
+				width: 455px;
+				top: 681px;
+
 				label {
 					padding: 7px 15px;
 					font-size: 20px;
+					line-height: normal;
 				}
 			}
 
@@ -2162,7 +2269,8 @@ main {
 
 			h5 {
 				font-size: 24px;
-				padding: 43px 0 10px 26px;
+				padding: 0 0 10px 26px;
+				margin-top: 43px;
 			}
 
 			p {
@@ -2192,14 +2300,9 @@ main {
   }
 
 	#blogPage, #Articles {
-		header {
-			height: calc( 100vh - 344px );
-			margin-bottom: 0;
-		}
 		main {
 			.blogBar {
-				position: relative;
-				width: 377px;
+				width: 376px;
 				height: 50px;
 				margin-left: auto;
 				margin-right: auto;
@@ -2227,6 +2330,7 @@ main {
 					width: 50px;
 					border: 1px solid #D8D8D8;
 					border-left: none;
+					background: #F9F9F9;
 				}
 				.inputTri {
 					cursor: pointer;
@@ -2284,7 +2388,7 @@ main {
 				position: absolute;
 				left: 50%;
 				transform: translateX(-50%);
-				bottom: -23px;
+				bottom: -20px;
 
 				ul {
 					 display: flex;
@@ -2378,6 +2482,12 @@ main {
 			}
 
 	  }
+	}
+
+	#blogPage {
+		main {
+			.blogBar { top: 615px; }
+		}
 	}
 
 }

@@ -9,6 +9,16 @@ import 'aos/dist/aos.css';
 
 function BeginnerHandCourse() {
 
+
+  const handleSentBtn1 = () => {
+    document.getElementById('firstSentInfo').style.display = 'block'
+  };
+
+  const handleSentBtn2 = () => {
+    document.getElementById('secondSentInfo').style.display = 'block'
+    document.getElementById('firstSentInfo').style.display = 'none'
+  };
+
   // use useEffect to set rellax
   // useEffect(() => {
   //   new Rellax(".animate", { // <---- Via class name
@@ -70,17 +80,45 @@ function BeginnerHandCourse() {
             <span>如繳費完畢，臨時有事無法前來參加課程，不提供退費，但同學可以自行轉讓給其他同學。</span>
           </div>
           <ParallaxCricle text='坐而言不如起而行！現在開始你的斜槓人生！'/>
-          <form className='signUp redInput'>
-            <div >
-              <input type='text' placeholder='姓名'/>
-              <input type='text' placeholder='聯絡電話'/>
-              <input type='email' placeholder='電子信箱'/>
-              <input type='text' placeholder='Line/社交軟體'/>
-              <input type='text' placeholder='從何得知課程訊息'/>
-              <input type='text' placeholder='是否有珠寶、設計背景'/>
+          <div className='signUp'>
+            <p>我要報名！</p>
+            <div className='inputSection'>
+              <form>
+                <div>
+                  <select name="Courses">
+                    <option id='firstOpt'> 請選擇課程 </option>
+                    <option value="beginner">初階手繪珠寶設計</option>
+                    <option value="advanced">進階手繪珠寶設計</option>
+                    <option value="digital">數位珠寶設計</option>
+                    <option value="3D">3D珠寶建模</option>
+                  </select>
+                  <div className='signUpTri'></div>
+                </div>
+                <input type='text' placeholder='姓名'/>
+                <input type='text' placeholder='聯絡電話'/>
+                <input type='email' placeholder='電子信箱'/>
+                <input type='text' placeholder='Line/社交軟體'/>
+                <input type='text' placeholder='從何得知課程訊息'/>
+                <input type='text' placeholder='是否有珠寶、設計背景'/>
+                <textarea cols='10' rows='5' placeholder='對課程的期望？'></textarea>
+              </form>
+              <button className='shortBtn' onClick={handleSentBtn1}>送出</button>
+              <div id='firstSentInfo' className='sentInfo'>
+                <p className='x' onClick={() => document.getElementById('firstSentInfo').style.display = 'none'}>X</p>
+                <p>感謝您的填寫！<br/>已將匯款資訊傳送至您填寫的信箱，請確認。</p>
+                <span onClick={handleSentBtn2}>未收到信件，請重新傳送</span>
+              </div>
+              <div id='secondSentInfo' className='sentInfo'>
+                <p className='x' onClick={() => document.getElementById('secondSentInfo').style.display = 'none'}>X</p>
+                <p>已再次發送匯款資訊信件，請確認。</p>
+                <span>若還是未收到，請聯絡Facebook粉專或Line，我們會盡快與您聯絡，不好意思造成您的不便。</span>
+                <div className='icons'>
+                  <i className="lab la-line"></i>
+                  <i className="lab la-facebook"></i>
+                </div>
+              </div>
             </div>
-            <input className='textarea' type='textarea' placeholder='對課程的期望？'/>
-          </form>
+          </div>
         </main>
       </div>
     </>

@@ -78,51 +78,72 @@ export function ParallaxCricle(props) {
 }
 
 // Blog page
-export function BlogArticle() {
+export function BlogArticle(props) {
 
-  const [resize, setResize] = useState(50);
-  const size = () => {
-    if (window.innerWidth <= 850) {
-      setResize(20);
-    } else {
-      setResize(50);
-    }
-  }
-  window.addEventListener('resize', size);
+  // // 設定手機的內文字數（blog頁面）
+  // const [resize, setResize] = useState(50);
+  // // 設定手機的尺寸｜
+  // const [mobileImg, setMobileImg] = useState(false);
+  // const size = () => {
+  //   if (window.innerWidth <= 675) {
+  //     setResize(20);
+  //     setMobileImg(true);
+  //
+  //   } else {
+  //     setResize(50);
+  //     setMobileImg(false);
+  //   }
+  // }
+  // window.addEventListener('resize', size);
+  //
+  // const wholeArticles = article.map((content, key) =>
+  //   <Link className='articles' key={key} to={`/blog/${content.title}`}>
+  //     <div><img src={`${mobileImg === false ? content.img : content.img_mobile}`} alt="articleImgs"/></div>
+  //     <div>
+  //       <h5>{content.title}</h5>
+  //       <p>{content.content[0].substring(0, resize)}...</p>
+  //     </div>
+  //   </Link>
+  // )
 
-  const articles = article.map((content, key) =>
-    <Link className='articles' key={key} to={`/blog/${content.title}`}>
-      <div><img src={content.img} alt="articleImgs"/></div>
-      <div>
-        <h5>{content.title}</h5>
-        <p>{content.content[0].substring(0, resize)}...</p>
-      </div>
-    </Link>
-  )
+  // const abc = article.filter(key => key.category === '珠寶知識').map((content, key) =>
+  //   <Link className='articles' key={key} to={`/blog/${content.title}`}>
+  //     <div><img src={`${mobileImg === false ? content.img : content.img_mobile}`} alt="articleImgs"/></div>
+  //     <div>
+  //       <h5>{content.title}</h5>
+  //       <p>{content.content[0].substring(0, resize)}...</p>
+  //     </div>
+  //   </Link>
+  // );
 
   return (
     <>
       <div>
-        {articles}
+        {props.articles}
       </div>
     </>
   )
 }
 
+
 export function RandomBlogArticle() {
   const [resize, setResize] = useState(50);
+  const [mobileImg, setMobileImg] = useState(false);
   const size = () => {
-    if (window.innerWidth <= 850) {
+    if (window.innerWidth <= 675) {
       setResize(20);
+      setMobileImg(true);
+
     } else {
       setResize(50);
+      setMobileImg(false);
     }
   }
   window.addEventListener('resize', size);
 
   const articles = article.map((content, key) =>
     <Link key={key} className='articles' to={`/blog/${content.title}`}>
-      <div><img src={content.img} alt="articleImgs"/></div>
+      <div><img src={`${mobileImg === false ? content.img : content.img_mobile}`} alt="articleImgs"/></div>
       <div >
         <h5>{content.title}</h5>
         <p>{content.content[0].substring(0, resize)}...</p>
