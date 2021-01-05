@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/AK_Jewelry/static/css/main.de39b3b3.chunk.css",
-    "main.js": "/AK_Jewelry/static/js/main.2f46a9c3.chunk.js",
-    "main.js.map": "/AK_Jewelry/static/js/main.2f46a9c3.chunk.js.map",
+    "main.css": "/AK_Jewelry/static/css/main.d5ae9e60.chunk.css",
+    "main.js": "/AK_Jewelry/static/js/main.428bcdde.chunk.js",
+    "main.js.map": "/AK_Jewelry/static/js/main.428bcdde.chunk.js.map",
     "runtime-main.js": "/AK_Jewelry/static/js/runtime-main.57a1e6f3.js",
     "runtime-main.js.map": "/AK_Jewelry/static/js/runtime-main.57a1e6f3.js.map",
     "static/css/2.ec02d681.chunk.css": "/AK_Jewelry/static/css/2.ec02d681.chunk.css",
-    "static/js/2.55e30efb.chunk.js": "/AK_Jewelry/static/js/2.55e30efb.chunk.js",
-    "static/js/2.55e30efb.chunk.js.map": "/AK_Jewelry/static/js/2.55e30efb.chunk.js.map",
+    "static/js/2.b3c29d27.chunk.js": "/AK_Jewelry/static/js/2.b3c29d27.chunk.js",
+    "static/js/2.b3c29d27.chunk.js.map": "/AK_Jewelry/static/js/2.b3c29d27.chunk.js.map",
     "index.html": "/AK_Jewelry/index.html",
     "static/css/2.ec02d681.chunk.css.map": "/AK_Jewelry/static/css/2.ec02d681.chunk.css.map",
-    "static/css/main.de39b3b3.chunk.css.map": "/AK_Jewelry/static/css/main.de39b3b3.chunk.css.map",
-    "static/js/2.55e30efb.chunk.js.LICENSE.txt": "/AK_Jewelry/static/js/2.55e30efb.chunk.js.LICENSE.txt",
+    "static/css/main.d5ae9e60.chunk.css.map": "/AK_Jewelry/static/css/main.d5ae9e60.chunk.css.map",
+    "static/js/2.b3c29d27.chunk.js.LICENSE.txt": "/AK_Jewelry/static/js/2.b3c29d27.chunk.js.LICENSE.txt",
     "static/media/experience1-1.263a0981.jpg": "/AK_Jewelry/static/media/experience1-1.263a0981.jpg",
     "static/media/experience1-1_mobile.acc2a518.jpg": "/AK_Jewelry/static/media/experience1-1_mobile.acc2a518.jpg",
     "static/media/experience1-2.e6daf780.jpg": "/AK_Jewelry/static/media/experience1-2.e6daf780.jpg",
@@ -104,8 +104,8 @@
   "entrypoints": [
     "static/js/runtime-main.57a1e6f3.js",
     "static/css/2.ec02d681.chunk.css",
-    "static/js/2.55e30efb.chunk.js",
-    "static/css/main.de39b3b3.chunk.css",
-    "static/js/main.2f46a9c3.chunk.js"
+    "static/js/2.b3c29d27.chunk.js",
+    "static/css/main.d5ae9e60.chunk.css",
+    "static/js/main.428bcdde.chunk.js"
   ]
 }
