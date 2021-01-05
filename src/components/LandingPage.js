@@ -71,6 +71,19 @@ function LandingPage() {
     });
 
 
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    if (window.innerWidth <= 675) {
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }
+  }, [])
+
+
+
+
 // aos
   useEffect(() => {
     Aos.init({
@@ -130,7 +143,7 @@ function LandingPage() {
         </div>
         <div className='lectureInfo' id='lectureInfoSection'>
           <img src={abstract2} alt="Jewelry"/>
-          <p data-aos='fade-up'>近期開課資訊</p>
+          <p id='lectureP' style={{ transform: `translateY(${offsetY * -0.55}px)` }}>近期開課資訊</p>
         </div>
         <div className='dateInfo'>
           <LessonSection handText='初階手繪珠寶設計' digitalText='數位珠寶設計'/>
