@@ -1375,16 +1375,18 @@ main {
 					font-size: 20px;
 					border-radius: 10px;
 					border: 2px solid #8D182B;
-					margin-bottom: 30px;
 					text-indent: 20.5px;
 
 					&::placeholder { color: #C4C4C4; }
 				}
+				div {
+					margin-bottom: 30px;
+
+					&:first-child { margin-top: 49px; }
+				}
 
 				.select {
-					margin-top: 49px;
 					width: 430.5px;
-					margin: 49px auto 0 auto;
 					position: relative;
 
 					select {
@@ -1419,7 +1421,7 @@ main {
 					}
 				}
 
-				#errorD, #errorN, #errorE, #errorW {
+				#errorD, #errorN, #errorE, #errorW, #errorP, #errorS, #errorT {
 					color: #8D182B;
 					position: absolute;
 					left: 18px;
@@ -1429,7 +1431,7 @@ main {
 
 				textarea {
 					height: 162px;
-					margin-bottom: 40px;
+					margin-bottom: 10px;
 					resize: none;
 				}
 			}
@@ -1802,6 +1804,64 @@ main {
 	}
 }
 
+#freelancePage {
+	main {
+		.listBlock { margin-bottom: 250px; }
+
+		.weProvide li { width: 174px; }
+		> p {
+			font-size: 24px;
+			text-align: left;
+			width: 1021px;
+			margin: 0 auto;
+			letter-spacing: 0.05em;
+		}
+		> div {
+			margin: 24px 52px 106px 52px;
+
+			img {
+				width: calc( 33% - 28px );
+				margin-right: 14px;
+				margin-left: 14px;
+			}
+		}
+
+		#coop {
+			border: 2px solid #1F2533;
+
+			form {
+				input, select, textarea { border: 2px solid #1F2533; }
+			}
+
+			textarea {
+				height: 162px;
+				margin-bottom: 10px;
+				resize: none;
+
+				&:first-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.signUp {
+			.sentInfo { background: rgba(25, 24, 40, 0.6); }
+			.sentInfo {
+				width: 316px;
+				padding: 100px 92px 0 42px;
+			}
+			#firstSentInfo {
+				p {
+					margin-bottom: 100px;
+					&:not(:first-child) {
+						margin-top: 100px;
+					}
+				}
+			}
+		}
+	}
+}
+
 #blogPage, #Articles {
 	header {
 		height: auto;
@@ -1953,6 +2013,10 @@ main {
     }
   }
 
+	#freelancePage {
+		main 	> p { width: 800px; }
+	}
+
 	#blogPage, #Articles {
 		main {
 			.articles {
@@ -1975,6 +2039,9 @@ main {
 }
 
 @media screen and ( max-width: 1000px ) {
+	#freelancePage, #blogPage ,#FaqPage {
+		header { width: 100vw;}
+	}
 
   #aboutPage {
     main {
@@ -2186,6 +2253,63 @@ main {
       }
       .diamond { top: 3px; }
 
+			.signUp {
+				margin-bottom: 100px;
+				text-align: center;
+				> p {
+					font-size: 20px;
+					position: absolute;
+					top: 26px;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+
+				.inputSection {
+					width: 347px;
+					margin-top: 0;
+					padding-bottom: 40px;
+				}
+
+				form {
+					input, select, textarea {
+						height: 45px;
+						width: 314px;
+						text-indent: 15px;
+					}
+
+					div {
+						margin-bottom: 25px;
+
+						&:first-child { margin-top: 86px; }
+					}
+
+					.select {
+						width: 314px;
+
+						.signUpTri { top: 10px; }
+					}
+
+					#errorD, #errorN, #errorE, #errorW, #errorP, #errorS, #error { top: 42px; }
+
+					textarea { height: 193px; }
+				}
+
+				.sentInfo {
+					width: 283px;
+					height: 606px;
+					padding: 100px 17px 0 17px;
+					top: 110px;
+
+					.x {
+						position: absolute;
+						top: 13px;
+						right: 24px;
+						cursor: pointer;
+					}
+				}
+
+			}
+
     }
   }
 
@@ -2309,6 +2433,38 @@ main {
 	  }
 	}
 
+	#freelancePage {
+		main {
+			.listBlock { margin-bottom: 100px; }
+
+			.weProvide li { width: 145px; }
+			> p {
+				font-size: 20px;
+				text-align: left;
+				width: 600px;
+				margin: 0 auto;
+				letter-spacing: 0.05em;
+			}
+			> div {
+				margin: 0;
+
+				img {
+					width: 100%;
+					margin: 0;
+					margin-top: 100px;
+
+					&:not(:first-child) { margin-top: 50px; }
+				}
+			}
+			.longBtn {margin-bottom: 100px;}
+
+			#coop {
+				textarea { height: 150px; }
+			}
+		}
+	}
+
+
 	#blogPage, #Articles {
 		header {
 			height: auto;
@@ -2411,6 +2567,10 @@ main {
       .getCase .freelanceImg .fadeIn span { font-size: 20px; }
     }
   }
+
+	#freelancePage {
+		main >p { width: 334px; }
+	}
 
 	#FaqPage main div { width: 450px; }
 

@@ -106,6 +106,12 @@ export const learnWhat = [
   '結業時每人至少完成一件珠寶設計圖稿'
 ]
 
+export const provide = [
+  '婚戒訂製',
+  '企業品牌合作',
+  '珠寶客製化訂製'
+]
+
 
 // Blog
 export const article = [

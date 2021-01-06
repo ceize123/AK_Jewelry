@@ -77,6 +77,7 @@ export function ParallaxCricle(props) {
   )
 }
 
+
 // Blog page
 export function BlogArticle(props) {
 

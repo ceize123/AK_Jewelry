@@ -15,30 +15,6 @@ function BeginnerHandCourse() {
     document.getElementById('firstSentInfo').style.display = 'block'
   }
 
-
-  // const submitForm = (e) => {
-  //   e.preventDefault()
-  //   let messagesName = []
-  //
-  //   if ( select.value === '請選擇課程' ) {
-  //     errorDrop.innerText = '請選擇課程'
-  //   }
-  //
-  //   if (name.value === '' || name.value === null) {
-  //     messagesName.push('請輸入姓名')
-  //   }
-  //
-  //   if (email.value)
-  //
-  //   if (messagesName.length > 0 ) {
-  //     errorName.innerText = messagesName.join(', ')
-  //
-  //   } else {
-  //     document.getElementById('firstSentInfo').style.display = 'block'
-  //     errorName.innerText = ''
-  //   }
-  // }
-
   const handleSentBtn2 = () => {
     document.getElementById('secondSentInfo').style.display = 'block'
     document.getElementById('firstSentInfo').style.display = 'none'
@@ -71,11 +47,17 @@ function BeginnerHandCourse() {
       <div id='BeginnerHandCoursePage'>
         <HeaderContent title='Beginner' sub='初階手繪珠寶設計'/>
         <main>
-          <ListsWithDiamond className='suitFor' title='適合對象...' listName={beginnerHandSuit} />
+          <ul>
+            <ListsWithDiamond className='suitFor' title='適合對象...' listName={beginnerHandSuit} />
+          </ul>
           <ParallaxCricle text={['歡迎你!', <br/>, 'Andrea 將手把手的帶你一步一步進入珠寶的世界！']}/>
-          <ListsWithDiamond className='learnWhat' title='你可以學到...' listName={learnWhat} />
+          <ul>
+            <ListsWithDiamond className='learnWhat' title='你可以學到...' listName={learnWhat} />
+          </ul>
           <ParallaxCricle text={['Andrea老師精心編排，', <br/>, '讓沒有美術設計經驗的同學也能快速上手喔！']}/>
-          <ListsWithDiamond className='whyChose' title='為什麼選Andrea Ko珠寶教室?' listName={whyChose} />
+          <ul>
+            <ListsWithDiamond className='whyChose' title='為什麼選Andrea Ko珠寶教室?' listName={whyChose} />
+          </ul>
           <ParallaxCricle text='我們非常重視與產業接軌以及學生的設計發想能力，打好軟實力基礎，才能走得更長遠。'/>
           <h3 data-aos='fade-up'>上完課你可以做到...</h3>
           <div className='student'>
