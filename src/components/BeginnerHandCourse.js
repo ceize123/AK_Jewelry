@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useForm } from "react-hook-form";
 import {HeaderContent, ListsWithDiamond, ParallaxCricle} from './pagesContent.js';
 import {beginnerHandSuit, learnWhat, whyChose} from './diamondListAndArticleContent.js';
 import student1 from '../imgs/RD-初階手繪珠寶設計/學生作品1.png';
@@ -8,11 +9,35 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 function BeginnerHandCourse() {
-
-
-  const handleSentBtn1 = () => {
+  const emailRule = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})$/
+  const { register, handleSubmit, errors } = useForm();
+  const onSubmit = data => {
     document.getElementById('firstSentInfo').style.display = 'block'
-  };
+  }
+
+
+  // const submitForm = (e) => {
+  //   e.preventDefault()
+  //   let messagesName = []
+  //
+  //   if ( select.value === '請選擇課程' ) {
+  //     errorDrop.innerText = '請選擇課程'
+  //   }
+  //
+  //   if (name.value === '' || name.value === null) {
+  //     messagesName.push('請輸入姓名')
+  //   }
+  //
+  //   if (email.value)
+  //
+  //   if (messagesName.length > 0 ) {
+  //     errorName.innerText = messagesName.join(', ')
+  //
+  //   } else {
+  //     document.getElementById('firstSentInfo').style.display = 'block'
+  //     errorName.innerText = ''
+  //   }
+  // }
 
   const handleSentBtn2 = () => {
     document.getElementById('secondSentInfo').style.display = 'block'
@@ -83,26 +108,44 @@ function BeginnerHandCourse() {
           <div className='signUp'>
             <p>我要報名！</p>
             <div className='inputSection'>
-              <form>
-                <div>
-                  <select name="Courses">
-                    <option id='firstOpt'> 請選擇課程 </option>
-                    <option value="beginner">初階手繪珠寶設計</option>
-                    <option value="advanced">進階手繪珠寶設計</option>
-                    <option value="digital">數位珠寶設計</option>
-                    <option value="3D">3D珠寶建模</option>
+              <form id='form' onSubmit={handleSubmit(onSubmit)}>
+                <div className='select star'>
+                  <select name='course' ref={register({ required: true })}>
+                    <option id='firstOpt' value=''>請選擇課程</option>
+                    <option value='beginner'>初階手繪珠寶設計</option>
+                    <option value='advanced'>進階手繪珠寶設計</option>
+                    <option value='digital'>數位珠寶設計</option>
+                    <option value='3D'>3D珠寶建模</option>
                   </select>
+                  {errors.course && <span id='errorD'>請選擇課程</span>}
                   <div className='signUpTri'></div>
                 </div>
-                <input type='text' placeholder='姓名'/>
-                <input type='text' placeholder='聯絡電話'/>
-                <input type='email' placeholder='電子信箱'/>
-                <input type='text' placeholder='Line/社交軟體'/>
-                <input type='text' placeholder='從何得知課程訊息'/>
-                <input type='text' placeholder='是否有珠寶、設計背景'/>
-                <textarea cols='10' rows='5' placeholder='對課程的期望？'></textarea>
+                <div className='star'>
+                  <input type='text' placeholder='姓名' name='name' ref={register({ required: true })}/>
+                  {errors.name && <span id='errorN'>請輸入姓名</span>}
+                </div>
+                <div>
+                  <input type='text' placeholder='聯絡電話' name='tel' ref={register}/>
+                </div>
+                <div className='star'>
+                  <input type='text' placeholder='電子信箱' name='email' ref={register({ required: true, pattern: emailRule })}/>
+                  {errors.email && <span id='errorE'>信箱格式錯誤</span>}
+                </div>
+                <div>
+                  <input type='text' placeholder='Line/社交軟體' name='app' ref={register}/>
+                </div>
+                <div className='star'>
+                  <input type='text' placeholder='從何得知課程訊息' name='where' ref={register({ required: true })}/>
+                  {errors.where && <span id='errorW'>請輸入從何得知課程訊息</span>}
+                </div>
+                <div>
+                  <input type='text' placeholder='是否有珠寶、設計背景' name='learned' ref={register}/>
+                </div>
+                <div>
+                  <textarea cols='10' rows='5' placeholder='對課程的期望？' name='expectation' ref={register}></textarea>
+                </div>
+                <button className='shortBtn' type='submit' id='submit'>送出</button>
               </form>
-              <button className='shortBtn' onClick={handleSentBtn1}>送出</button>
               <div id='firstSentInfo' className='sentInfo'>
                 <p className='x' onClick={() => document.getElementById('firstSentInfo').style.display = 'none'}>X</p>
                 <p>感謝您的填寫！<br/>已將匯款資訊傳送至您填寫的信箱，請確認。</p>

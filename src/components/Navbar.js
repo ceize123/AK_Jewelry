@@ -143,6 +143,14 @@ function Navbar() {
                 </div>
               </Link>
             </li>
+            <li id='FaqList' className={click ? 'active': null}>
+              <Link to='/FAQ' onClick={handleClick}>
+                <div className='selectDiv'>
+                  <p>FAQ</p>
+                  <span>問與答</span>
+                </div>
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
