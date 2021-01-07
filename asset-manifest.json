@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/AK_Jewelry/static/css/main.3a8296f5.chunk.css",
-    "main.js": "/AK_Jewelry/static/js/main.430c8ecb.chunk.js",
-    "main.js.map": "/AK_Jewelry/static/js/main.430c8ecb.chunk.js.map",
+    "main.js": "/AK_Jewelry/static/js/main.d30462be.chunk.js",
+    "main.js.map": "/AK_Jewelry/static/js/main.d30462be.chunk.js.map",
     "runtime-main.js": "/AK_Jewelry/static/js/runtime-main.57a1e6f3.js",
     "runtime-main.js.map": "/AK_Jewelry/static/js/runtime-main.57a1e6f3.js.map",
     "static/css/2.ec02d681.chunk.css": "/AK_Jewelry/static/css/2.ec02d681.chunk.css",
@@ -15,6 +15,7 @@
     "static/media/experience1-1.263a0981.jpg": "/AK_Jewelry/static/media/experience1-1.263a0981.jpg",
     "static/media/experience1-1_mobile.acc2a518.jpg": "/AK_Jewelry/static/media/experience1-1_mobile.acc2a518.jpg",
     "static/media/experience1-2.e6daf780.jpg": "/AK_Jewelry/static/media/experience1-2.e6daf780.jpg",
+    "static/media/experience1-3.1265531c.jpg": "/AK_Jewelry/static/media/experience1-3.1265531c.jpg",
     "static/media/experience2-1.e7f9f14a.jpg": "/AK_Jewelry/static/media/experience2-1.e7f9f14a.jpg",
     "static/media/experience2-1_mobile.d2900de2.jpg": "/AK_Jewelry/static/media/experience2-1_mobile.d2900de2.jpg",
     "static/media/experience2-2.83945926.jpg": "/AK_Jewelry/static/media/experience2-2.83945926.jpg",
@@ -42,6 +43,7 @@
     "static/media/knowledge4-1.73863481.jpg": "/AK_Jewelry/static/media/knowledge4-1.73863481.jpg",
     "static/media/knowledge4-1_mobile.9b85df36.jpg": "/AK_Jewelry/static/media/knowledge4-1_mobile.9b85df36.jpg",
     "static/media/knowledge4-2.fb302631.jpg": "/AK_Jewelry/static/media/knowledge4-2.fb302631.jpg",
+    "static/media/knowledge4-3.8d83fa31.jpg": "/AK_Jewelry/static/media/knowledge4-3.8d83fa31.jpg",
     "static/media/knowledge5-1.746041cd.jpg": "/AK_Jewelry/static/media/knowledge5-1.746041cd.jpg",
     "static/media/knowledge5-1_mobile.f3ef0d8c.jpg": "/AK_Jewelry/static/media/knowledge5-1_mobile.f3ef0d8c.jpg",
     "static/media/knowledge5-2.929382db.jpg": "/AK_Jewelry/static/media/knowledge5-2.929382db.jpg",
@@ -50,6 +52,7 @@
     "static/media/trend1-1.ede0014e.jpg": "/AK_Jewelry/static/media/trend1-1.ede0014e.jpg",
     "static/media/trend1-1_mobile.f2d2f353.jpg": "/AK_Jewelry/static/media/trend1-1_mobile.f2d2f353.jpg",
     "static/media/trend1-2.36f6c271.jpg": "/AK_Jewelry/static/media/trend1-2.36f6c271.jpg",
+    "static/media/trend1-3.ab1b07c9.jpg": "/AK_Jewelry/static/media/trend1-3.ab1b07c9.jpg",
     "static/media/trend2-1.9d3a07d3.jpg": "/AK_Jewelry/static/media/trend2-1.9d3a07d3.jpg",
     "static/media/trend2-1_mobile.34352a52.jpg": "/AK_Jewelry/static/media/trend2-1_mobile.34352a52.jpg",
     "static/media/trend2-2.88b82c5a.jpg": "/AK_Jewelry/static/media/trend2-2.88b82c5a.jpg",
@@ -65,6 +68,7 @@
     "static/media/trend5-1.4a5d888f.jpg": "/AK_Jewelry/static/media/trend5-1.4a5d888f.jpg",
     "static/media/trend5-1_mobile.bd46fd64.jpg": "/AK_Jewelry/static/media/trend5-1_mobile.bd46fd64.jpg",
     "static/media/trend5-2.7f4962a8.jpg": "/AK_Jewelry/static/media/trend5-2.7f4962a8.jpg",
+    "static/media/trend5-3.ead25e53.jpg": "/AK_Jewelry/static/media/trend5-3.ead25e53.jpg",
     "static/media/圈圈.77c6ed8d.svg": "/AK_Jewelry/static/media/圈圈.77c6ed8d.svg",
     "static/media/圓小鑽石.60dfdeef.png": "/AK_Jewelry/static/media/圓小鑽石.60dfdeef.png",
     "static/media/學生作品1.6078ca19.png": "/AK_Jewelry/static/media/學生作品1.6078ca19.png",
@@ -106,6 +110,6 @@
     "static/css/2.ec02d681.chunk.css",
     "static/js/2.c7134921.chunk.js",
     "static/css/main.3a8296f5.chunk.css",
-    "static/js/main.430c8ecb.chunk.js"
+    "static/js/main.d30462be.chunk.js"
   ]
 }
