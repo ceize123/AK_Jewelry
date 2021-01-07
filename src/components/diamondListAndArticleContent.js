@@ -13,6 +13,7 @@ import knowledge3_3 from '../imgs/Blog/Web/knowledge3-3.jpg';
 import knowledge4_1 from '../imgs/Blog/Web/knowledge4-1.jpg';
 import knowledge4_1_mobile from '../imgs/Blog/Mobile/knowledge4-1_mobile.jpg';
 import knowledge4_2 from '../imgs/Blog/Web/knowledge4-2.jpg';
+import knowledge4_3 from '../imgs/Blog/Web/knowledge4-3.jpg';
 import knowledge5_1 from '../imgs/Blog/Web/knowledge5-1.jpg';
 import knowledge5_1_mobile from '../imgs/Blog/Mobile/knowledge5-1_mobile.jpg';
 import knowledge5_2 from '../imgs/Blog/Web/knowledge5-2.jpg';
@@ -20,6 +21,7 @@ import knowledge5_3 from '../imgs/Blog/Web/knowledge5-3.jpg';
 import experience1_1 from '../imgs/Blog/Web/experience1-1.jpg';
 import experience1_1_mobile from '../imgs/Blog/Mobile/experience1-1_mobile.jpg';
 import experience1_2 from '../imgs/Blog/Web/experience1-2.jpg';
+import experience1_3 from '../imgs/Blog/Web/experience1-3.jpg';
 import experience2_1 from '../imgs/Blog/Web/experience2-1.jpg';
 import experience2_1_mobile from '../imgs/Blog/Mobile/experience2-1_mobile.jpg';
 import experience2_2 from '../imgs/Blog/Web/experience2-2.jpg';
@@ -35,6 +37,7 @@ import experience4_3 from '../imgs/Blog/Web/experience4-3.jpg';
 import trend1_1 from '../imgs/Blog/Web/trend1-1.jpg';
 import trend1_1_mobile from '../imgs/Blog/Mobile/trend1-1_mobile.jpg';
 import trend1_2 from '../imgs/Blog/Web/trend1-2.jpg';
+import trend1_3 from '../imgs/Blog/Web/trend1-3.jpg';
 import trend2_1 from '../imgs/Blog/Web/trend2-1.jpg';
 import trend2_1_mobile from '../imgs/Blog/Mobile/trend2-1_mobile.jpg';
 import trend2_2 from '../imgs/Blog/Web/trend2-2.jpg';
@@ -50,6 +53,7 @@ import trend4_3 from '../imgs/Blog/Web/trend4-3.jpg';
 import trend5_1 from '../imgs/Blog/Web/trend5-1.jpg';
 import trend5_1_mobile from '../imgs/Blog/Mobile/trend5-1_mobile.jpg';
 import trend5_2 from '../imgs/Blog/Web/trend5-2.jpg';
+import trend5_3 from '../imgs/Blog/Web/trend5-3.jpg';
 
 
 
@@ -185,6 +189,7 @@ export const article = [
               ],
     img: knowledge4_1,
     img2: knowledge4_2,
+    img3: knowledge4_3,
     img_mobile: knowledge4_1_mobile,
     category: '珠寶知識',
   },
@@ -320,6 +325,7 @@ export const article = [
               ],
     img: experience1_1,
     img2: experience1_2,
+    img3: experience1_3,
     img_mobile: experience1_1_mobile,
     category: '經驗分享',
   },
@@ -335,6 +341,7 @@ export const article = [
               ],
     img: trend5_1,
     img2: trend5_2,
+    img3: trend5_3,
     img_mobile: trend5_1_mobile,
     category: '產業趨勢',
   },
@@ -420,6 +427,7 @@ export const article = [
               ],
     img: trend1_1,
     img2: trend1_2,
+    img3: trend1_3,
     img_mobile: trend1_1_mobile,
     category: '產業趨勢',
   }
