@@ -81,40 +81,48 @@ function Navbar() {
                       <div className='insideTransparent' onClick={handleBoth}></div>
                       <ul className='deepUl'>
                         <i className="fas fa-chevron-left"></i>
-                        <Link to='/BeginnerHandCourse' onClick={closeMobileMenu}>
-                          <li className={clickDeep ? 'active': null}>
+                        <li className={clickDeep ? 'active': null}>
+                          <Link to='/CourseBeginner' onClick={closeMobileMenu}>
                             <div>
                               <p className='insideEng deepEng'>Beginner</p>
                               <span>初階手繪珠寶</span>
                             </div>
-                          </li>
-                        </Link>
+                          </Link>
+                        </li>
                         <li className={clickDeep ? 'active': null}>
-                          <div>
-                            <p className='insideEng deepEng'>Advanced</p>
-                            <span id='deepUlAdvanced'>進階手繪珠寶</span>
-                          </div>
+                          <Link to='/CourseAdvance' onClick={closeMobileMenu}>
+                            <div>
+                              <p className='insideEng deepEng'>Advanced</p>
+                              <span id='deepUlAdvanced'>進階手繪珠寶</span>
+                            </div>
+                          </Link>
                         </li>
                       </ul>
                     </div>
                   </li>
                   <li className={clickInside ? 'active': null}>
-                    <div>
-                      <p className='insideEng'>Digital Jewelry Design</p>
-                      <span>數位珠寶設計</span>
-                    </div>
+                    <Link to='/CourseDigital' onClick={closeMobileMenu}>
+                      <div>
+                        <p className='insideEng'>Digital Jewelry Design</p>
+                        <span>數位珠寶設計</span>
+                      </div>
+                    </Link>
                   </li>
                   <li className={clickInside ? 'active': null}>
-                    <div>
-                      <p className='insideEng'>3D Cad</p>
-                      <span>3D珠寶建模</span>
-                    </div>
+                    <Link to='/Course3D' onClick={closeMobileMenu}>
+                      <div>
+                        <p className='insideEng'>3D Cad</p>
+                        <span>3D珠寶建模</span>
+                      </div>
+                    </Link>
                   </li>
                   <li className={clickInside ? 'active': null}>
-                    <div>
-                      <p className='insideEng'>Review For Free</p>
-                      <span>免費複習課程</span>
-                    </div>
+                    <Link to='/CourseReview' onClick={closeMobileMenu}>
+                      <div>
+                        <p className='insideEng'>Review For Free</p>
+                        <span>免費複習課程</span>
+                      </div>
+                    </Link>
                   </li>
                 </ul>
               </div>

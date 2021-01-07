@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import DelayLink from 'react-delay-link';
+import { TellMeTime } from './pagesContent.js';
 import abstract2 from '../imgs/RD-landingpage/抽象線條人物2.svg';
 import bling from '../imgs/RD-landingpage/抽象人物線條亮晶晶.gif';
 import diamond from '../imgs/RD-landingpage/圓小鑽石.png';
@@ -50,9 +52,9 @@ function LessonSection(props) {
           <ul>
             {digitalContent}
           </ul>
-          <Link to='/BeginnerHandCourse'>
+          <DelayLink delay={500} to='/CourseBeginner'>
           <button className='shortBtn'>詳細資訊</button>
-          </Link>
+          </DelayLink>
         </div>
       </div>
     </>
@@ -148,11 +150,7 @@ function LandingPage() {
         <div className='dateInfo'>
           <LessonSection handText='初階手繪珠寶設計' digitalText='數位珠寶設計'/>
         </div>
-        <div className='tellMeTime'  data-aos='fade-up' data-aos-delay='500'>
-          <p>目前開課時間都無法配合<span id='comma'>，</span><span>怎麼辦？</span></p>
-          <p>別擔心！<span>告訴我們你可以的時間</span></p>
-          <button className='shortBtn'>填寫</button>
-        </div>
+        <TellMeTime />
       </main>
     </>
   );

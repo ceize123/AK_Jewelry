@@ -55,6 +55,7 @@ import trend5_2 from '../imgs/Blog/Web/trend5-2.jpg';
 
 
 // DiamondList
+// landingPage
 export const lpHand = [
   '分享歐美珠寶產業最新資訊不脫軌',
   '五人內小班制 教學更細緻',
@@ -67,6 +68,15 @@ export const lpDigital = [
   '提升珠寶繪畫技巧，更重視學生設計發想能力'
 ]
 
+// all
+export const whyChose = [
+  '分享歐美珠寶產業最新資訊不脫軌',
+  '五人內小班制 教學更細緻',
+  '不定期免費舊生複習課程 ',
+  '重視並教導學生設計發想能力'
+]
+
+// aboutPage
 export const aboutPageAndrea = [
   'GIA- AJP應用珠寶家',
   '紐約 FIT 設計學校畢業，主修珠寶設計',
@@ -79,13 +89,7 @@ export const aboutPageAndrea = [
   '不定期回台開辦珠寶設計教學'
 ]
 
-export const whyChose = [
-  '分享歐美珠寶產業最新資訊不脫軌',
-  '五人內小班制 教學更細緻',
-  '不定期免費舊生複習課程 ',
-  '重視並教導學生設計發想能力'
-]
-
+// beginner
 export const beginnerHandSuit = [
   '零基礎，想轉職珠寶設計師',
   '對珠寶設計有興趣有熱情',
@@ -93,7 +97,7 @@ export const beginnerHandSuit = [
   '想成立珠寶飾品品牌需要培養設計能力'
 ]
 
-export const learnWhat = [
+export const beginnerLearnWhat = [
   '珠寶設計概論',
   '珠寶設計製圖與上色',
   '鑽石表現技法',
@@ -106,6 +110,44 @@ export const learnWhat = [
   '結業時每人至少完成一件珠寶設計圖稿'
 ]
 
+// advanced
+export const advancedHandSuit = [
+  '上過Andrea初階手繪珠寶設計課程的學員',
+  '擁有基礎珠寶繪畫技巧的同學'
+]
+
+export const advancedLearnWhat = [
+  '進階珠寶設計：戒指三視圖與透視圖練習',
+  '金屬的光影變化繪圖技法',
+  '多種彩色寶石練習 (土耳其石、孔雀石、珊瑚、月光石、蛋白石等….)',
+  '貴金屬種類與特性的認識',
+  '金工製作流程介紹',
+  '國內外品牌&設計師作品賞析',
+  '珠寶飾品營運流程解析',
+  '其他依個人班學員程度及需要增加',
+  '結業時每人至少完成一套珠寶飾品設計圖稿'
+]
+
+// digital
+export const digitalSuit = [
+  '適合對象',
+  '對運用軟體設計珠寶有興趣的初學者',
+  '想要精進自己的珠寶設計師',
+  '想出國念珠寶設計準備作品集'
+]
+
+// review
+export const reviewSuit = [
+  '上過Andrea Ko 初階手繪珠寶設計課程的學員'
+]
+
+export const reviewLearnWhat = [
+  '複習上課所學的內容，有任何問題都可以詢問老師'
+]
+
+
+
+// freelance
 export const provide = [
   '婚戒訂製',
   '企業品牌合作',

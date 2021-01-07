@@ -901,11 +901,29 @@ main {
       top: -400%;
       left: -20%;
       transform: rotate(30deg);
-      transition: all 0.7s ease;
+      transition: all 1.5s linear;
       border: 8px solid #eee;
-
     }
     &:hover:after {
+      left: 300%;
+      top: 300%;
+    }
+
+		&:before {
+      content: '';
+      padding: 0;
+      height: 400%;
+      background-color: $white;
+      border-left: 50% solid #eee;
+      display: block;
+      position: absolute;
+      top: -400%;
+      left: -20%;
+      transform: rotate(30deg);
+      transition: all 0.7s linear;
+      border: 8px solid #eee;
+    }
+		&:focus:before {
       left: 100%;
       top: 100%;
     }
@@ -1299,7 +1317,7 @@ main {
 
 // allPages
 // web
-#aboutPage, #BeginnerHandCoursePage, #freelancePage, #porfolioPage, #blogPage, #FaqPage {
+#aboutPage, #courseBeginnerHandPage, #courseAdvancedHandPage, #courseDigitalPage, #course3DPage, #CourseReviewPage, #freelancePage, #porfolioPage, #blogPage, #FaqPage, #noMatch {
   max-width: 1600px;
   text-align: center;
   button {
@@ -1579,10 +1597,9 @@ main {
   }
 }
 
-#BeginnerHandCoursePage {
-  main {
-    .listBlock { margin-bottom: 341px; }
-
+#courseBeginnerHandPage, #courseAdvancedHandPage, #courseDigitalPage, #course3DPage, #CourseReviewPage {
+	main {
+		.listBlock { margin-bottom: 341px; }
 		.parallax {
 			position: relative;
 			width: 423px;
@@ -1595,7 +1612,7 @@ main {
 				top: 25px;
 				left: 0;
 				right: 0;
-				overflow: hidden;
+				// overflow: hidden;
 				border-radius: 50%;
 
 				p {
@@ -1607,14 +1624,59 @@ main {
 			}
     }
 
-    .suitFor {
+		.student {
+			display: flex;
+			justify-content: center;
+			margin-left: 17px;
+			margin-right: 17px;
+			div {
+				width: calc( 33% - 13px );
+				margin: 77px 6.5px 341px 6.5px;
+
+				span {
+					display: block;
+					text-align: left;
+				}
+				img { width: 100%; }
+			}
+		}
+
+		.classInfo {
+			width: 432px;
+			font-size: 24px;
+			margin: 0 auto 341px auto;
+
+			h3 { margin-bottom: -30px; }
+			h4 {
+				font-weight: 700;
+				margin-top: 65px;
+				letter-spacing: 0.08em;
+			}
+			button {
+				margin-top: 50px;
+				margin-bottom: 0;
+			}
+			span {
+				letter-spacing: 0.08em;
+				text-align: left;
+				display: block;
+				margin-top: 25px;
+			}
+		}
+	}
+}
+
+#courseBeginnerHandPage {
+  main {
+
+    .beginnerSuitFor {
 			li { width: 421px; }
 			+ .parallax p {
 				width: 259px;
 				margin-top: 200px;
 			}
 		}
-		.learnWhat {
+		.beginnerLearnWhat {
 			li { width: 424.75px; }
 			+ .parallax p {
 				width: 294px;
@@ -1642,48 +1704,50 @@ main {
 				margin-top: 1150px;
 			}
 		}
+  }
+}
+
+#courseAdvancedHandPage {
+	main {
+		.advancedSuitFor {
+			li { width: 460px; }
+			+ .parallax p {
+				width: 259px;
+				margin-top: 210px;
+			}
+		}
+
+		.advancedLearnWhat {
+			li { width: 450px; }
+			+ .parallax p {
+				width: 259px;
+				margin-top: 420px;
+			}
+		}
+
+		.whyChose {
+			li { width: 371px; }
+			+ .parallax p {
+				width: 298px;
+				margin-top: 570px;
+			}
+		}
 
 		.student {
-			display: flex;
-			justify-content: center;
-			margin-left: 17px;
-			margin-right: 17px;
-			div {
-				width: calc( 33% - 13px );
-				margin: 77px 6.5px 341px 6.5px;
-
-				span {
-					display: block;
-					text-align: left;
-				}
-				img { width: 100%; }
+			+ .parallax p {
+				width: 264px;
+				margin-top: 820px;
 			}
 		}
 
 		.classInfo {
-			width: 430px;
-			font-size: 24px;
-			margin: 0 auto 341px auto;
-
-			h3 { margin-bottom: -30px; }
-			h4 {
-				font-weight: 700;
-				margin-top: 65px;
-				letter-spacing: 0.08em;
-			}
-			button {
-				margin-top: 50px;
-				margin-bottom: 0;
-			}
-			span {
-				letter-spacing: 0.08em;
-				text-align: left;
-				display: block;
-				margin-top: 25px;
+			+ .parallax p {
+				width: 204px;
+				margin-top: 1150px;
 			}
 		}
 
-  }
+	}
 }
 
 #porfolioPage {
@@ -2228,7 +2292,7 @@ main {
 }
 
 @media screen and ( max-width: 850px ) {
-  #aboutPage, #BeginnerHandCoursePage, #freelancePage, #porfolioPage, #blogPage, #FaqPage {
+  #aboutPage, #courseBeginnerHandPage, #courseAdvancedHandPage, #courseDigitalPage,#course3DPage, #CourseReviewPage, #freelancePage, #porfolioPage, #blogPage, #FaqPage, #noMatch {
     header {
       height: auto;
       padding-top: 150px;
@@ -2341,10 +2405,9 @@ main {
       .designSec img { width: calc(50% - 30px); }
     }
   }
-
-	#BeginnerHandCoursePage {
-	  main {
-	    .listBlock { margin-bottom: 125px; }
+	#courseBeginnerHandPage, #courseAdvancedHandPage, #courseDigitalPage, #course3DPage, #CourseReviewPage {
+		main {
+			.listBlock { margin-bottom: 125px; }
 			.parallax img { width: 344.7px; }
 
 			.parallax {
@@ -2358,39 +2421,6 @@ main {
 					p {	font-size: 16px; }
 				}
 	    }
-
-	    .suitFor {
-				+ .parallax p {
-					width: 207px;
-					margin-top: 80px;
-				}
-			}
-			.learnWhat {
-				+ .parallax p {
-					width: 207px;
-					margin-top: 240px;
-				}
-			}
-			.whyChose {
-				+ .parallax p {
-					width: 225px;
-					margin-top: 340px;
-				}
-			}
-
-			.student {
-				+ .parallax p {
-					width: 207px;
-					margin-top: 770px;
-				}
-			}
-
-			.classInfo {
-				+ .parallax p {
-					width: 191px;
-					margin-top: 970px;
-				}
-			}
 
 			.student {
 				flex-direction: column;
@@ -2430,7 +2460,85 @@ main {
 				}
 			}
 
+		}
+	}
+
+	#courseBeginnerHandPage {
+	  main {
+	    .beginnerSuitFor {
+				+ .parallax p {
+					width: 207px;
+					margin-top: 80px;
+				}
+			}
+			.beginnerLearnWhat {
+				+ .parallax p {
+					width: 207px;
+					margin-top: 240px;
+				}
+			}
+			.whyChose {
+				+ .parallax p {
+					width: 225px;
+					margin-top: 340px;
+				}
+			}
+
+			.student {
+				+ .parallax p {
+					width: 207px;
+					margin-top: 770px;
+				}
+			}
+
+			.classInfo {
+				+ .parallax p {
+					width: 191px;
+					margin-top: 970px;
+				}
+			}
+
 	  }
+	}
+
+	#courseAdvancedHandPage {
+		main {
+			.advancedSuitFor {
+				+ .parallax p {
+					width: 207px;
+					margin-top: 80px;
+				}
+			}
+
+			.advancedLearnWhat {
+				+ .parallax p {
+					width: 207px;
+					margin-top: 240px;
+				}
+			}
+
+			.whyChose {
+				+ .parallax p {
+					width: 225px;
+					margin-top: 300px;
+				}
+			}
+
+			.student {
+				+ .parallax p {
+					width: 207px;
+					margin-top: 750px;
+				}
+			}
+
+			.classInfo {
+				+ .parallax p {
+					width: 191px;
+					margin-top: 930px;
+				}
+			}
+
+		}
 	}
 
 	#freelancePage {
@@ -2552,7 +2660,7 @@ main {
 
 @media screen and ( max-width: 675px ) {
 	body { overflow-x: hidden;}
-  #aboutPage, #BeginnerHandCoursePage, #freelancePage, #porfolioPage, #blogPage, #FaqPage {
+  #aboutPage, #courseBeginnerHandPage, #courseAdvancedHandPage, #courseDigitalPage,#course3DPage, #CourseReviewPage, #freelancePage, #porfolioPage, #blogPage, #FaqPage {
     button {
       font-size: 20px;
     }
@@ -2689,11 +2797,18 @@ main {
 
 		}
 	}
+
+	#noMatch {
+		header {
+      h1 { font-size: 36px; }
+      p { font-size: 18px; }
+    }
+	}
 }
 
 
 @media screen and ( max-width: 480px ) {
-  #aboutPage, #BeginnerHandCoursePage, #freelancePage, #porfolioPage, #blogPage, #FaqPage {
+  #aboutPage, #courseBeginnerHandPage, #courseAdvancedHandPage, #courseDigitalPage,#course3DPage, #CourseReviewPage, #freelancePage, #porfolioPage, #blogPage, #FaqPage {
     header {
       h1 { font-size: 36px; }
       p { font-size: 18px; }
@@ -2727,10 +2842,22 @@ main {
     }
   }
 
-	#BeginnerHandCoursePage {
-	  main {
+	#courseBeginnerHandPage, #courseAdvancedHandPage, #courseDigitalPage, #course3DPage, #CourseReviewPage {
+		main {
+			.student div { width: 319px; }
 
-	    .suitFor li, .learnWhat li { width: 327px; }
+			.classInfo {
+				width: 100%;
+				span {
+					width: 344px;
+				}
+			}
+		}
+	}
+
+	#courseBeginnerHandPage {
+	  main {
+	    .beginnerSuitFor li, .beginnerLearnWhat li { width: 327px; }
 			.whyChose li { width: 348px; }
 			.student {
 				+ .parallax p {
@@ -2742,22 +2869,31 @@ main {
 					margin-top: 930px;
 				}
 			}
+	  }
+	}
 
-			.student div { width: 319px; }
+	#courseAdvancedHandPage {
+		main {
+			.advancedSuitFor li, .advancedLearnWhat li { width: 327px;}
 
-			.classInfo {
-				width: 100%;
-				span {
-					width: 344px;
+			.whyChose li { width: 348px; }
+
+			.student {
+				+ .parallax p {
+					margin-top: 680px;
 				}
 			}
 
-			.redInput {
-				background: #8D182B;
+			.classInfo {
+				+ .parallax p {
+					width: 191px;
+					margin-top: 880px;
+				}
 			}
 
-	  }
+		}
 	}
+
 
 	#blogPage {
 		main {
