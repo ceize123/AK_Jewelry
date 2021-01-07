@@ -37,7 +37,7 @@ function Navbar() {
       if ( document.getElementById('nav') ) {
         if (window.innerWidth > 1000) {
           let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-          if (scrollTop > lastScrollTop) {
+          if (scrollTop > lastScrollTop && scrollTop > 0) {
             document.getElementById('nav').style.top = '-81px';
           } else {
             document.getElementById('nav').style.top = '0';
