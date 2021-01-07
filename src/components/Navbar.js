@@ -45,7 +45,7 @@ function Navbar() {
           lastScrollTop = scrollTop;
         } else {
           let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-          if (scrollTop > lastScrollTop) {
+          if (scrollTop > lastScrollTop && scrollTop > 0) {
             document.getElementById('nav').style.top = '-56px';
           } else {
             document.getElementById('nav').style.top = '0';
