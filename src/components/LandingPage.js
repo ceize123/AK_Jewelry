@@ -52,7 +52,7 @@ function LessonSection(props) {
           <ul>
             {digitalContent}
           </ul>
-          <DelayLink delay={500} to='/CourseBeginner'>
+          <DelayLink delay={400} to='/CourseDigital'>
           <button className='shortBtn'>詳細資訊</button>
           </DelayLink>
         </div>

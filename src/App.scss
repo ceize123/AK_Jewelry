@@ -902,7 +902,7 @@ main {
       top: -400%;
       left: -20%;
       transform: rotate(30deg);
-      transition: all 1.5s linear;
+      transition: all 1.05s linear;
       border: 8px solid #eee;
     }
     &:hover:after {
@@ -921,7 +921,7 @@ main {
       top: -400%;
       left: -20%;
       transform: rotate(30deg);
-      transition: all 0.7s linear;
+      transition: all 0.5s linear;
       border: 8px solid #eee;
     }
 		&:focus:before {
@@ -934,12 +934,12 @@ main {
     display: flex;
 
     img {
-      width: 46vw;
-      margin-left: 55px;
+      width: 420px;
+      margin-left: 299px;
     }
 
     p {
-      margin: 279px 0 0 176px;
+      margin: 231px 0 0 218px;
       letter-spacing: 0.05em;
     }
   }
@@ -1098,6 +1098,11 @@ main {
       .digitalBar { margin-top: 100px; }
 
     }
+
+	  .lectureInfo {
+			img { margin-left: 200px; }
+	    p { margin: 231px 0 0 150px; }
+	  }
   }
 }
 
@@ -1140,9 +1145,10 @@ main {
   }
   main{
     .lectureInfo {
+			img { margin-left: 70px; }
       p {
         font-size: 30px;
-        margin: 200px 0 0 100px;
+        margin: 200px 0 0 70px;
       }
     }
 
