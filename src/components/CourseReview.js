@@ -12,12 +12,12 @@ import { reviewSuit, reviewLearnWhat } from './diamondListAndArticleContent.js';
 function CourseReview() {
   return (
     <>
-      <div id='CourseReviewPage'>
+      <div id='courseReviewPage'>
         <HeaderContent title='Rreview For Free' sub='免費複習課程'/>
         <main>
-          <ListsWithDiamond className='ReviewSuitFor' title='適合對象...' listName={reviewSuit} />
+          <ListsWithDiamond className='reviewSuitFor' title='適合對象...' listName={reviewSuit} />
           <ParallaxCricle text={['歡迎大家回來畫畫珠寶，', <br/>, '談天說地！']}/>
-          <ListsWithDiamond className='ReviewLearnWhat' title='你可以學到...' listName={reviewLearnWhat} />
+          <ListsWithDiamond className='reviewLearnWhat' title='你可以學到...' listName={reviewLearnWhat} />
           <ParallaxCricle text='任何珠寶相關問題不怕你問！'/>
           <div className='classInfo' data-aos='fade-up' data-aos-delay='600'>
             <h3>課程資訊</h3>
