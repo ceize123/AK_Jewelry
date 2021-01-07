@@ -8,6 +8,7 @@ function Blog() {
   const handleDropDown = () => setDropDown(!dropDown);
 
   useEffect(() => {
+    let lastScrollTop = 0;
     window.onscroll = function() {
       if ( document.getElementById('blogBar') ) {
         if (window.innerWidth > 850) {
@@ -37,6 +38,26 @@ function Blog() {
             }
           }
         }
+
+        if ( document.getElementById('nav') ) {
+          if (window.innerWidth > 1000) {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop && scrollTop > 0) {
+              document.getElementById('nav').style.top = '-81px';
+            } else {
+              document.getElementById('nav').style.top = '0';
+            }
+            lastScrollTop = scrollTop;
+          } else {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop && scrollTop > 0) {
+              document.getElementById('nav').style.top = '-56px';
+            } else {
+              document.getElementById('nav').style.top = '0';
+            }
+            lastScrollTop = scrollTop;
+            }
+          }
     }
   }, []);
 
