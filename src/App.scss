@@ -83,9 +83,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
   z-index: 1;
-	position: relative;
+	position: fixed;
+	transition: 0.5s;
 
   img {
     margin-left: 35px;
@@ -592,7 +592,7 @@ footer {
 .dateInfo li, button { font-size: 24px; }
 
 header {
-
+	padding-top: 81px;
   .sloganSec {
     position: relative;
 
@@ -1103,7 +1103,7 @@ main {
 
 @media screen and (max-width: 1000px) {
   header {
-    padding-top: 0px;
+    padding-top: 56px;
 
     .sloganSec {
       img {
@@ -1333,6 +1333,7 @@ main {
   header {
     height: calc(100vh - 280px);
     padding-top: 280px;
+		margin-top: 81px;
     margin-bottom: 209px;
 
     h1 {
@@ -2170,6 +2171,10 @@ main {
 }
 
 @media screen and ( max-width: 1000px ) {
+	#aboutPage, #courseBeginnerHandPage, #courseAdvancedHandPage, #courseDigitalPage,#course3DPage, #courseReviewPage, #freelancePage, #porfolioPage, #blogPage, #FaqPage, #noMatch {
+		header { margin-top: 56px; }
+	}
+
 	#freelancePage, #blogPage ,#FaqPage {
 		header { width: 100vw;}
 	}
