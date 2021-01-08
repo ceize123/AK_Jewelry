@@ -26,7 +26,7 @@ function Blog() {
               document.getElementById('blogBar').style.top = 0;
             } else {
               document.getElementById('blogBar').style.position = 'absolute';
-              document.getElementById('blogBar').style.top = `681px`;
+              document.getElementById('blogBar').style.top = `581px`;
             }
           } else {
             if ( window.pageYOffset > 615 ) {
@@ -34,7 +34,7 @@ function Blog() {
               document.getElementById('blogBar').style.top = 0;
             } else {
               document.getElementById('blogBar').style.position = 'absolute';
-              document.getElementById('blogBar').style.top = `615px`;
+              document.getElementById('blogBar').style.top = `515px`;
             }
           }
         }

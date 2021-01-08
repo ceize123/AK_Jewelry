@@ -233,26 +233,26 @@ export function BlogArticle(props) {
 
 
 export function RandomBlogArticle() {
-  const [resize, setResize] = useState(50);
-  const [mobileImg, setMobileImg] = useState(false);
-  const size = () => {
-    if (window.innerWidth <= 675) {
-      setResize(20);
-      setMobileImg(true);
 
-    } else {
-      setResize(50);
-      setMobileImg(false);
-    }
+  const [windowWidth, setwindowWidth] = useState(window.innerWidth)
+  const handleResize = () => {
+    setwindowWidth(window.innerWidth)
   }
-  window.addEventListener('resize', size);
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.addEventListener('resize', handleResize);
+    }
+  }, [])
 
   const articles = article.map((content, key) =>
     <Link key={key} className='articles' to={`/blog/${content.title}`}>
-      <div><img src={`${mobileImg === false ? content.img : content.img_mobile}`} alt="articleImgs"/></div>
+      <div><img src={`${windowWidth > 675 ? content.img : content.img_mobile}`} alt="articleImgs"/></div>
       <div >
         <h5>{content.title}</h5>
-        <p>{content.content[0].substring(0, resize)}...</p>
+        <p>{content.content[0].substring(0, `${windowWidth > 675 ? 50 : 20}`)}...</p>
       </div>
     </Link>
   )

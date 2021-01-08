@@ -1265,7 +1265,7 @@ main {
           margin-left: 13px;
 
           li {
-            width: calc( 90vw - 39px);
+            width: 309px;
             margin-left: 30px;
             line-height: 39.6px;
             white-space: wrap;
@@ -2244,6 +2244,7 @@ main {
 				font-size: 60px;
 				margin-top: -66px;
 				margin-bottom: 20px;
+				white-space: nowrap;
 			}
 
 			.porfolioSec {
@@ -2727,7 +2728,7 @@ main {
 	#blogPage, #Articles {
 		header {
 			height: auto;
-			margin-bottom: 419px;
+			margin-bottom: 319px;
 		}
 		main {
 			.blogBar {
@@ -2773,8 +2774,7 @@ main {
 
 			h5 {
 				font-size: 24px;
-				padding: 0 0 10px 26px;
-				margin-top: 43px;
+				padding: 43px 0 10px 26px;
 			}
 
 			p {
