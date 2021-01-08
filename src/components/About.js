@@ -61,19 +61,13 @@ function About() {
                   其中SILVER意指該系列以銀飾為主打， DRIFT則象徵了設計師珠寶應該自由奔放，
                   不受框架拘束的精神。
                 </span>
-                <Link to='/freelance'>
-                  <button className='longBtn' id='cooperateBtn'>企業合作/個人訂製</button>
-                </Link>
+                <button className='longBtn' id='cooperateBtn'><Link to='/freelance'>企業合作/個人訂製</Link></button>
               </div>
             </div>
           </div>
           <div className='aboutPageLastBtn' data-aos='fade-up' data-aos-offset='0' data-aos-delay='400'>
-            <Link to='/#lectureInfoSection'>
-              <button className='longBtn'>近期課程資訊</button>
-            </Link>
-            <Link to='/porfolio'>
-              <button className='longBtn'>作品集</button>
-            </Link>
+            <button className='longBtn'><Link to='/#lectureInfoSection'>近期課程資訊</Link></button>
+            <button className='longBtn'><Link to='/porfolio'>作品集</Link></button>
           </div>
         </main>
       </div>
