@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import DelayLink from 'react-delay-link';
 import { TellMeTime } from './pagesContent.js';
-import abstract2 from '../imgs/RD-landingpage/抽象線條人物2.svg';
+import abstract2 from '../imgs/RD-landingpage/抽象線條人物2.png';
 import bling from '../imgs/RD-landingpage/抽象人物線條亮晶晶.gif';
 import diamond from '../imgs/RD-landingpage/圓小鑽石.png';
 import Aos from 'aos';
@@ -22,15 +22,17 @@ function LessonSection(props) {
   return (
     <>
       <div className='handBlock'>
-        <div className='handBar'
-        onMouseOver={()=>setText2('Beginner')}
-        onMouseLeave={()=>setText2('初階手繪珠寶設計')}
-        >
-          <p className='handP'>
-            {text2}
-          </p>
-        </div>
-        <div className='date' data-aos='fade-up' data-aos-anchor-placement='top-center'>
+        <Link to='/CourseBeginner'>
+          <div className='handBar'
+          onMouseOver={()=>setText2('Beginner')}
+          onMouseLeave={()=>setText2('初階手繪珠寶設計')}
+          >
+            <p className='handP'>
+              {text2}
+            </p>
+          </div>
+        </Link>
+        <div className='date' data-aos='fade-up' data-aos-anchor-placement='top-center' data-aos-delay='300'>
           <span>日期：2021<br/>籌備中，敬請期待！</span>
           <ul>
             {handContent}
@@ -39,15 +41,17 @@ function LessonSection(props) {
         </div>
       </div>
       <div className='digitalBlock'>
-        <div className='digitalBar'
-        onMouseOver={()=>setText1('Digital Jewelry')}
-        onMouseLeave={()=>setText1('數位珠寶設計')}
-        >
-          <p className='digitalP'>
-            {text1}
-          </p>
-        </div>
-        <div className='date digitalDate' data-aos='fade-up' data-aos-anchor-placement='top-center' data-aos-duration='0'>
+        <Link to='/CourseDigital'>
+          <div className='digitalBar'
+          onMouseOver={()=>setText1('Digital Jewelry')}
+          onMouseLeave={()=>setText1('數位珠寶設計')}
+          >
+            <p className='digitalP'>
+              {text1}
+            </p>
+          </div>
+        </Link>
+        <div className='date digitalDate' data-aos='fade-up' data-aos-anchor-placement='top-center' data-aos-duration='0' data-aos-delay='300'>
           <span id='digitalSpan'>日期：2021<br/>1/01, 1/07, 1/14, 1/21, 1/28</span>
           <ul>
             {digitalContent}
@@ -132,8 +136,8 @@ function LandingPage() {
       </header>
       <main>
         <div className='aboutSec' ref={aboutSection}>
-          <p data-aos='fade-up' data-aos-offset='120' data-aos-delay='0'>About</p>
-          <span data-aos='fade-up' data-aos-offset='120' data-aos-delay='0'>ANDREA老師畢業於紐約FIT珠寶設計學系，
+          <p data-aos='fade-up' data-aos-offset='80' data-aos-delay='0'>About</p>
+          <span data-aos='fade-up' data-aos-offset='80' data-aos-delay='0'>ANDREA老師畢業於紐約FIT珠寶設計學系，
           畢業後立即進入了紐約一線的珠寶設計師品牌執業，
           為好萊塢明星提供客製化與紅毯珠寶設計，有多年業界經驗。
           <br/>
