@@ -1338,8 +1338,7 @@ main {
 
   header {
     height: calc(100vh - 280px);
-    padding-top: 280px;
-		margin-top: 81px;
+    padding-top: 361px;
     margin-bottom: 209px;
 
     h1 {
@@ -2178,7 +2177,7 @@ main {
 
 @media screen and ( max-width: 1000px ) {
 	#aboutPage, #courseBeginnerHandPage, #courseAdvancedHandPage, #courseDigitalPage,#course3DPage, #courseReviewPage, #freelancePage, #porfolioPage, #blogPage, #FaqPage, #noMatch {
-		header { margin-top: 56px; }
+		header { padding-top: 56px; }
 	}
 
 	#freelancePage, #blogPage ,#FaqPage {
@@ -2377,7 +2376,7 @@ main {
   #aboutPage, #courseBeginnerHandPage, #courseAdvancedHandPage, #courseDigitalPage,#course3DPage, #courseReviewPage, #freelancePage, #porfolioPage, #blogPage, #FaqPage, #noMatch {
     header {
       height: auto;
-      padding-top: 150px;
+      padding-top: 206px;
       margin-bottom: 140px;
     }
 
