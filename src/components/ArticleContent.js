@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import DelayLink from 'react-delay-link';
 import { article } from './diamondListAndArticleContent.js';
 import { useParams } from 'react-router-dom';
 import { RandomBlogArticle } from './pagesContent.js';
@@ -69,12 +70,8 @@ function Articles() {
           </div>
         ))}
         <div className='articleBtn' data-aos='fade-up'>
-        <Link to='/'>
-          <button className='longBtn'>近期課程資訊</button>
-        </Link>
-        <Link to='/porfolio'>
-          <button className='longBtn'>作品集</button>
-        </Link>
+          <button className='longBtn'><DelayLink delay={400} to='/'>近期課程資訊</DelayLink></button>
+          <button className='longBtn'><DelayLink delay={400} to='/porfolio'>作品集</DelayLink></button>
         </div>
         <h5 data-aos='fade-up'>其他人也看過</h5>
         <RandomBlogArticle />

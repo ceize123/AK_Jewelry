@@ -143,9 +143,9 @@ function LandingPage() {
           <br/>
           <br/>
           因現居北美洲，ANDREA老師一年只會回來開2次課程...</span>
-          <Link to='/about'>
+          <DelayLink delay={400} to='/about'>
             <button className='shortBtn' data-aos='fade-up' id='moreBtn' data-aos-offset='0' data-aos-delay='0'>More</button>
-          </Link>
+          </DelayLink>
         </div>
         <div className='lectureInfo' id='lectureInfoSection'>
           <img src={abstract2} alt="Jewelry"/>

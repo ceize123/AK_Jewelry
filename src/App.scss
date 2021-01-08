@@ -59,7 +59,7 @@ html, body {
 li { list-style: none; }
 hr { margin: 0; }
 a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -221,6 +221,7 @@ nav {
 
 // mobile
 @media screen and (max-width: 1000px) {
+	a { color: #000; }
 
   nav {
     height: 56px;
@@ -1310,6 +1311,7 @@ main {
 		.lectureInfo {
       img {
         width: 279px;
+				height: 362px;
         margin: 0 auto;
       }
       p {

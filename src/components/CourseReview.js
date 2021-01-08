@@ -1,9 +1,9 @@
 import React from 'react';
+import DelayLink from 'react-delay-link';
 import {
   HeaderContent,
   ListsWithDiamond,
   ParallaxCricle,
-  YouCanLearn,
   SignUp,
   TellMeTime
 } from './pagesContent.js';
