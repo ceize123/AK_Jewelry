@@ -134,7 +134,6 @@ export const advancedLearnWhat = [
 
 // digital
 export const digitalSuit = [
-  '適合對象',
   '對運用軟體設計珠寶有興趣的初學者',
   '想要精進自己的珠寶設計師',
   '想出國念珠寶設計準備作品集'
