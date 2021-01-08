@@ -42,7 +42,7 @@ function Blog() {
         if ( document.getElementById('nav') ) {
           if (window.innerWidth > 1000) {
             let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            if (scrollTop > lastScrollTop && scrollTop > 0) {
+            if (scrollTop > lastScrollTop && scrollTop > 81) {
               document.getElementById('nav').style.top = '-81px';
             } else {
               document.getElementById('nav').style.top = '0';
@@ -50,7 +50,7 @@ function Blog() {
             lastScrollTop = scrollTop;
           } else {
             let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            if (scrollTop > lastScrollTop && scrollTop > 0) {
+            if (scrollTop > lastScrollTop && scrollTop > 56) {
               document.getElementById('nav').style.top = '-56px';
             } else {
               document.getElementById('nav').style.top = '0';
