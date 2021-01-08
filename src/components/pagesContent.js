@@ -120,6 +120,7 @@ export function SignUp() {
               <option value='advanced'>進階手繪珠寶設計</option>
               <option value='digital'>數位珠寶設計</option>
               <option value='3D'>3D珠寶建模</option>
+              <option value='review'>免費複習課程</option>
             </select>
             {errors.course && <span id='errorD'>請選擇課程</span>}
             <div className='signUpTri'></div>

@@ -33,8 +33,6 @@ function CourseReview() {
             <span>免費，無需準備材料</span>
             <h4>上課地點</h4>
             <span>台北市，近西門捷運站 (走路約5分鐘)</span>
-            <h4>其他注意事項</h4>
-            <span>如繳費完畢，臨時有事無法前來參加課程，不提供退費，但同學可以自行轉讓給其他同學。</span>
           </div>
           <ParallaxCricle text='免費資源！要把握機會唷！'/>
           <SignUp />

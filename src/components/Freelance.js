@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import DelayLink from 'react-delay-link';
 import { useForm } from "react-hook-form";
 import {HeaderContent, ListsWithDiamond} from './pagesContent.js';
 import {provide} from './diamondListAndArticleContent.js';
@@ -29,9 +30,9 @@ function Freelance() {
             <img src={porfolio18} alt='Design2'/>
             <img src={porfolio19} alt='Design3'/>
           </div>
-          <Link to='/porfolio'>
+          <DelayLink delay={400} to='/porfolio'>
             <button className='longBtn'>作品集</button>
-          </Link>
+          </DelayLink>
           <div className='signUp'>
             <p>合作表單</p>
             <div id='coop' className='inputSection'>
