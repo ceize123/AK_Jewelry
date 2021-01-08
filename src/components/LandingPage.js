@@ -32,7 +32,7 @@ function LessonSection(props) {
             </p>
           </div>
         </Link>
-        <div className='date' data-aos='fade-up' data-aos-anchor-placement='top-center' data-aos-delay='300'>
+        <div className='date' data-aos='fade-up' data-aos-anchor-placement='top-center' data-aos-delay='0'>
           <span>日期：2021<br/>籌備中，敬請期待！</span>
           <ul>
             {handContent}
@@ -51,7 +51,7 @@ function LessonSection(props) {
             </p>
           </div>
         </Link>
-        <div className='date digitalDate' data-aos='fade-up' data-aos-anchor-placement='top-center' data-aos-duration='0' data-aos-delay='300'>
+        <div className='date digitalDate' data-aos='fade-up' data-aos-anchor-placement='top-center' data-aos-duration='0' data-aos-delay='0'>
           <span id='digitalSpan'>日期：2021<br/>1/01, 1/07, 1/14, 1/21, 1/28</span>
           <ul>
             {digitalContent}
@@ -129,7 +129,7 @@ function LandingPage() {
             <p>喚起你心中的藝術家，</p>
             <p>開啟閃亮亮斜槓人生</p>
           </div>
-          <div data-aos='fade-up' data-aos-delay='400' className='getIn' onClick={gotoAboutSection}>
+          <div data-aos='fade-up' data-aos-delay='400' data-aos-offset='-20' className='getIn' onClick={gotoAboutSection}>
             <p><i className="las la-long-arrow-alt-right"></i>進入珠寶世界</p>
           </div>
         </div>
