@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/AK_Jewelry/static/css/main.2cf18a0c.chunk.css",
-    "main.js": "/AK_Jewelry/static/js/main.d7986673.chunk.js",
-    "main.js.map": "/AK_Jewelry/static/js/main.d7986673.chunk.js.map",
+    "main.css": "/AK_Jewelry/static/css/main.0204bdce.chunk.css",
+    "main.js": "/AK_Jewelry/static/js/main.142bf2dc.chunk.js",
+    "main.js.map": "/AK_Jewelry/static/js/main.142bf2dc.chunk.js.map",
     "runtime-main.js": "/AK_Jewelry/static/js/runtime-main.57a1e6f3.js",
     "runtime-main.js.map": "/AK_Jewelry/static/js/runtime-main.57a1e6f3.js.map",
     "static/css/2.ec02d681.chunk.css": "/AK_Jewelry/static/css/2.ec02d681.chunk.css",
@@ -10,8 +10,9 @@
     "static/js/2.aef67159.chunk.js.map": "/AK_Jewelry/static/js/2.aef67159.chunk.js.map",
     "index.html": "/AK_Jewelry/index.html",
     "static/css/2.ec02d681.chunk.css.map": "/AK_Jewelry/static/css/2.ec02d681.chunk.css.map",
-    "static/css/main.2cf18a0c.chunk.css.map": "/AK_Jewelry/static/css/main.2cf18a0c.chunk.css.map",
+    "static/css/main.0204bdce.chunk.css.map": "/AK_Jewelry/static/css/main.0204bdce.chunk.css.map",
     "static/js/2.aef67159.chunk.js.LICENSE.txt": "/AK_Jewelry/static/js/2.aef67159.chunk.js.LICENSE.txt",
+    "static/media/arrow進入珠寶世界.71400f8f.svg": "/AK_Jewelry/static/media/arrow進入珠寶世界.71400f8f.svg",
     "static/media/experience1-1.263a0981.jpg": "/AK_Jewelry/static/media/experience1-1.263a0981.jpg",
     "static/media/experience1-1_mobile.acc2a518.jpg": "/AK_Jewelry/static/media/experience1-1_mobile.acc2a518.jpg",
     "static/media/experience1-2.e6daf780.jpg": "/AK_Jewelry/static/media/experience1-2.e6daf780.jpg",
@@ -76,6 +77,7 @@
     "static/media/學生作品3.832806dd.png": "/AK_Jewelry/static/media/學生作品3.832806dd.png",
     "static/media/抽象人物線條亮晶晶.c6326ce0.gif": "/AK_Jewelry/static/media/抽象人物線條亮晶晶.c6326ce0.gif",
     "static/media/抽象線條人物2.706f21c0.png": "/AK_Jewelry/static/media/抽象線條人物2.706f21c0.png",
+    "static/media/文字logo.a54b5975.svg": "/AK_Jewelry/static/media/文字logo.a54b5975.svg",
     "static/media/明星穿戴照1.2531c184.png": "/AK_Jewelry/static/media/明星穿戴照1.2531c184.png",
     "static/media/明星穿戴照2.3a28c6f2.png": "/AK_Jewelry/static/media/明星穿戴照2.3a28c6f2.png",
     "static/media/明星穿戴照3.02cbcf72.png": "/AK_Jewelry/static/media/明星穿戴照3.02cbcf72.png",
@@ -109,7 +111,7 @@
     "static/js/runtime-main.57a1e6f3.js",
     "static/css/2.ec02d681.chunk.css",
     "static/js/2.aef67159.chunk.js",
-    "static/css/main.2cf18a0c.chunk.css",
-    "static/js/main.d7986673.chunk.js"
+    "static/css/main.0204bdce.chunk.css",
+    "static/js/main.142bf2dc.chunk.js"
   ]
 }
