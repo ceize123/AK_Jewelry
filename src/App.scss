@@ -1858,6 +1858,13 @@ main {
 	}
 }
 
+#course3DPage {
+	header {
+		margin-bottom: 0;
+		height: calc( 100vh - 280px );
+	}
+}
+
 #porfolioPage {
 	main {
 
@@ -2755,6 +2762,13 @@ main {
 					margin-top: 330px;
 				}
 			}
+		}
+	}
+
+	#course3DPage {
+		header {
+			margin-bottom: 0;
+			height: calc( 100vh - 280px );
 		}
 	}
 
