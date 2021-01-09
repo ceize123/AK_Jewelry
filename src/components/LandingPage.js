@@ -65,7 +65,8 @@ function LessonSection(props) {
   )
 }
 
-function LandingPage() {
+function LandingPage(forwardedRef) {
+
 
 // scoll to element
   const aboutSection = useRef(null);
@@ -86,8 +87,6 @@ function LandingPage() {
       return () => window.removeEventListener('scroll', handleScroll);
     }
   }, [])
-
-
 
 
 // aos

@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import DelayLink from 'react-delay-link';
 import { article } from './diamondListAndArticleContent.js';
 import { useParams } from 'react-router-dom';
-import { RandomBlogArticle } from './pagesContent.js';
+import { RandomBlogArticle, TwoBtn } from './pagesContent.js';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -69,10 +67,7 @@ function Articles() {
             <p data-aos='fade-up'>{content.content}</p>
           </div>
         ))}
-        <div className='articleBtn' data-aos='fade-up'>
-          <button className='longBtn'><DelayLink delay={400} to='/'>近期課程資訊</DelayLink></button>
-          <button className='longBtn'><DelayLink delay={400} to='/porfolio'>作品集</DelayLink></button>
-        </div>
+        <TwoBtn url='/porfolio' linkName='作品集'/>
         <h5 data-aos='fade-up'>其他人也看過</h5>
         <RandomBlogArticle />
       </main>

@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
-import DelayLink from 'react-delay-link';
-import {HeaderContent, ListsWithDiamond} from './pagesContent.js';
+import {HeaderContent, ListsWithDiamond, TwoBtn} from './pagesContent.js';
 import {aboutPageAndrea, whyChose} from './diamondListAndArticleContent.js';
 import aboutImg1 from '../imgs/RD-about師資介紹/明星穿戴照1.png';
 import aboutImg2 from '../imgs/RD-about師資介紹/明星穿戴照2.png';
@@ -62,14 +61,11 @@ function About() {
                   其中SILVER意指該系列以銀飾為主打， DRIFT則象徵了設計師珠寶應該自由奔放，
                   不受框架拘束的精神。
                 </span>
-                <button className='longBtn' id='cooperateBtn'><DelayLink delay={400} to='/freelance'>企業合作/個人訂製</DelayLink></button>
+                <Link to='/freelance'><button className='longBtn' id='cooperateBtn'>企業合作/個人訂製</button></Link>
               </div>
             </div>
           </div>
-          <div className='aboutPageLastBtn' data-aos='fade-up' data-aos-offset='0' data-aos-delay='400'>
-            <button className='longBtn'><DelayLink delay={400} to='/#lectureInfoSection'>近期課程資訊</DelayLink></button>
-            <button className='longBtn'><DelayLink delay={400} to='/porfolio'>作品集</DelayLink></button>
-          </div>
+          <TwoBtn url='/freelance' linkName='企業合作/個人訂製'/>
         </main>
       </div>
     </>

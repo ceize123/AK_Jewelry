@@ -1565,7 +1565,7 @@ main {
     }
 
     .getCase {
-      margin-bottom: 200px;
+      margin-bottom: 250px;
       h3 > span { font-family: $playFair; }
       h3 { margin-bottom: 50px; }
 
@@ -1602,12 +1602,20 @@ main {
       }
     }
 
-    .aboutPageLastBtn {
-      button {
-        margin: 0 44px 200px 44px;
-        display: inline;
-      }
-    }
+		.twoBtn {
+			display: flex;
+			justify-content: center;
+			padding-bottom: 200px;
+
+			button {
+				display: inline;
+				margin: 0;
+				margin-left: 44px;
+				margin-right: 44px;
+				color: #000;
+
+			}
+		}
   }
 }
 
@@ -1936,12 +1944,13 @@ main {
 				button {
 					display: inline;
 					margin: 0;
+					margin-left: 44px;
+					margin-right: 44px;
 					background-color: transparent;
 					box-shadow: 0 1px 8px #fff;
 					text-shadow: 0 3px 15px #fff;
+					color: #fff;
 
-
-					&:last-child { margin-left: 88px; }
 				}
 			}
 		}
@@ -2113,6 +2122,20 @@ main {
 			}
 		}
 
+		.twoBtn {
+			display: flex;
+			justify-content: center;
+			padding: 100px 0 205px 0;
+
+			button {
+				display: inline;
+				margin: 0;
+				margin-left: 44px;
+				margin-right: 44px;
+				color: #000;
+			}
+		}
+
 	}
 }
 
@@ -2220,18 +2243,26 @@ main {
           	  box-shadow: 4px 4px 12px -2px rgba(20%,20%,40%,0.5);
               margin-top: 55px;
               margin-bottom: 100px;
+							color: #000;
             }
           }
         }
       }
 
-      .aboutPageLastBtn {
-        button {
-          display: block;
-          margin: 0 auto 20px auto;
-          &:last-child { margin-bottom: 100px; }
-        }
-      }
+			.twoBtn {
+				display: block;
+				padding: 100px 0;
+
+				button {
+					display: block;
+					margin: 0 auto;
+					font-size: 20px;
+
+					&:last-child {
+						margin: 15px auto 0 auto;
+					}
+				}
+			}
     }
   }
 
@@ -2371,6 +2402,21 @@ main {
 					display: block;
           margin: 0 auto 24px auto;
           &:last-child { margin-bottom: 100px; }
+				}
+			}
+
+			.twoBtn {
+				display: block;
+				padding: 100px 0 55px 0;
+
+				button {
+					display: block;
+					margin: 0 auto;
+					font-size: 20px;
+
+					&:last-child {
+						margin: 15px auto 0 auto;
+					}
 				}
 			}
 		}

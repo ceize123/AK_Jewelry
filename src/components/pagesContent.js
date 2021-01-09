@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
+import { useHistory } from 'react-router';
 import { useForm } from "react-hook-form";
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import diamond from '../imgs/RD-landingpage/圓小鑽石.png';
 import circle from '../imgs/RD-初階手繪珠寶設計/圈圈.svg';
 import student1 from '../imgs/RD-初階手繪珠寶設計/學生作品1.png';
@@ -78,6 +79,22 @@ export function ParallaxCricle(props) {
         </div>
       </div>
     </>
+  )
+}
+
+export function TwoBtn(props) {
+  const history = useHistory()
+  const handleHistory = () => {
+    setTimeout(() => {
+      history.push(`${props.url}`)
+    }, 400)
+  }
+
+  return (
+    <div className='twoBtn'>
+      <Link to='/#lectureInfoSection'><button className='longBtn'>近期課程資訊</button></Link>
+      <Link onClick={handleHistory}><button className='longBtn'>{props.linkName}</button></Link>
+    </div>
   )
 }
 
@@ -186,42 +203,6 @@ export function TellMeTime() {
 
 // Blog page
 export function BlogArticle(props) {
-
-  // // 設定手機的內文字數（blog頁面）
-  // const [resize, setResize] = useState(50);
-  // // 設定手機的尺寸｜
-  // const [mobileImg, setMobileImg] = useState(false);
-  // const size = () => {
-  //   if (window.innerWidth <= 675) {
-  //     setResize(20);
-  //     setMobileImg(true);
-  //
-  //   } else {
-  //     setResize(50);
-  //     setMobileImg(false);
-  //   }
-  // }
-  // window.addEventListener('resize', size);
-  //
-  // const wholeArticles = article.map((content, key) =>
-  //   <Link className='articles' key={key} to={`/blog/${content.title}`}>
-  //     <div><img src={`${mobileImg === false ? content.img : content.img_mobile}`} alt="articleImgs"/></div>
-  //     <div>
-  //       <h5>{content.title}</h5>
-  //       <p>{content.content[0].substring(0, resize)}...</p>
-  //     </div>
-  //   </Link>
-  // )
-
-  // const abc = article.filter(key => key.category === '珠寶知識').map((content, key) =>
-  //   <Link className='articles' key={key} to={`/blog/${content.title}`}>
-  //     <div><img src={`${mobileImg === false ? content.img : content.img_mobile}`} alt="articleImgs"/></div>
-  //     <div>
-  //       <h5>{content.title}</h5>
-  //       <p>{content.content[0].substring(0, resize)}...</p>
-  //     </div>
-  //   </Link>
-  // );
 
   return (
     <>

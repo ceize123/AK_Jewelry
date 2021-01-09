@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
-import DelayLink from 'react-delay-link';
-import {HeaderContent} from './pagesContent.js';
+import {HeaderContent, TwoBtn} from './pagesContent.js';
 import porfolio1 from '../imgs/RD-作品集/設計作品1.png';
 import porfolio2 from '../imgs/RD-作品集/設計作品2.png';
 import porfolio3 from '../imgs/RD-作品集/設計作品3.png';
@@ -60,10 +59,7 @@ function Porfolio() {
             <img src={porfolio17} alt="porfolio17" data-aos='fade-up' />
             <img src={porfolio18} alt="porfolio18" data-aos='fade-up' />
             <img src={porfolio19} alt="porfolio19" data-aos='fade-up' />
-            <div>
-              <button className='longBtn'><DelayLink delay={400} to='/#lectureInfoSection'>近期課程資訊</DelayLink></button>
-              <button className='longBtn'><DelayLink delay={400} to='freelance'>企業合作/個人訂製</DelayLink></button>
-            </div>
+            <TwoBtn url='/freelance' linkName='企業合作/個人訂製'/>
           </section>
         </main>
       </div>
