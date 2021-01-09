@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../imgs/RD-landingpage/logo.png';
+import textLogo from '../imgs/RD-landingpage/文字logo.svg';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -60,7 +61,8 @@ function Navbar() {
     <>
       <nav id='nav'>
         <Link to='/'>
-          <img src={logo} alt='logo'/>
+          <img className='logo' src={logo} alt='logo'/>
+          <img className='textLogo' src={textLogo} alt='logo'/>
         </Link>
         <div className='hamburger' onClick={handleClick}>
           <div className="lines line-top"></div>
@@ -91,7 +93,7 @@ function Navbar() {
                 <div className='transparent' onClick={handleClickInside}></div>
                 <ul className='insideUl'>
                   <li className={clickInside ? 'active': null}>
-                    <div onClick={handleClickDeep}>
+                    <div className='insideSelectDiv' onClick={handleClickDeep}>
                       <p className='insideEng' >Jewelry Design
                         <span className='insideTri mobileTri upperTri'></span>
                       </p>
@@ -108,7 +110,7 @@ function Navbar() {
                         <i className="fas fa-chevron-left"></i>
                         <li className={clickDeep ? 'active': null}>
                           <Link to='/CourseBeginner' onClick={closeMobileMenu}>
-                            <div>
+                            <div className='insideSelectDiv'>
                               <p className='insideEng deepEng'>Beginner</p>
                               <span>初階手繪珠寶</span>
                             </div>
@@ -116,7 +118,7 @@ function Navbar() {
                         </li>
                         <li className={clickDeep ? 'active': null}>
                           <Link to='/CourseAdvance' onClick={closeMobileMenu}>
-                            <div>
+                            <div className='insideSelectDiv'>
                               <p className='insideEng deepEng'>Advanced</p>
                               <span id='deepUlAdvanced'>進階手繪珠寶</span>
                             </div>
@@ -127,7 +129,7 @@ function Navbar() {
                   </li>
                   <li className={clickInside ? 'active': null}>
                     <Link to='/CourseDigital' onClick={closeMobileMenu}>
-                      <div>
+                      <div className='insideSelectDiv'>
                         <p className='insideEng'>Digital Jewelry Design</p>
                         <span>數位珠寶設計</span>
                       </div>
@@ -135,7 +137,7 @@ function Navbar() {
                   </li>
                   <li className={clickInside ? 'active': null}>
                     <Link to='/Course3D' onClick={closeMobileMenu}>
-                      <div>
+                      <div className='insideSelectDiv'>
                         <p className='insideEng'>3D Cad</p>
                         <span>3D珠寶建模</span>
                       </div>
@@ -143,7 +145,7 @@ function Navbar() {
                   </li>
                   <li className={clickInside ? 'active': null}>
                     <Link to='/CourseReview' onClick={closeMobileMenu}>
-                      <div>
+                      <div className='insideSelectDiv'>
                         <p className='insideEng'>Review For Free</p>
                         <span>免費複習課程</span>
                       </div>

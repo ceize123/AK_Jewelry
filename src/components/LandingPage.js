@@ -5,6 +5,7 @@ import { TellMeTime } from './pagesContent.js';
 import abstract2 from '../imgs/RD-landingpage/抽象線條人物2.png';
 import bling from '../imgs/RD-landingpage/抽象人物線條亮晶晶.gif';
 import diamond from '../imgs/RD-landingpage/圓小鑽石.png';
+import arrow from '../imgs/RD-landingpage/arrow進入珠寶世界.svg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import {lpHand, lpDigital} from './diamondListAndArticleContent.js';
@@ -129,7 +130,7 @@ function LandingPage(forwardedRef) {
             <p>開啟閃亮亮斜槓人生</p>
           </div>
           <div data-aos='fade-up' data-aos-delay='400' data-aos-offset='-20' className='getIn' onClick={gotoAboutSection}>
-            <p><i className="las la-long-arrow-alt-right"></i>進入珠寶世界</p>
+            <p><img src={arrow} alt="arrow"/>進入珠寶世界</p>
           </div>
         </div>
       </header>
@@ -148,7 +149,7 @@ function LandingPage(forwardedRef) {
         </div>
         <div className='lectureInfo' id='lectureInfoSection'>
           <img src={abstract2} alt="Jewelry"/>
-          <p id='lectureP' style={{ transform: `translateY(${offsetY * -0.55}px)` }}>近期開課資訊</p>
+          <p id='lectureP' style={{ transform: `translateY(${offsetY * -0.45}px)` }}>近期開課資訊</p>
         </div>
         <div className='dateInfo'>
           <LessonSection handText='初階手繪珠寶設計' digitalText='數位珠寶設計'/>

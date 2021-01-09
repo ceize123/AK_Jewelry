@@ -27,7 +27,7 @@ function Porfolio() {
 
   useEffect(() => {
     Aos.init({
-      duration: 1000,
+      duration: 700,
       once: true,
       offsetTop: 60,
     });

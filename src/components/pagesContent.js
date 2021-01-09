@@ -104,7 +104,7 @@ export function YouCanLearn(props) {
     <>
     <h3 data-aos='fade-up'>上完課你可以做到...</h3>
     <div className='student'>
-      <div data-aos='fade-up'><span>學生作品-By Feng</span><img src={student1} alt="Feng"/></div>
+      <div data-aos='fade-up'><span>學生作品-By Fang</span><img src={student1} alt="Fang"/></div>
       <div data-aos='fade-up'><span>學生作品-By Ivy</span><img src={student2} alt="Ivy"/></div>
       <div data-aos='fade-up'><span>學生作品-By Lillian</span><img src={student3} alt="Lillian"/></div>
     </div>

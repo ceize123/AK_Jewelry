@@ -94,7 +94,7 @@ function Blog() {
 
 
   const [articleFilter, setArticleFilter] = useState(wholeArticles);
-  let [category, setCategory] = useState();
+  let [category, setCategory] = useState(0);
   const allArticles = () => setArticleFilter(wholeArticles);
 
   const filters = article.filter(key => key.category === category).map((content, key) =>

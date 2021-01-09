@@ -61,20 +61,20 @@ import trend5_3 from '../imgs/Blog/Web/trend5-3.jpg';
 // DiamondList
 // landingPage
 export const lpHand = [
-  '分享歐美珠寶產業最新資訊不脫軌',
+  '分享歐美珠寶產業資訊不脫軌',
   '五人內小班制 教學更細緻',
   '不定期免費舊生複習課程'
 ]
 
 export const lpDigital = [
-  '分享歐美珠寶產業最新資訊不脫軌',
+  '分享歐美珠寶產業資訊不脫軌',
   '五人內小班制 教學更細緻',
   '提升珠寶繪畫技巧，更重視學生設計發想能力'
 ]
 
 // all
 export const whyChose = [
-  '分享歐美珠寶產業最新資訊不脫軌',
+  '分享歐美珠寶產業資訊不脫軌',
   '五人內小班制 教學更細緻',
   '不定期免費舊生複習課程 ',
   '重視並教導學生設計發想能力'

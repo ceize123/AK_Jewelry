@@ -2,47 +2,53 @@ import React, { useState } from 'react';
 import { HeaderContent } from './pagesContent.js';
 
 function Faq() {
-  const [open, setOpen] = useState();
+  const [open1, setOpen1] = useState(false);
+  const [open2, setOpen2] = useState(false);
+  const [open3, setOpen3] = useState(false);
+  const [open4, setOpen4] = useState(false);
+  const [open5, setOpen5] = useState(false);
+  const [open6, setOpen6] = useState(false);
+  const [open7, setOpen7] = useState(false);
 
   return (
     <>
       <div id='FaqPage'>
         <HeaderContent title='FAQ' sub='問與答'/>
         <main>
-        <div onClick={() => setOpen(1)}>
+        <div onClick={() => setOpen1(!open1)}>
           <h3>Q：沒有相關基礎也可以上課嗎？</h3>
-          <p style={{display: open === 1 ? 'block' : 'none'}}>
+          <p style={{display: open1 === true ? 'block' : 'none'}}>
             A: 參與課程的學生許多都不是藝術相關背景，因此我們特別編製適合初學學員的課程內容，
             沒有基礎也可以上喔。課程結束後，學員能在設計知識與繪畫方面有顯著進步成果，
             也能獨立操作完整設計流程。
           </p>
         </div>
-        <div onClick={() => setOpen(2)}>
+        <div onClick={() => setOpen2(!open2)}>
           <h3>Q：上課地點？人數？課程時間如何計算?</h3>
-          <p style={{display: open === 2 ? 'block' : 'none'}}>
+          <p style={{display: open2 === true ? 'block' : 'none'}}>
             A: 目前只有在台北開課，有邀約的情況才會南下開班，教室距離西門捷運站約五分鐘路程。
             一班的人數控制在3人左右，一堂課是3個小時，以初階班來舉例就是10堂課，
             30小時。如果是開設白天班，則大多會一天上兩堂課10:00~16:30，在5個白天上完十堂課。
           </p>
         </div>
-        <div onClick={() => setOpen(3)}>
+        <div onClick={() => setOpen3(!open3)}>
           <h3>Q：報名流程？</h3>
-          <p style={{display: open === 3 ? 'block' : 'none'}}>
+          <p style={{display: open3 === true ? 'block' : 'none'}}>
             A: 請至課程頁面的最下方填寫報名表，之後會收到郵件通知相關細節與轉帳資訊。
             繳費後才算是完成報名手續喔！匯款完成後也請再與我們聯繫，
             除了確認完成報名程序外我們也會再寄發上課相關訊息給同學。
             請務必確認填寫正確的郵件信箱，已順利進行報名流程。
           </p>
         </div>
-        <div onClick={() => setOpen(4)}>
+        <div onClick={() => setOpen4(!open4)}>
           <h3>Q：學費可以刷卡嗎？需要一次付清？</h3>
-          <p style={{display: open === 4 ? 'block' : 'none'}}>
+          <p style={{display: open4 === true ? 'block' : 'none'}}>
             A: AK珠寶教室現階段只接受轉帳匯款喔！因為是小班教學，約3人滿班，收到匯款後才確定保留名額。
           </p>
         </div>
-        <div onClick={() => setOpen(5)}>
+        <div onClick={() => setOpen5(!open5)}>
           <h3>Q：數位班和手繪班有什麼不同？</h3>
-          <p style={{display: open === 5 ? 'block' : 'none'}}>
+          <p style={{display: open5 === true ? 'block' : 'none'}}>
             A：手繪班我們主要是運用水彩、麥克筆等媒材下去進行創作，
             課堂上除了產業知識外還會示範如何完成鑽石、彩色寶石及金屬跟戒指3D透視圖等等的畫法。
             教你如何從草稿到完整的設計圖。課程結束後，學員就有能力可以獨自完成設計稿。
@@ -51,18 +57,18 @@ function Faq() {
             包括鑽石跟彩寶的不同呈現方式等等。
           </p>
         </div>
-        <div onClick={() => setOpen(6)}>
+        <div onClick={() => setOpen6(!open6)}>
           <h3>Q：初階班上完能學到什麼程度呢？</h3>
-          <p style={{display: open === 6 ? 'block' : 'none'}}>
+          <p style={{display: open6 === true ? 'block' : 'none'}}>
             A: 除了手繪技巧方面，初階課程會帶入寶石與設計相關知識與注意事項。
             初階班將學習鑽石與常見有色寶石的畫法，也會示範金屬的繪製技巧、
             各式鑲嵌表示技法與整個設計的流程。課程結束後，學員可以獨立完成像是項鍊、
             手鍊、耳環與胸針等等的設計稿喔！
           </p>
         </div>
-        <div onClick={() => setOpen(7)}>
+        <div onClick={() => setOpen7(!open7)}>
           <h3>Q：課程結束後有問題可以另外請教老師嗎？</h3>
-          <p style={{display: open === 7 ? 'block' : 'none'}}>
+          <p style={{display: open7 === true ? 'block' : 'none'}}>
             A: 珠寶相關的問題都可以詢問喔！教室也會不定期舉辦舊生不收費的複習課程，
             歡迎同學回來磨練自己的技巧。
           </p>
