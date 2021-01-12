@@ -113,6 +113,30 @@ function Blog() {
     }
   }, [category])
 
+  const handleClicktoScroll = () => {
+    if ( window.innerWidth > 1000 ) {
+      window.scrollTo({
+        top: 836,
+        behavior: 'smooth'
+      });
+    } else if ( window.innerWidth < 1000 && window.innerWidth > 850 ) {
+      window.scrollTo({
+        top: 700,
+        behavior: 'smooth'
+      });
+    } else if ( window.innerWidth < 850 && window.innerWidth > 480 ){
+      window.scrollTo({
+        top: 520,
+        behavior: 'smooth'
+      });
+    } else {
+      window.scrollTo({
+        top: 420,
+        behavior: 'smooth'
+      });
+    }
+  }
+
 
 
   return (
@@ -123,7 +147,10 @@ function Blog() {
         <div className='blogBar' id='blogBar'>
           <input type='radio' name='category' id='first' onClick={allArticles}/>
           <label htmlFor='first'>全部文章</label>
-          <input type='radio' name='category' id='second' onClick={ () => setCategory( category = '珠寶知識')}/>
+          <input type='radio' name='category' id='second' onClick={ () => {
+            setCategory( category = '珠寶知識')
+            handleClicktoScroll()
+          }}/>
           <label htmlFor='second'>珠寶知識</label>
           <input type='radio' name='category' id='third' onClick={ () => setCategory( category = '產業趨勢')}/>
           <label htmlFor='third' >產業趨勢</label>

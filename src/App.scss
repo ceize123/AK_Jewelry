@@ -2772,6 +2772,10 @@ main {
 		}
 	}
 
+	#porfolioPage {
+		header { margin-bottom: 321px; }
+	}
+
 	#freelancePage {
 		main {
 			.listBlock { margin-bottom: 100px; }
@@ -3094,6 +3098,8 @@ main {
 			}
 		}
 	}
+
+	#porfolioPage main h2 { color: #D8D8D8; }
 
 	#FaqPage main div { width: 344px; }
 }
