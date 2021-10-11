@@ -155,9 +155,9 @@ function Navbar() {
               </div>
             </li>
             <li className={click ? 'active': null}>
-              <Link to='/porfolio' onClick={handleClick}>
+              <Link to='/portfolio' onClick={handleClick}>
                 <div className='selectDiv'>
-                  <p>Porfolio</p>
+                  <p>Portfolio</p>
                   <span>作品集</span>
                 </div>
               </Link>

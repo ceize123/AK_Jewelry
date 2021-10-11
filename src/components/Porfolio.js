@@ -36,7 +36,7 @@ function Porfolio() {
   return (
     <>
       <div id='porfolioPage'>
-        <HeaderContent title='Porfolio' sub='作品集'/>
+        <HeaderContent title='Portfolio' sub='作品集'/>
         <main>
           <h2 data-aos='fade-up'>Andrea Ko</h2>
           <section className='porfolioSec'>

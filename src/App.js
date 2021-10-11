@@ -49,7 +49,7 @@ function App() {
           <Route path='/CourseDigital' component={CourseDigital} />
           <Route path='/Course3D' component={Course3D} />
           <Route path='/CourseReview' component={CourseReview} />
-          <Route path='/porfolio' component={Porfolio} />
+          <Route path='/portfolio' component={Porfolio} />
           <Route path='/freelance' component={Freelance} />
           <Route path='/blog' exact component={Blog} />
           <Route path='/FAQ' exact component={Faq} />
