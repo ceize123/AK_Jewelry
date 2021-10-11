@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/AK_Jewelry/static/css/main.fe9cfd09.chunk.css",
-    "main.js": "/AK_Jewelry/static/js/main.ca3e717b.chunk.js",
-    "main.js.map": "/AK_Jewelry/static/js/main.ca3e717b.chunk.js.map",
+    "main.js": "/AK_Jewelry/static/js/main.5f5e73e1.chunk.js",
+    "main.js.map": "/AK_Jewelry/static/js/main.5f5e73e1.chunk.js.map",
     "runtime-main.js": "/AK_Jewelry/static/js/runtime-main.57a1e6f3.js",
     "runtime-main.js.map": "/AK_Jewelry/static/js/runtime-main.57a1e6f3.js.map",
     "static/css/2.ec02d681.chunk.css": "/AK_Jewelry/static/css/2.ec02d681.chunk.css",
@@ -112,6 +112,6 @@
     "static/css/2.ec02d681.chunk.css",
     "static/js/2.aef67159.chunk.js",
     "static/css/main.fe9cfd09.chunk.css",
-    "static/js/main.ca3e717b.chunk.js"
+    "static/js/main.5f5e73e1.chunk.js"
   ]
 }
